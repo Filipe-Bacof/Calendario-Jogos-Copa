@@ -11,8 +11,7 @@ body {
     background-color: #121214;
     background-image: url("./assets/background.svg");
     background-position-x: center;
-    background-position-y: 55.6%;
-    background-repeat-y: no-repeat;
+    background-position-y: -770px;
 }
 
 body * {
@@ -26,6 +25,13 @@ body * {
 
 header {
     margin-bottom: 63px;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .card {
@@ -40,6 +46,7 @@ header {
     display: flex;
     gap: 16px;
     justify-content: center;
+    align-items: center;
     padding: 8px 16px;
     border: 1px solid #746615;
     border-radius: 6px;
@@ -51,7 +58,7 @@ header {
 
 .card h2 span {
     color: #e1e1e6;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
