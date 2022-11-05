@@ -38,6 +38,7 @@ document.querySelector("#app").innerHTML=`
         ${createCard("30/11", "quarta", createGame('tunisia', '12:00', 'france') + createGame('australia', '12:00', 'denmark') + createGame('poland', '16:00', 'argentina') + createGame('saudi-arabia', '16:00', 'mexico'))}
         ${createCard("01/12", "quinta", createGame('croatia', '12:00', 'belgium') + createGame('canada', '12:00', 'morocco') + createGame('japan', '16:00', 'spain') + createGame('costa-rica', '16:00', 'germany'))}
         ${createCard("02/12", "sexta", createGame('south-korea', '12:00', 'portugal') + createGame('ghana', '12:00', 'uruguay') + createGame('serbia', '16:00', 'switzerland') + createGame('brazil', '16:00', 'cameroon'))}
+        <p>Será Atualizado Em Breve!</p>
         ${createCard("03/12", "sabado", '<p>Oitavas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
         ${createCard("04/12", "domingo", '<p>Oitavas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
         ${createCard("05/12", "segunda", '<p>Oitavas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
