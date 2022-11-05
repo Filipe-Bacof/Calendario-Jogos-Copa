@@ -37,7 +37,16 @@ document.querySelector("#app").innerHTML=`
         ${createCard("29/11", "terça", createGame('ecuador', '12:00', 'senegal') + createGame('netherlands', '12:00', 'qatar') + createGame('iran', '16:00', 'united-states') + createGame('wales', '16:00', 'england'))}
         ${createCard("30/11", "quarta", createGame('tunisia', '12:00', 'france') + createGame('australia', '12:00', 'denmark') + createGame('poland', '16:00', 'argentina') + createGame('saudi-arabia', '16:00', 'mexico'))}
         ${createCard("01/12", "quinta", createGame('croatia', '12:00', 'belgium') + createGame('canada', '12:00', 'morocco') + createGame('japan', '16:00', 'spain') + createGame('costa-rica', '16:00', 'germany'))}
-        ${createCard("02/12", "quinta", createGame('south-korea', '12:00', 'portugal') + createGame('ghana', '12:00', 'uruguay') + createGame('serbia', '16:00', 'switzerland') + createGame('brazil', '16:00', 'cameroon'))}
-        ${createCard("03/12", "domingo", '<p>Início das Oitavas de Final. <br /><br />Aguarde, será atualizado em breve...</p>')}
+        ${createCard("02/12", "sexta", createGame('south-korea', '12:00', 'portugal') + createGame('ghana', '12:00', 'uruguay') + createGame('serbia', '16:00', 'switzerland') + createGame('brazil', '16:00', 'cameroon'))}
+        ${createCard("03/12", "sabado", '<p>Oitavas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
+        ${createCard("04/12", "domingo", '<p>Oitavas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
+        ${createCard("05/12", "segunda", '<p>Oitavas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
+        ${createCard("06/12", "terça", '<p>Oitavas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
+        ${createCard("09/12", "sexta", '<p>Quartas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
+        ${createCard("10/12", "sabado", '<p>Quartas de Final</p>' + createGame('empty', '12:00', 'empty') + createGame('empty', '16:00', 'empty'))}
+        ${createCard("13/12", "terça", '<p>Semi Finais</p>' + createGame('empty', '16:00', 'empty'))}
+        ${createCard("14/12", "quarta", '<p>Semi Finais</p>' + createGame('empty', '16:00', 'empty'))}
+        ${createCard("17/12", "sabado", '<p>Disputa de Terceiro Lugar</p>' + createGame('empty', '12:00', 'empty'))}
+        ${createCard("18/12", "domingo", '<p>Final</p>' + createGame('empty', '12:00', 'empty'))}
     </main>
 `
