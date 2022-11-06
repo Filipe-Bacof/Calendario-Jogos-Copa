@@ -53,3 +53,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("18/12", "domingo", '<p>Final</p>' + createGame('empty', '', '12:00', 'empty', ''))}
     </main>
 `
+
+const dataAtual = new Date()
+console.log(dataAtual)
+// adicionar recurso de auto-rolagem
