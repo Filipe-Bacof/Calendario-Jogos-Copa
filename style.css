@@ -72,7 +72,7 @@ header p {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 270px;
+    width: 300px;
 }
 
 .card ul li {
@@ -95,4 +95,16 @@ header p {
 
 p {
     color: #e1e1e6;
+}
+
+li div {
+    background-color: #121214;
+    height: 50px;
+    width: 40px;
+    color: #d4d4d9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px; /* top right bottom left */
 }
