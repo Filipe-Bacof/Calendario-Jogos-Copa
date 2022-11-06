@@ -101,11 +101,15 @@ li div {
     background-color: #121214;
     height: 50px;
     width: 40px;
-    color: #d4d4d9;
+    color: #b4f6b4;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px 10px 0px 10px; /* top right bottom left */
+}
+
+li div span {
+    color: #b4b4f6;
 }
