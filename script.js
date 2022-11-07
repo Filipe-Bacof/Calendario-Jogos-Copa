@@ -60,3 +60,7 @@ document.querySelector("#app").innerHTML = `
 const dataAtual = new Date()
 console.log(dataAtual)
 // adicionar recurso de auto-rolagem
+
+
+console.log(document.querySelector('*').scrollTop)
+// scroll anotado no caderno, criar estrutura switch para abrir automaticamente na data
