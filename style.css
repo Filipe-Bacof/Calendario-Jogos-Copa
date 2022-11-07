@@ -97,6 +97,14 @@ p {
     color: #e1e1e6;
 }
 
+label {
+    color: #e1e1e6;
+}
+
+h3 {
+    color: #f7dd43;
+}
+
 li div {
     background-color: #121214;
     height: 50px;
