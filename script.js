@@ -64,3 +64,11 @@ console.log(dataAtual)
 
 console.log(document.querySelector('*').scrollTop)
 // scroll anotado no caderno, criar estrutura switch para abrir automaticamente na data
+
+function rolagem() {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+    })
+}
