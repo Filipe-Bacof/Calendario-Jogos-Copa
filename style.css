@@ -123,3 +123,29 @@ li div {
 li div span {
     color: #b4b4f6;
 }
+
+.scroll-day-btn {
+    width: 80px;
+    height: 30px;
+    background-color: #121214;
+    color: #b4b4f6;
+    border: 2px solid #f7dd43;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.scroll-top-btn {
+    width: 80px;
+    height: 30px;
+    background-color: #121214;
+    color: #b4b4f6;
+    border: 2px solid #f7dd43;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+}
