@@ -28,6 +28,8 @@ document.querySelector("#app").innerHTML = `
         <label>Será atualizado diariamente <br/>durante a copa do mundo 2022</label><br/><br/>
         <h3>Feito por Filipe Bacof</h3>
         <a href="https://github.com/Filipe-Bacof/Calendario-Jogos-Copa" target="_blank">Link para o Github</a>
+        <button class="scroll-top-btn" onclick="rolagemTopo()">TOPO</button>
+        <button class="scroll-day-btn" onclick="rolagemDia()">DIA ATUAL</button>
     </header>
     <main id="cards">
         ${createCard("20/11", "domingo", createGame('qatar', 'QAT', '13:00', 'ecuador', 'ECU', '0', '0'))}
