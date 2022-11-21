@@ -33,7 +33,7 @@ document.querySelector("#app").innerHTML = `
     </header>
     <main id="cards">
         ${createCard("20/11", "domingo", createGame('qatar', 'QAT', '13:00', 'ecuador', 'ECU', '0', '2'))}
-        ${createCard("21/11", "segunda", createGame('england', 'ENG', '10:00', 'iran', 'IRN') + createGame('senegal', 'SEN', '13:00', 'netherlands', 'HOL') + createGame('united-states', 'USA', '16:00', 'wales', 'WAL'))}
+        ${createCard("21/11", "segunda", createGame('england', 'ENG', '10:00', 'iran', 'IRN', '6', '2') + createGame('senegal', 'SEN', '13:00', 'netherlands', 'HOL') + createGame('united-states', 'USA', '16:00', 'wales', 'WAL'))}
         ${createCard("22/11", "terça", createGame('argentina', 'ARG', '07:00', 'saudi-arabia', 'KSA') + createGame('denmark', 'DEN', '10:00', 'tunisia', 'TUN') + createGame('mexico', 'MEX', '13:00', 'poland', 'POL') + createGame('france', 'FRA', '16:00', 'australia', 'AUS'))}
         ${createCard("23/11", "quarta", createGame('morocco', 'MAR', '07:00', 'croatia', 'CRO') + createGame('germany', 'GER', '10:00', 'japan', 'JPN') + createGame('spain', 'ESP', '13:00', 'costa-rica', 'CRC') + createGame('belgium', 'BEL', '16:00', 'canada', 'CAN'))}
         ${createCard("24/11", "quinta", createGame('switzerland', 'SUI', '07:00', 'cameroon', 'CMR') + createGame('uruguay', 'URU', '10:00', 'south-korea', 'KOR') + createGame('portugal', 'POR', '13:00', 'ghana', 'GHA') + createGame('brazil', 'BRA', '16:00', 'serbia', 'SRB'))}
