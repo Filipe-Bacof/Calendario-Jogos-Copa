@@ -74,4 +74,5 @@ function rolagemTopo() {
     })
 }
 
-console.log(window.scrollY)
+console.log(window.scrollY);
+rolagemDia();
