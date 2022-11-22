@@ -75,4 +75,4 @@ function rolagemTopo() {
 }
 
 console.log(window.scrollY);
-rolagemDia();
+setTimeout(rolagemDia, 1500)
