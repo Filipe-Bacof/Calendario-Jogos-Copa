@@ -2,13 +2,417 @@
     {
         "id": 0,
         "sigla": "ARG",
-        "pais": "Argentina",
+        "pais": "argentina",
+        "grupo": "C",
+        "jogadores": {
+            "tecnico": "Lionel Scaloni",
+            "goleiros": ["Franco Armani", "Geronimo Rulli", "Damian Martinez"],
+            "zagueiros": ["Juan Foyth", "Nicolas Tagliafico", "Gonzalo Montiel", "German Pezzella", "Cristian Romero", "Nicolas Otamendi", "Lisandro Martinez", "Nahuel Molina"],
+            "meioscampos": ["Leandro Paredes", "Rodrigo De Paul", "Marcos Acuna", "Exequiel Palacios", "Thiago Almada", "Alejandro Gomez", "Rodriguez Guido", "Alexis Mac Allister", "Enzo Fernandez"],
+            "atacantes": ["Julian Alvarez", "Lionel Messi", "Angel Di Maria", "Angel Correa", "Paulo Dybala", "Lautaro Martinez"]
+        }
+    },
+    {
+        "id": 1,
+        "sigla": "AUS",
+        "pais": "australia",
         "grupo": "D",
         "jogadores": {
-            "goleiros": "arnaldo",
-            "meio-campo": "pedro",
-            "zagueiros": ["paulo", "joão", "vitor"],
-            "atacantes": ["neymar", "bruno"]
+            "tecnico": "Graham James Arnold",
+            "goleiros": ["Mathew Ryan", "Andrew Redmayne", "Danny Vukovic"],
+            "zagueiros": ["Milos Degenek", "Nathaniel Atkinson", "Kye Rowles", "Fran Karacic", "Bailey Wright", "Aziz Behich", "Harry Souttar", "Thomas Deng", "Joel Bruce King"],
+            "meioscampos": ["Ajdin Hrustic", "Aaron Mooy", "Riley McGree", "Cameron Devlin", "Jackson Irvine", "Keanu Baccus"],
+            "atacantes": ["Marco Tilio", "Mathew Leckie", "Jamie MacLaren", "Awer Mabil", "Mitch Duke", "Garang Kuol", "Craig Goodwin", "Jason Cummings"]
+        }
+    },
+    {
+        "id": 2,
+        "sigla": "BEL",
+        "pais": "belgium",
+        "grupo": "F",
+        "jogadores": {
+            "tecnico": "Roberto Martínez Montoliu",
+            "goleiros": ["Thibaut Courtois", "Simon Mignolet", "Koen Casteels"],
+            "zagueiros": ["Toby Alderweireld", "Arthur Theate", "Wout Faes", "Jan Vertonghen", "Leander Dendoncker", "Zeno Debast"],
+            "meioscampos": ["Axel Witsel", "Kevin De Bruyne", "Youri Tielemans", "Thomas Meunier", "Thorgan Hazard", "Amadou Onana", "Hans Vanaken", "Timothy Castagne"],
+            "atacantes": ["Romelu Lukaku", "Eden Hazard", "Yannick Carrasco", "Dries Mertens", "Leandro Trossard", "De Ketelaere", "Michy Batshuayi", "Lois Openda", "Jeremy Doku"]
+        }
+    },
+    {
+        "id": 3,
+        "sigla": "BRA",
+        "pais": "brazil",
+        "grupo": "G",
+        "jogadores": {
+            "tecnico": "Tite",
+            "goleiros": ["Alisson", "Ederson", "Weverton"],
+            "zagueiros": ["Danilo", "Alex Sandro", "Daniel Alves", "Alex Telles", "Militão", "Marquinhos", "Thiago Silva", "Bremer"],
+            "meioscampos": ["Bruno Guimarães", "Casemiro", "Fabinho", "Fred", "Paquetá", "Everton Ribeiro"],
+            "atacantes": ["Neymar", "Vinicius Júnior", "Antony", "Rodrygo", "Raphinha", "Richarlison", "Pedro", "Gabriel Jesus", "Gabriel Martinelli"]
+        }
+    },
+    {
+        "id": 4,
+        "sigla": "CMR",
+        "pais": "cameroon",
+        "grupo": "G",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 5,
+        "sigla": "CAN",
+        "pais": "canada",
+        "grupo": "F",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 6,
+        "sigla": "CRC",
+        "pais": "costa-rica",
+        "grupo": "E",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 7,
+        "sigla": "CRO",
+        "pais": "croatia",
+        "grupo": "F",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 8,
+        "sigla": "DEN",
+        "pais": "denmark",
+        "grupo": "D",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 9,
+        "sigla": "ECU",
+        "pais": "ecuador",
+        "grupo": "A",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 10,
+        "sigla": "ENG",
+        "pais": "england",
+        "grupo": "B",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 11,
+        "sigla": "FRA",
+        "pais": "france",
+        "grupo": "D",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 12,
+        "sigla": "GER",
+        "pais": "germany",
+        "grupo": "E",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 13,
+        "sigla": "GHA",
+        "pais": "ghana",
+        "grupo": "H",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 14,
+        "sigla": "IRN",
+        "pais": "iran",
+        "grupo": "B",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 15,
+        "sigla": "JPN",
+        "pais": "japan",
+        "grupo": "E",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 16,
+        "sigla": "KOR",
+        "pais": "south-korea",
+        "grupo": "H",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 17,
+        "sigla": "MEX",
+        "pais": "mexico",
+        "grupo": "C",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 18,
+        "sigla": "MAR",
+        "pais": "morocco",
+        "grupo": "F",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 19,
+        "sigla": "HOL",
+        "pais": "netherlands",
+        "grupo": "A",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 20,
+        "sigla": "POL",
+        "pais": "poland",
+        "grupo": "C",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 21,
+        "sigla": "POR",
+        "pais": "portugal",
+        "grupo": "H",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 22,
+        "sigla": "QAT",
+        "pais": "qatar",
+        "grupo": "A",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 23,
+        "sigla": "KSA",
+        "pais": "saudi-arabia",
+        "grupo": "C",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 24,
+        "sigla": "SEN",
+        "pais": "senegal",
+        "grupo": "A",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 25,
+        "sigla": "SRB",
+        "pais": "serbia",
+        "grupo": "G",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 26,
+        "sigla": "ESP",
+        "pais": "spain",
+        "grupo": "E",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 27,
+        "sigla": "SUI",
+        "pais": "switzerland",
+        "grupo": "G",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 28,
+        "sigla": "TUN",
+        "pais": "tunisia",
+        "grupo": "D",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 29,
+        "sigla": "USA",
+        "pais": "united-states",
+        "grupo": "B",
+        "jogadores": {
+            "tecnico": "",
+            "goleiros": ["", "", ""],
+            "zagueiros": ["", "", "", "", "", "", "", ""],
+            "meioscampos": ["", "", "", "", "", "", "", "", ""],
+            "atacantes": ["", "", "", "", "", ""]
+        }
+    },
+    {
+        "id": 30,
+        "sigla": "URU",
+        "pais": "uruguay",
+        "grupo": "H",
+        "jogadores": {
+            "tecnico": "Diego Alonso",
+            "goleiros": ["Fernando Muslera", "Sebastian Sosa", "Sergio Rochet"],
+            "zagueiros": ["Jose Gimenez", "Diego Godin", "Ronald Araujo", "Guillermo Varela", "Mathias Olivera", "Vina Matias", "Sebastian Coates", "Martin Caceres", "Jose Luis Rodriguez"],
+            "meioscampos": ["Matias Vecino", "Rodrigo Bentancur", "Nicolas De La Cruz", "Giorgian De Arrascaeta", "Lucas Torreira", "Federico Valverde", "Agustin Canobbio", "Manuel Ugarte"],
+            "atacantes": ["Facundo Pellistri", "Luis Suarez", "Darwin Nunez", "Maximiliano Gomez", "Facundo Torres", "Edinson Cavani"]
+        }
+    },
+    {
+        "id": 31,
+        "sigla": "WAL",
+        "pais": "wales",
+        "grupo": "B",
+        "jogadores": {
+            "tecnico": "Robert John Page",
+            "goleiros": ["Wayne Hennessey", "Danny Ward", "Adam Davies"],
+            "zagueiros": ["Chris Gunter", "Neco Shay Williams", "Ben Davies", "Chris Mepham", "Joe Rodon", "Connor Roberts", "Ethan Ampadu", "Tom Lockyer", "Ben Cabango", "Rubin Colwill"],
+            "meioscampos": ["Joe Allen", "Harry Wilson", "Aaron Ramsey", "Joseff Morrell", "Jonathan Williams", "Sorba Thomas", "Dylan Levitt", "Matt Smith", ""],
+            "atacantes": ["Brennan Johnson", "Gareth Bale", "Kieffer Moore", "Mark Harris", "Daniel James"]
         }
     }
 ]
