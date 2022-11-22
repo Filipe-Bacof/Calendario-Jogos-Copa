@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "sigla": "ARG",
+        "pais": "Argentina",
+        "grupo": "D",
+        "jogadores": {
+            "goleiros": "arnaldo",
+            "meio-campo": "pedro",
+            "zagueiros": ["paulo", "joão", "vitor"],
+            "atacantes": ["neymar", "bruno"]
+        }
+    }
+]
