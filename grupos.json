@@ -187,11 +187,11 @@
         "pais": "iran",
         "grupo": "B",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Carlos Queiroz",
+            "goleiros": ["Alireza Beiranvand", "Payam Niazmand", "Amir Abedzadeh", "Hossein Hosseini"],
+            "zagueiros": ["Sadegh Moharrami", "Ehsan Haji Safi", "Shojae Khalilzadeh", "Milad Mohammadi", "Morteza Pouraliganji", "Mohammad Kanaani", "Roozbeh Cheshmi", "Majid Hosseini", "Ramin Rezaeian", "Abolfazl Jalali"],
+            "meioscampos": ["Saeid Ezatolahi", "Alireza Jahanbakhsh", "Vahid Amiri", "Saman Ghoddos", "Mahdi Torabi", "Ali Gholizadeh", "Karimi Ali", "Ahmad Noorollahi", ""],
+            "atacantes": ["Mehdi Taremi", "Karim Ansarifard", "Sardar Azmoun"]
         }
     },
     {
@@ -200,11 +200,11 @@
         "pais": "japan",
         "grupo": "E",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Hajime Moriyasu",
+            "goleiros": ["Eiji Kawashima", "Shuichi Gonda", "Daniel Schmidt"],
+            "zagueiros": ["Miki Yamane", "Shogo Taniguchi", "Kou Itakura", "Yuto Nagatomo", "Takehiro Tomiyasu", "Hiroki Sakai", "Maya Yoshida", "Hiroki Ito"],
+            "meioscampos": ["Wataru Endo", "Gaku Shibasaki", "Ritsu Doan", "Kaoru Mitoma", "Takumi Minamino", "Takefusa Kubo", "Hidemasa Morita", "Junya Ito", "Daichi Kamada", "Ao Tanaka", "Yuki Soma"],
+            "atacantes": ["Takuma Asano", "Shuto Machino", "Ayase Ueda", "Daizen Maeda"]
         }
     },
     {
@@ -213,11 +213,11 @@
         "pais": "south-korea",
         "grupo": "H",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Paulo Jorge Gomes",
+            "goleiros": ["Kim Seunggyu", "Song Bumkeun", "Jo Hyeonwoo"],
+            "zagueiros": ["Yoon Jonggyu", "Kim Jinsu", "Kim Minjae", "Hong Chul", "Kim Moonhwan", "Kim Younggwon", "Kwon Kyungwon", "Kim Taehwan", "Cho Yumin"],
+            "meioscampos": ["Jung Wooyoung", "Hwang Inbeom", "Son Heungmin", "Paik Seungho", "Lee Jaesung", "Hwang Heechan", "Son Junho", "Na Sangho", "Lee Kangin", "Kwon Changhoon", "Jeong Wooyeong", "Song Minkyu"],
+            "atacantes": ["Cho Guesung", "Hwang Uijo"]
         }
     },
     {
