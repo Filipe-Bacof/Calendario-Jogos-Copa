@@ -226,11 +226,11 @@
         "pais": "mexico",
         "grupo": "C",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Gerardo Daniel Martino",
+            "goleiros": ["Alfredo Talavera", "Rodolfo Cota", "Guillermo Ochoa"],
+            "zagueiros": ["Nestor Araujo", "Cesar Montes", "Edson Alvarez", "Johan Vasquez", "Gerardo Arteaga", "Hector Moreno", "Jorge Sanchez", "Jesus Gallardo", "Kevin Alvarez"],
+            "meioscampos": ["Luis Romo", "Carlos Rodriguez", "Erick Gutierrez", "Hector Herrera", "Andres Guardado", "Luis Chavez"],
+            "atacantes": ["Raul Jimenez", "Alexis Vega", "Gogelio Gabriel Funes", "Orbelin Pineda", "Henry Martin", "Uriel Antuna", "Hirving Lozando", "Roberto Alvarado"]
         }
     },
     {
@@ -239,11 +239,11 @@
         "pais": "morocco",
         "grupo": "F",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Hoalid Regragui",
+            "goleiros": ["Yassine Bounou", "Monir El Kajoui", "Ahmed Tagnaouti"],
+            "zagueiros": ["Achraf Hakimi", "Noussair Mazraoui", "Nayef Aguerd", "Ghanem Saiss", "Jawad El Yamiq", "Dari Achraf", "Benoun Badr", "Yahya Attiat-Allah"],
+            "meioscampos": ["Sofyan Amrabat", "Hakim Ziyech", "Azzedine Ounahi", "Anass Zaroury", "Ilias Chair", "Zakaria Aboukhlal", "Selim Amallah", "Sofiane Boufal", "Bilal El Khannouss", "Jabrane Yahya"],
+            "atacantes": ["Abd Al Razke Hamdalah", "Abdelhamid Sabiri", "Abde Ezzalzouli", "Youssef En Nesyri", "Walid Cheddira"]
         }
     },
     {
@@ -252,11 +252,11 @@
         "pais": "netherlands",
         "grupo": "A",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Louis Van Gaal",
+            "goleiros": ["Remko Pasveer", "Justin Bijlow", "Andries Noppert"],
+            "zagueiros": ["Jurrien Timber", "Matthijs De Ligt", "Virgil Van Dijk", "Nathan Ake", "Stefan De Vrij", "Tyrell Malacia", "Daley Blind", "Denzel Dumfries", "Jeremie Frimpong"],
+            "meioscampos": ["Steven Berghuis", "Davy Klaassen", "Marten De Roon", "Teun Koopmeiners", "Frenkie De Jong", "Kenneth Taylor", "Xavi Simons"],
+            "atacantes": ["Steven Bergwijn", "Cody Gakpo", "Luuk De Jong", "Memphis Depay", "Noa Lang", "Vincent Janssen", "Wout Weghorst"]
         }
     },
     {
@@ -265,11 +265,11 @@
         "pais": "poland",
         "grupo": "C",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Czes ław Michniewicz",
+            "goleiros": ["Wojciech Szczesny", "Lukasz Skorupski", "Kamil Grabara"],
+            "zagueiros": ["Matty Cash", "Artur Jedrzejczyk", "Mateusz Wieteska", "Jan Bednarek", "Jakub Kiwior", "Kamil Glik", "Bartosz Bereszynski", "Robert Gumny"],
+            "meioscampos": ["Krystian Bielik", "Damian Szymanski", "Grzegorz Krychowiak", "Kamil Grosicki", "Jakub Kaminski", "Szyman Zurkowski", "Sebastian Szymanski", "Piotr Zielinski", "Nicola Zalewski", "Przemyslaw Frankowski", "Michal Skoras"],
+            "atacantes": ["Arkadiusz Milik", "Lewandowski Robert", "Karol Swiderski", "Krzysztof Piatek"]
         }
     },
     {
@@ -278,11 +278,11 @@
         "pais": "portugal",
         "grupo": "H",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Fernando Manuel Fernandes",
+            "goleiros": ["Rui Patricio", "Jose Sa", "Diogo Costa"],
+            "zagueiros": ["Diogo Dalot", "Pepe", "Ruben Dias", "Raphael Guerreiro", "Danilo", "Nuno Mendes", "Joao Cancelo", "Antonio Silva"],
+            "meioscampos": ["Joao Palhinha", "Bruno Fernandes", "William", "Vitinha", "Joao Mario", "Rúben Neves", "Matheus Nunes", "Otavio"],
+            "atacantes": ["Cristiano Ronaldo", "Andre Silva", "Bernardo Silva", "Joao Felix", "Rafael Leao", "Ricardo Horta", "Goncalo Ramos"]
         }
     },
     {
@@ -291,11 +291,11 @@
         "pais": "qatar",
         "grupo": "A",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Féliz Sánchez Bas",
+            "goleiros": ["Saad Alsheeb", "Yousof Hassan", "Meshaal Barsham"],
+            "zagueiros": ["Pedro Miguel", "Mohammed Waad", "Tarek Salman", "Musaab Khidir", "Homam Ahmed", "Bassam Hisham", "Boualem Khoukhi", "Ismail Mohamad"],
+            "meioscampos": ["Abdelkarim Hassan", "Abdulaziz Hatem", "Ali Assadalla", "Hassan Alhaydos", "Karim Boudiaf", "Salem Al Hajri", "Assim Madibo", "Naif Abdulraheem", "Jassem Gaber", "Mostafa Tarek Meshaal"],
+            "atacantes": ["Ahmed Alaaeldin", "Mohammed Muntari", "Akram Afif", "Khalid Muneer", "Almoez Ali"]
         }
     },
     {
@@ -304,11 +304,11 @@
         "pais": "saudi-arabia",
         "grupo": "C",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Hervé Renard",
+            "goleiros": ["Mohammed Alyami", "Mohammed Alowais", "Nawaf Alaqidi"],
+            "zagueiros": ["Sultan Alghannam", "Abdullah Madu", "Abdulelah Alamri", "Ali Albulathi", "Mohammed Alburayk", "Saud Abdulhamid", "Yasser Alshahrani", "Hassan Altambakti"],
+            "meioscampos": ["Salman Alfaraj", "Abdulelah Almalki", "Abdullah Otayf", "Ali Alhassan", "Sami Alnaji", "Nawaf Al Abid", "Mohamed Kanno", "Nasser Aldawsari", "Riyadh Sharahili"],
+            "atacantes": ["Feras Albrikan", "Salem Aldawsari", "Saleh Alshehri", "Hatam Bahbri", "Abdulrahman Alobud", "Haitham Asiri"]
         }
     },
     {
@@ -317,11 +317,11 @@
         "pais": "senegal",
         "grupo": "A",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Aliou Cissé",
+            "goleiros": ["Seny Dieng", "Edouard Mendy", "Alfred Gomis"],
+            "zagueiros": ["Formose Mendy", "Kalidou Koulibaly", "Pape Abou Cisse", "Cheikhou Kouyate", "Moussa Ndiaye", "Fode Ballo", "Ismail Jakobs", "Youssouf Sabaly", "Abdou Diallo", "Moustapha Name"],
+            "meioscampos": ["Idrissa Gana Gueye", "Nampalys Mendy", "Pathe Ciss", "Krepin Diatta", "Pape Sarr", "Mamadou Ndiaye", "Pape Gueye"],
+            "atacantes": ["Nicolas Jackson", "Boulaye Dia", "Iliman Ndiaye", "Ismaila Sarr", "Famara Diedhiou", "Cheikh Dieng"]
         }
     },
     {
@@ -330,11 +330,11 @@
         "pais": "serbia",
         "grupo": "G",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Dragan Stojković",
+            "goleiros": ["Marko Dmitrovic", "Predrag Rajkovic", "Vanja Milinkovic"],
+            "zagueiros": ["Strahinja Pavlovic", "Strahinja Erakovic", "Nikola Milenkovic", "Milos Veljkovic", "Stefan Mitrovic", "Srdan Babic", "Filip Mladenovic"],
+            "meioscampos": ["Nemanja Maksimovic", "Nemanja Gudelj", "Andrija Zivkovic", "Sasa Lukic", "Filip Kostic", "Uros Racic", "Sergej Milinkovic-Savic", "Darko Lazovic", "Ivan Ilic", "Marko Grujic"],
+            "atacantes": ["Nemanja Radonjic", "Aleksandar Mitrovic", "Dusan Tajic", "Luka Jovic", "Dusan Vlahovic", "Filip Djuricic"]
         }
     },
     {
@@ -343,11 +343,11 @@
         "pais": "spain",
         "grupo": "E",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Luis Enrique Martínez",
+            "goleiros": ["Robert Lynch Sánchez", "David Raya", "Unai Simon"],
+            "zagueiros": ["Cesar Azpilicueta", "Eric Garcia", "Pau Torres", "Alejandro Balde", "Hugo Guillamon", "Jordi Alba", "Dani Carvajal", "Aymeric Laporte"],
+            "meioscampos": ["Sergio Busquets", "Marcos Llorente", "Koke", "Gavi", "Rodri", "Carlos Soler", "Pedri Gonzalez"],
+            "atacantes": ["Alvaro Morata", "Marco Asensio", "Ferran Torres", "Nico Williams", "Yeremy Pino", "Dani Olmo", "Pablo Sarabia", "Anssumane Fati"]
         }
     },
     {
@@ -356,11 +356,11 @@
         "pais": "switzerland",
         "grupo": "G",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Murat Yakin",
+            "goleiros": ["Yann Sommer", "Jonas Omlin", "Gregor Kobel", "Philipp Koehn"],
+            "zagueiros": ["Edimilson Fernandes", "Silvan Widmer", "Nico Elvedi", "Manuel Akanji", "Renato Steffen", "Ricardo Rodriguez", "Eray Comert", "Fabian Schaer"],
+            "meioscampos": ["Denis Zakaria", "Remo Freuler", "Granit Xhaka", "Michel Aebischer", "Mohameth Sow", "Christian Fassnacht", "Fabian Frei", "Xherdan Shaqiri", "Fabian Rieder", "Ardon Jashari"],
+            "atacantes": ["Breel Embolo", "Haris Seferovic", "Ruben Vargas", "Noah Okafor"]
         }
     },
     {
@@ -369,11 +369,11 @@
         "pais": "tunisia",
         "grupo": "D",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Jalel Kadri",
+            "goleiros": ["Aymen Mathlouthi", "Aymen Dahmen", "Ben Said Bechir", "Hassen Mouez"],
+            "zagueiros": ["Ifa Bilel", "Talbi Montassar", "Meriah Yassine", "Dylan Bronn", "Maaloul Ali", "Drager Mohamed", "Wajdi Kechrida", "Ali Abdi"],
+            "meioscampos": ["Nader Ghandri", "Mejbri Hannibal", "Sassi Ferjani", "Aissa Laidouni", "Ben Romdhane Ali", "Ellyes Skhiri", "Chaaleli Ghaylen"],
+            "atacantes": ["Msakni Youssef", "Issam Jebali", "Wahbi Khazri", "Taha Khenissi", "Jaziri Seifeddine", "Sliti Naim", "Ben Slimane Anis"]
         }
     },
     {
@@ -382,11 +382,11 @@
         "pais": "united-states",
         "grupo": "B",
         "jogadores": {
-            "tecnico": "",
-            "goleiros": ["", "", ""],
-            "zagueiros": ["", "", "", "", "", "", "", ""],
-            "meioscampos": ["", "", "", "", "", "", "", "", ""],
-            "atacantes": ["", "", "", "", "", ""]
+            "tecnico": "Gregg Berhalter",
+            "goleiros": ["Matt Turner", "Ethan Horvath", "Sean Johnson"],
+            "zagueiros": ["Sergino Dest", "Walker Zimmerman", "Antonee Robinson", "Tim Ream", "Aaron Long", "Shaquell Moore", "Cameron Carter-Vickers", "DeAndre Yedlin", "Joseph Scally"],
+            "meioscampos": ["Tyler Adams", "Yunus Musah", "Weston James Earl Mc Kennie", "Luca De La Torre", "Cristian Roldan", "Kellyn Perry-Acosta"],
+            "atacantes": ["Giovanni Reyna", "Jesus Ferreira", "Christian Pulisic", "Branden Aaronson", "Jordan Morris", "Haji Wright", "Tim Weah", "Josh Sargent"]
         }
     },
     {
