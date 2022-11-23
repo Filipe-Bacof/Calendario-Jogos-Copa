@@ -61,7 +61,7 @@ document.querySelector("#app").innerHTML = `
 
 function rolagemDia() {
     window.scrollTo({
-        top: 1550,
+        top: 1670,
         left: 0,
         behavior: 'smooth',
     })
@@ -73,6 +73,7 @@ function rolagemTopo() {
         behavior: 'smooth',
     })
 }
+setTimeout(rolagemDia, 1500);
 
 console.log(window.scrollY);
 
