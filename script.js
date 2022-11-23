@@ -61,7 +61,7 @@ document.querySelector("#app").innerHTML = `
 
 function rolagemDia() {
     window.scrollTo({
-        top: 1670,
+        top: 2220,
         left: 0,
         behavior: 'smooth',
     })
