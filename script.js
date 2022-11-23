@@ -624,22 +624,23 @@ function rendenizarSelecao(sigla) {
         <h2>Grupo ${json[indice].grupo}</h2>
         <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
         <h3>Tecnico: <span>${json[indice].jogadores.tecnico}</span></h3>
-        <h3>Goleiros</h3>
+        <h3>Goleiros:</h3>
         <ul>
             ${gerarJogadores(numGoleiros, indice, "goleiros")}
         </ul>
-        <h3>Zagueiros</h3>
+        <h3>Zagueiros:</h3>
         <ul>
             ${gerarJogadores(numZagueiros, indice, "zagueiros")}
         </ul>
-        <h3>MeiosCampos</h3>
+        <h3>Meios-Campos:</h3>
         <ul>
             ${gerarJogadores(numMeiosCampos, indice, "meioscampos")}
         </ul>
-        <h3>Atacantes</h3>
+        <h3>Atacantes:</h3>
         <ul>
             ${gerarJogadores(numAtacantes, indice, "atacantes")}
         </ul>
+        <h1 onclick="voltarAoAPP()">VOLTAR</h1>
     </div>
     `
 }
@@ -649,6 +650,7 @@ function gerarNovosDados(sigla) {
     document.querySelector("#group").classList.remove("esconder")
     document.querySelector("#app").classList.add("esconder")
     document.querySelector("#group").classList.add("mostrar")
+    rolagemTopo()
     document.querySelector("#group").innerHTML = `
     <main id="cards">
         ${rendenizarSelecao(sigla)}
@@ -662,4 +664,5 @@ function voltarAoAPP() {
     document.querySelector("#group").classList.remove("mostrar")
     document.querySelector("#app").classList.add("mostrar")
     document.querySelector("#group").classList.add("esconder")
+    rolagemDia()
 }

@@ -165,3 +165,35 @@ li div span {
 .esconder {
     display: none;
 }
+
+#group .card h1,
+h2 {
+    color: #97000d;
+    border: 2px solid #97000d;
+    border-radius: 8px;
+    background-color: #121214;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+#group .card h2 {
+    margin: 8px auto;
+}
+
+#group .card h3 {
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+#group .card ul li {
+    color: #e1e1e6;
+    padding: 2px;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#group .card ul li + li {
+    border-top: none;
+}
