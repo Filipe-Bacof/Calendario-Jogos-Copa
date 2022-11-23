@@ -595,7 +595,7 @@ function escolherIndice(sigla) {
             paisEscolhido = 31
         break;
         default:
-            paisEscolhido = 32
+            paisEscolhido = 3
         break;
     }
     return paisEscolhido;
