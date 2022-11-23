@@ -35,7 +35,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("20/11", "domingo", createGame('qatar', 'QAT', '13:00', 'ecuador', 'ECU', '0', '2'))}
         ${createCard("21/11", "segunda", createGame('england', 'ENG', '10:00', 'iran', 'IRN', '6', '2') + createGame('senegal', 'SEN', '13:00', 'netherlands', 'HOL', '0', '2') + createGame('united-states', 'USA', '16:00', 'wales', 'WAL', '1', '1'))}
         ${createCard("22/11", "terça", createGame('argentina', 'ARG', '07:00', 'saudi-arabia', 'KSA', '1', '2') + createGame('denmark', 'DEN', '10:00', 'tunisia', 'TUN', '0', '0') + createGame('mexico', 'MEX', '13:00', 'poland', 'POL', '0', '0') + createGame('france', 'FRA', '16:00', 'australia', 'AUS', '4', '1'))}
-        ${createCard("23/11", "quarta", createGame('morocco', 'MAR', '07:00', 'croatia', 'CRO', '0', '0') + createGame('germany', 'GER', '10:00', 'japan', 'JPN', '1', '2') + createGame('spain', 'ESP', '13:00', 'costa-rica', 'CRC', '', '') + createGame('belgium', 'BEL', '16:00', 'canada', 'CAN', '', ''))}
+        ${createCard("23/11", "quarta", createGame('morocco', 'MAR', '07:00', 'croatia', 'CRO', '0', '0') + createGame('germany', 'GER', '10:00', 'japan', 'JPN', '1', '2') + createGame('spain', 'ESP', '13:00', 'costa-rica', 'CRC', '7', '0') + createGame('belgium', 'BEL', '16:00', 'canada', 'CAN', '', ''))}
         ${createCard("24/11", "quinta", createGame('switzerland', 'SUI', '07:00', 'cameroon', 'CMR', '', '') + createGame('uruguay', 'URU', '10:00', 'south-korea', 'KOR', '', '') + createGame('portugal', 'POR', '13:00', 'ghana', 'GHA', '', '') + createGame('brazil', 'BRA', '16:00', 'serbia', 'SRB', '', ''))}
         ${createCard("25/11", "sexta", createGame('wales', 'WAL', '07:00', 'iran', 'IRN', '', '') + createGame('qatar', 'QAT', '10:00', 'senegal', 'SEN', '', '') + createGame('netherlands', 'HOL', '13:00', 'ecuador', 'ECU', '', '') + createGame('england', 'ENG', '16:00', 'united-states', 'USA', '', ''))}
         ${createCard("26/11", "sabado", createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '', '') + createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '', '') + createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '', '') + createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
@@ -501,110 +501,110 @@ function escolherIndice(sigla) {
     switch (sigla) {
         case "ARG":
             paisEscolhido = 0
-        break;
+            break;
         case "AUS":
             paisEscolhido = 1
-        break;
+            break;
         case "BEL":
             paisEscolhido = 2
-        break;
+            break;
         case "BRA":
             paisEscolhido = 3
-        break;
+            break;
         case "CMR":
             paisEscolhido = 4
-        break;
+            break;
         case "CAN":
             paisEscolhido = 5
-        break;
+            break;
         case "CRC":
             paisEscolhido = 6
-        break;
+            break;
         case "CRO":
             paisEscolhido = 7
-        break;
+            break;
         case "DEN":
             paisEscolhido = 8
-        break;
+            break;
         case "ECU":
             paisEscolhido = 9
-        break;
+            break;
         case "ENG":
             paisEscolhido = 10
-        break;
+            break;
         case "FRA":
             paisEscolhido = 11
-        break;
+            break;
         case "GER":
             paisEscolhido = 12
-        break;
+            break;
         case "GHA":
             paisEscolhido = 13
-        break;
+            break;
         case "IRN":
             paisEscolhido = 14
-        break;
+            break;
         case "JPN":
             paisEscolhido = 15
-        break;
+            break;
         case "KOR":
             paisEscolhido = 16
-        break;
+            break;
         case "MEX":
             paisEscolhido = 17
-        break;
+            break;
         case "MAR":
             paisEscolhido = 18
-        break;
+            break;
         case "HOL":
             paisEscolhido = 19
-        break;
+            break;
         case "POL":
             paisEscolhido = 20
-        break;
+            break;
         case "POR":
             paisEscolhido = 21
-        break;
+            break;
         case "QAT":
             paisEscolhido = 22
-        break;
+            break;
         case "KSA":
             paisEscolhido = 23
-        break;
+            break;
         case "SEN":
             paisEscolhido = 24
-        break;
+            break;
         case "SRB":
             paisEscolhido = 25
-        break;
+            break;
         case "ESP":
             paisEscolhido = 26
-        break;
+            break;
         case "SUI":
             paisEscolhido = 27
-        break;
+            break;
         case "TUN":
             paisEscolhido = 28
-        break;
+            break;
         case "USA":
             paisEscolhido = 29
-        break;
+            break;
         case "URU":
             paisEscolhido = 30
-        break;
+            break;
         case "WAL":
             paisEscolhido = 31
-        break;
+            break;
         default:
             paisEscolhido = 3
-        break;
+            break;
     }
     return paisEscolhido;
 }
 
 function gerarJogadores(quatidade, indice, tipoJogador) {
     let listaJogadores = '';
-    for (let i = 0; i < quatidade; i++){
+    for (let i = 0; i < quatidade; i++) {
         listaJogadores += `<li>${json[indice].jogadores[tipoJogador][i]}</li>`
     }
     return listaJogadores;
