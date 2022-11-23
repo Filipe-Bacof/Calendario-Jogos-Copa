@@ -133,6 +133,10 @@ li div span {
     color: #b4b4f6;
 }
 
+li img {
+    cursor: pointer;
+}
+
 .scroll-day-btn {
     width: 80px;
     height: 30px;
