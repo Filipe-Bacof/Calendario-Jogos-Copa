@@ -22,11 +22,11 @@ body * {
 #app {
     width: fit-content;
     margin: 52px auto;
-    /* display: none; */
 }
 
 #group {
-    display: none;
+    width: fit-content;
+    margin: 52px auto;
 }
 
 header {
@@ -112,6 +112,10 @@ h3 {
     color: #f7dd43;
 }
 
+h3 span {
+    color: #e1e1e6;
+}
+
 li div {
     background-color: #121214;
     height: 50px;
@@ -153,4 +157,11 @@ li div span {
     position: fixed;
     right: 10px;
     bottom: 50px;
+}
+
+.mostrar {
+    display: block;
+}
+.esconder {
+    display: none;
 }
