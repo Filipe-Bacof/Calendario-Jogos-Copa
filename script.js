@@ -1,11 +1,11 @@
 function createGame(player1, sigla1, hour, player2, sigla2, goal1, goal2) {
     return `
         <li>
-            <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" onclick="gerarNovosDados('${sigla1}')" />
+            <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" onclick="gerarNovosDados('${sigla1}', '${player1}')" />
             <div><span>${sigla1}</span>${goal1 ? goal1 : ''}</div>
             <strong>${hour}</strong>
             <div><span>${sigla2}</span>${goal2 ? goal2 : ''}</div>
-            <img src="./assets/icon-${player2}.svg" alt="Bandeira ${player2}" onclick="gerarNovosDados('${sigla2}')" />
+            <img src="./assets/icon-${player2}.svg" alt="Bandeira ${player2}" onclick="gerarNovosDados('${sigla2}', '${player2}')" />
         </li>
     `
 }
@@ -610,20 +610,18 @@ function gerarJogadores(quatidade, indice, tipoJogador) {
     return listaJogadores;
 }
 
-function rendenizarSelecao(sigla) {
+function rendenizarSelecao(sigla, nomePic) {
     let indice = escolherIndice(sigla);
     let numGoleiros = json[indice].jogadores.goleiros.length;
     let numZagueiros = json[indice].jogadores.zagueiros.length;
     let numMeiosCampos = json[indice].jogadores.meioscampos.length;
     let numAtacantes = json[indice].jogadores.atacantes.length;
-
-    
-
     return `
     <div class="card">
         <h1 onclick="voltarAoAPP()">VOLTAR</h1>
         <h2>Grupo ${json[indice].grupo}</h2>
         <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
+        <img src="./assets/icon-${nomePic}.svg" alt="Bandeira ${nomePic}" />
         <h3>Tecnico: <span>${json[indice].jogadores.tecnico}</span></h3>
         <h3>Goleiros:</h3>
         <ul>
@@ -646,15 +644,15 @@ function rendenizarSelecao(sigla) {
     `
 }
 
-function gerarNovosDados(sigla) {
+function gerarNovosDados(sigla, nomePic) {
     document.querySelector("#app").classList.remove("mostrar")
     document.querySelector("#group").classList.remove("esconder")
     document.querySelector("#app").classList.add("esconder")
     document.querySelector("#group").classList.add("mostrar")
-    rolagemTopo()
+    rolagemTopo();
     document.querySelector("#group").innerHTML = `
     <main id="cards">
-        ${rendenizarSelecao(sigla)}
+        ${rendenizarSelecao(sigla, nomePic)}
     </main>
 `
 }
