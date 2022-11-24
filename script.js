@@ -697,8 +697,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span>1A</span></div>
+                        <div><span>2B</span></div>
                     </div>
                 </div>
 
@@ -708,8 +708,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span>1C</span></div>
+                        <div><span>2D</span></div>
                     </div>
                 </div>
 
@@ -719,8 +719,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span>1E</span></div>
+                        <div><span>2F</span></div>
                     </div>
                 </div>
 
@@ -730,8 +730,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span>1G</span></div>
+                        <div><span>2H</span></div>
                     </div>
                 </div>
 
@@ -741,8 +741,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span>1B</span></div>
+                        <div><span>2A</span></div>
                     </div>
                 </div>
 
@@ -752,8 +752,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span>1D</span></div>
+                        <div><span>2C</span></div>
                     </div>
                 </div>
 
@@ -763,8 +763,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span>1F</span></div>
+                        <div><span>2E</span></div>
                     </div>
                 </div>
 
@@ -774,8 +774,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span>1H</span></div>
+                        <div><span>2G</span></div>
                     </div>
                 </div>
             
@@ -790,8 +790,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span></span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
 
@@ -801,8 +801,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span></span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
 
@@ -812,8 +812,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span></span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
 
@@ -823,8 +823,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span></span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
             
@@ -839,8 +839,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span></span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
 
@@ -850,8 +850,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span></span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
             
@@ -866,8 +866,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span></span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
 
@@ -877,8 +877,8 @@ document.querySelector("#play-offs").innerHTML = `
                         <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
                     </div>
                     <div class="siglas">
-                        <div><span>sigla</span>gols</div>
-                        <div><span>sigla</span>gols</div>
+                        <div><span></span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
             
