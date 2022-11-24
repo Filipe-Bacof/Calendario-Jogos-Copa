@@ -19,12 +19,9 @@ body * {
     font-family: "Roboto", sans-serif;
 }
 
-#app {
-    width: fit-content;
-    margin: 52px auto;
-}
-
-#group {
+#app,
+#group,
+#classification {
     width: fit-content;
     margin: 52px auto;
 }
@@ -112,6 +109,10 @@ h3 {
     color: #f7dd43;
 }
 
+.destaque {
+    color: #df0c1e;
+}
+
 h3 span {
     color: #e1e1e6;
 }
@@ -163,6 +164,19 @@ li img {
     bottom: 50px;
 }
 
+.classification-btn {
+    width: 150px;
+    height: 30px;
+    background-color: #121214;
+    color: #b4b4f6;
+    border: 2px solid #f7dd43;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
 .mostrar {
     display: block;
 }
@@ -200,4 +214,28 @@ h2 {
 
 #group .card ul li + li {
     border-top: none;
+}
+
+#classification #cards h1 {
+    color: #e1e1e6;
+    justify-content: center;
+    text-align: center;
+}
+
+table tr * {
+    color: #e1e1e6;
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+}
+
+td img {
+    width: 30px;
+    height: 30px;
+}
+
+#cards span {
+    color: #f7dd43;
+    justify-content: center;
+    text-align: center;
 }
