@@ -245,8 +245,15 @@ td img {
     border-radius: 50px;
 }
 
-.legendas {
+#classification .card {
+    padding: 16px 5px;
+}
+
+#classification #cards .card h3 {
+    margin-bottom: 20px;
+}
+.legendas * {
     text-align: left;
     justify-content: left;
-    padding-left: 40px;
+    padding-left: 30px;
 }
