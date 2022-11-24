@@ -77,7 +77,7 @@ function rolagemTopo() {
         behavior: 'smooth',
     })
 }
-setTimeout(rolagemDia, 1500);
+setTimeout(rolagemDia, 3000);
 
 
 
