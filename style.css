@@ -234,7 +234,7 @@ td img {
     height: 30px;
 }
 
-#cards span {
+#classification #cards span {
     color: #f7dd43;
     justify-content: center;
     text-align: center;
