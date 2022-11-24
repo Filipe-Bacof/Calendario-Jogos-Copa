@@ -239,3 +239,14 @@ td img {
     justify-content: center;
     text-align: center;
 }
+
+.selected td img {
+    border: 3px solid #48c948;
+    border-radius: 50px;
+}
+
+.legendas {
+    text-align: left;
+    justify-content: left;
+    padding-left: 50px;
+}

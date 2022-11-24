@@ -38,7 +38,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("21/11", "segunda", createGame('england', 'ENG', '10:00', 'iran', 'IRN', '6', '2') + createGame('senegal', 'SEN', '13:00', 'netherlands', 'HOL', '0', '2') + createGame('united-states', 'USA', '16:00', 'wales', 'WAL', '1', '1'))}
         ${createCard("22/11", "terça", createGame('argentina', 'ARG', '07:00', 'saudi-arabia', 'KSA', '1', '2') + createGame('denmark', 'DEN', '10:00', 'tunisia', 'TUN', '0', '0') + createGame('mexico', 'MEX', '13:00', 'poland', 'POL', '0', '0') + createGame('france', 'FRA', '16:00', 'australia', 'AUS', '4', '1'))}
         ${createCard("23/11", "quarta", createGame('morocco', 'MAR', '07:00', 'croatia', 'CRO', '0', '0') + createGame('germany', 'GER', '10:00', 'japan', 'JPN', '1', '2') + createGame('spain', 'ESP', '13:00', 'costa-rica', 'CRC', '7', '0') + createGame('belgium', 'BEL', '16:00', 'canada', 'CAN', '1', '0'))}
-        ${createCard("24/11", "quinta", createGame('switzerland', 'SUI', '07:00', 'cameroon', 'CMR', '1', '0') + createGame('uruguay', 'URU', '10:00', 'south-korea', 'KOR', '', '') + createGame('portugal', 'POR', '13:00', 'ghana', 'GHA', '', '') + createGame('brazil', 'BRA', '16:00', 'serbia', 'SRB', '', ''))}
+        ${createCard("24/11", "quinta", createGame('switzerland', 'SUI', '07:00', 'cameroon', 'CMR', '1', '0') + createGame('uruguay', 'URU', '10:00', 'south-korea', 'KOR', '0', '0') + createGame('portugal', 'POR', '13:00', 'ghana', 'GHA', '', '') + createGame('brazil', 'BRA', '16:00', 'serbia', 'SRB', '', ''))}
         ${createCard("25/11", "sexta", createGame('wales', 'WAL', '07:00', 'iran', 'IRN', '', '') + createGame('qatar', 'QAT', '10:00', 'senegal', 'SEN', '', '') + createGame('netherlands', 'HOL', '13:00', 'ecuador', 'ECU', '', '') + createGame('england', 'ENG', '16:00', 'united-states', 'USA', '', ''))}
         ${createCard("26/11", "sabado", createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '', '') + createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '', '') + createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '', '') + createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
         ${createCard("27/11", "domingo", createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') + createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') + createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') + createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
@@ -134,7 +134,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>GC</td>
                 <td>SG</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>1</td>
                 <td><img src="./assets/icon-netherlands.svg" alt="Bandeira Holanda" /></td>
                 <td>Holanda</td>
@@ -147,7 +147,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
                 <td>2</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>2</td>
                 <td><img src="./assets/icon-ecuador.svg" alt="Bandeira Equador" /></td>
                 <td>Equador</td>
@@ -205,7 +205,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>GC</td>
                 <td>SG</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>1</td>
                 <td><img src="./assets/icon-england.svg" alt="Bandeira Inglaterra" /></td>
                 <td>Inglaterra</td>
@@ -218,7 +218,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>2</td>
                 <td>4</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>2</td>
                 <td><img src="./assets/icon-wales.svg" alt="Bandeira Gales" /></td>
                 <td>Gales</td>
@@ -276,7 +276,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>GC</td>
                 <td>SG</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>1</td>
                 <td><img src="./assets/icon-saudi-arabia.svg" alt="Bandeira Arábia Saudita" /></td>
                 <td>Arábia Saudita</td>
@@ -289,7 +289,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>1</td>
                 <td>1</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>2</td>
                 <td><img src="./assets/icon-poland.svg" alt="Bandeira Polônia" /></td>
                 <td>Polônia</td>
@@ -347,7 +347,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>GC</td>
                 <td>SG</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>1</td>
                 <td><img src="./assets/icon-france.svg" alt="Bandeira França" /></td>
                 <td>França</td>
@@ -360,7 +360,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>1</td>
                 <td>3</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>2</td>
                 <td><img src="./assets/icon-tunisia.svg" alt="Bandeira Tunísia" /></td>
                 <td>Tunísia</td>
@@ -418,7 +418,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>GC</td>
                 <td>SG</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>1</td>
                 <td><img src="./assets/icon-spain.svg" alt="Bandeira Espanha" /></td>
                 <td>Espanha</td>
@@ -431,7 +431,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
                 <td>7</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>2</td>
                 <td><img src="./assets/icon-japan.svg" alt="Bandeira Japão" /></td>
                 <td>Japão</td>
@@ -489,7 +489,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>GC</td>
                 <td>SG</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>1</td>
                 <td><img src="./assets/icon-belgium.svg" alt="Bandeira Bélgica" /></td>
                 <td>Bélgica</td>
@@ -502,7 +502,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
                 <td>1</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>2</td>
                 <td><img src="./assets/icon-croatia.svg" alt="Bandeira Croácia" /></td>
                 <td>Croácia</td>
@@ -560,7 +560,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>GC</td>
                 <td>SG</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>1</td>
                 <td><img src="./assets/icon-switzerland.svg" alt="Bandeira Suíça" /></td>
                 <td>Suíça</td>
@@ -574,7 +574,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>1</td>
                 
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>2</td>
                 <td><img src="./assets/icon-brazil.svg" alt="Bandeira Brasil" /></td>
                 <td>Brasil</td>
@@ -632,8 +632,34 @@ document.querySelector("#classification").innerHTML = `
                 <td>GC</td>
                 <td>SG</td>
             </tr>
-            <tr>
+            <tr class="selected">
                 <td>1</td>
+                <td><img src="./assets/icon-south-korea.svg" alt="Bandeira Coréia do Sul" /></td>
+                <td>Coréia do Sul</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr class="selected">
+                <td>2</td>
+                <td><img src="./assets/icon-uruguay.svg" alt="Bandeira Uruguai" /></td>
+                <td>Uruguai</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>3</td>
                 <td><img src="./assets/icon-ghana.svg" alt="Bandeira Gana" /></td>
                 <td>Gana</td>
                 <td>0</td>
@@ -646,20 +672,7 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td><img src="./assets/icon-south-korea.svg" alt="Bandeira Coréia do Sul" /></td>
-                <td>Coréia do Sul</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>3</td>
+                <td>4</td>
                 <td><img src="./assets/icon-portugal.svg" alt="Bandeira Portugal" /></td>
                 <td>Portugal</td>
                 <td>0</td>
@@ -671,24 +684,19 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
                 <td>0</td>
             </tr>
-            <tr>
-                <td>4</td>
-                <td><img src="./assets/icon-uruguay.svg" alt="Bandeira Uruguai" /></td>
-                <td>Uruguai</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
         </table>
     </div>
-    <div class="card">
+    <div class="card legendas">
         <h2>Legendas:</h2>
-        <p>EM BREVE</p>
+        <p>Circulados em Verde = Classificados</p><br>
+        <p>PTS = Pontos</p><br>
+        <p>PJ = Partidas Jogadas</p><br>
+        <p>VIT = Vitórias</p><br>
+        <p>E = Empates</p><br>
+        <p>DER = Derrotas</p><br>
+        <p>GM = Gols Marcados</p><br>
+        <p>GC = Gols Contra</p><br>
+        <p>SG = Saldo de Gols</p>
     </div>
     </main>
 `
