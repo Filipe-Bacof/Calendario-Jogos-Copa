@@ -27,6 +27,7 @@ document.querySelector("#app").innerHTML = `
         <p>Copa Do Mundo</p><br/>
         <label>Será atualizado diariamente <br/>durante a copa do mundo 2022</label><br/><br/>
         <label class="destaque">NOVIDADE: Classificações no site</label><br/><br/>
+        <label class="destaque">NOVIDADE: Gráfico das Finais no site</label><br/><br/>
         <h3>Feito por Filipe Bacof</h3>
         <a href="https://github.com/Filipe-Bacof/Calendario-Jogos-Copa" target="_blank">Link para o Github</a>
         <button class="scroll-top-btn" onclick="rolagemTopo()">TOPO</button>
