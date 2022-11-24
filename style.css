@@ -21,7 +21,8 @@ body * {
 
 #app,
 #group,
-#classification {
+#classification,
+#play-offs {
     width: fit-content;
     margin: 52px auto;
 }
@@ -117,7 +118,8 @@ h3 span {
     color: #e1e1e6;
 }
 
-li div {
+li div,
+.game div div {
     background-color: #121214;
     height: 50px;
     width: 40px;
@@ -130,7 +132,8 @@ li div {
     margin: 0px 10px 0px 10px; /* top right bottom left */
 }
 
-li div span {
+li div span,
+.siglas span {
     color: #b4b4f6;
 }
 
@@ -177,6 +180,19 @@ li img {
     bottom: 10px;
 }
 
+.fases-finais-btn {
+    width: 150px;
+    height: 30px;
+    background-color: #121214;
+    color: #b4b4f6;
+    border: 2px solid #f7dd43;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom: 50px;
+}
+
 .mostrar {
     display: block;
 }
@@ -216,7 +232,8 @@ h2 {
     border-top: none;
 }
 
-#classification #cards h1 {
+#classification #cards h1,
+#play-offs #cards h1 {
     color: #e1e1e6;
     justify-content: center;
     text-align: center;
@@ -234,7 +251,8 @@ td img {
     height: 30px;
 }
 
-#classification #cards span {
+#classification #cards span,
+#play-offs #cards span {
     color: #f7dd43;
     justify-content: center;
     text-align: center;
@@ -263,4 +281,61 @@ td img {
 #classification header {
     margin-bottom: 15px;
     text-align: center;
+}
+
+.fotos,
+.siglas {
+    display: flex;
+    flex-direction: row;
+}
+.game div div {
+    margin: 0px 5px 0px 5px; /* top right bottom left */
+}
+
+.games {
+    display: flex;
+    flex-direction: row;
+}
+
+.oitavas,
+.final {
+    gap: 6px;
+}
+
+.game {
+    padding-right: 6px;
+    border-right: 2px solid #121214;
+}
+
+.sem-borda {
+    border-right: none;
+}
+
+#play-offs #cards .card h3 {
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.quartas,
+.semifinais {
+    justify-content: space-around;
+}
+.quartas .game,
+.semifinais .game {
+    border-right: none;
+}
+
+.final {
+    justify-content: center;
+}
+
+.btn-nav {
+    width: 150px;
+    height: 30px;
+    background-color: #121214;
+    color: #b4b4f6;
+    border: 2px solid #f7dd43;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
 }

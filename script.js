@@ -32,6 +32,7 @@ document.querySelector("#app").innerHTML = `
         <button class="scroll-top-btn" onclick="rolagemTopo()">TOPO</button>
         <button class="scroll-day-btn" onclick="rolagemDia()">DIA ATUAL</button>
         <button class="classification-btn" onclick="irParaClassificacao()">CLASSIFICAÇÕES</button>
+        <button class="fases-finais-btn" onclick="irParaFasesFinais()">FASES FINAIS</button>
     </header>
     <main id="cards">
         ${createCard("20/11", "domingo", createGame('qatar', 'QAT', '13:00', 'ecuador', 'ECU', '0', '2'))}
@@ -77,7 +78,7 @@ function rolagemTopo() {
 }
 setTimeout(rolagemDia, 1500);
 
-console.log(window.scrollY);
+
 
 function sairDasClassificacoes() {
     document.querySelector("#app").classList.remove("esconder")
@@ -103,12 +104,30 @@ function rolarLegendas() {
     })
 }
 
+function irParaDatasDosJogos() {
+    document.querySelector("#app").classList.remove("esconder")
+    document.querySelector("#classification").classList.remove("mostrar")
+    document.querySelector("#app").classList.add("mostrar")
+    document.querySelector("#classification").classList.add("esconder")
+    rolagemDia();
+}
+
+function irParaMataMata() {
+    document.querySelector("#play-offs").classList.remove("esconder")
+    document.querySelector("#classification").classList.remove("mostrar")
+    document.querySelector("#play-offs").classList.add("mostrar")
+    document.querySelector("#classification").classList.add("esconder")
+    rolagemTopo();
+}
+
 document.querySelector("#classification").innerHTML = `
     <header>
         <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
         <label>Será atualizado diariamente <br />durante a copa do mundo 2022</label><br /><br />
         <button class="scroll-top-btn" onclick="sairDasClassificacoes()">VOLTAR</button>
         <button class="scroll-day-btn" onclick="rolarLegendas()">LEGENDAS</button>
+        <button class="classification-btn" onclick="irParaDatasDosJogos()">CALENDÁRIO</button>
+        <button class="fases-finais-btn" onclick="irParaMataMata()">FASES FINAIS</button>
     </header>
 <main id="cards">
     <h1>Classificação</h1>
@@ -658,13 +677,245 @@ document.querySelector("#classification").innerHTML = `
 
 
 
+document.querySelector("#play-offs").innerHTML = `
+    <header>
+        <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
+        <label>Será atualizado diariamente <br />durante a copa do mundo 2022</label><br /><br />
+    </header>
+    <main id="cards">
+        <h1>Fases Finais</h1>
+        <span>Atualizado por último em: </span>
+        <span>AINDA ESTÁ EM TESTES</span>
+        <div class="card">
+            <h3>Oitavas de Final</h3>
+            <div class="games oitavas">
 
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
 
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
 
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
 
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
 
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
 
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
 
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+
+                <div class="game sem-borda">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <h3>Quartas de Final</h3>
+            <div class="games quartas">
+
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+
+                <div class="game sem-borda">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <h3>Semi Finais</h3>
+            <div class="games semifinais">
+
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+
+                <div class="game sem-borda">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <h3>Terceiro Lugar e Final</h3>
+            <div class="games final">
+
+                <div class="game">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+
+                <div class="game sem-borda">
+                    <div class="fotos">
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
+                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
+                    </div>
+                    <div class="siglas">
+                        <div><span>sigla</span>gols</div>
+                        <div><span>sigla</span>gols</div>
+                    </div>
+                </div>
+            
+            </div>
+            <button class="btn-nav" onclick="irParaClassificacoes()">CLASSIFICAÇÕES</button>
+            <button class="btn-nav" onclick="irParaCalendario()">CALENDÁRIO</button>
+        </div>
+
+       
+            
+        
+     
+    </main>
+`
+
+function irParaClassificacoes() {
+    document.querySelector("#classification").classList.remove("esconder")
+    document.querySelector("#play-offs").classList.remove("mostrar")
+    document.querySelector("#classification").classList.add("mostrar")
+    document.querySelector("#play-offs").classList.add("esconder")
+    rolagemTopo();
+}
+
+function irParaCalendario() {
+    document.querySelector("#app").classList.remove("esconder")
+    document.querySelector("#play-offs").classList.remove("mostrar")
+    document.querySelector("#app").classList.add("mostrar")
+    document.querySelector("#play-offs").classList.add("esconder")
+    rolagemDia();
+}
+
+function irParaFasesFinais() {
+    document.querySelector("#play-offs").classList.remove("esconder")
+    document.querySelector("#app").classList.remove("mostrar")
+    document.querySelector("#play-offs").classList.add("mostrar")
+    document.querySelector("#app").classList.add("esconder")
+    rolagemTopo();
+}
 
 
 
@@ -1258,3 +1509,7 @@ function voltarAoAPP() {
     document.querySelector("#group").classList.add("esconder")
     rolagemDia()
 }
+
+console.log(window.scrollY);
+console.log(window.scrollX);
+
