@@ -122,9 +122,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo A</h3>
         <table>
             <tr>
+                <td></td>
                 <td>Equipe</td>
-                <td></td>
-                <td></td>
                 <td>PTS</td>
                 <td>PJ</td>
                 <td>VIT</td>
@@ -135,7 +134,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>SG</td>
             </tr>
             <tr class="selected">
-                <td>1</td>
                 <td><img src="./assets/icon-netherlands.svg" alt="Bandeira Holanda" /></td>
                 <td>Holanda</td>
                 <td>3</td>
@@ -148,7 +146,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>2</td>
             </tr>
             <tr class="selected">
-                <td>2</td>
                 <td><img src="./assets/icon-ecuador.svg" alt="Bandeira Equador" /></td>
                 <td>Equador</td>
                 <td>3</td>
@@ -161,7 +158,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>2</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td><img src="./assets/icon-senegal.svg" alt="Bandeira Senegal" /></td>
                 <td>Senegal</td>
                 <td>0</td>
@@ -174,7 +170,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>-2</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td><img src="./assets/icon-qatar.svg" alt="Bandeira Catar" /></td>
                 <td>Catar</td>
                 <td>0</td>
@@ -193,9 +188,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo B</h3>
         <table>
             <tr>
+                <td></td>
                 <td>Equipe</td>
-                <td></td>
-                <td></td>
                 <td>PTS</td>
                 <td>PJ</td>
                 <td>VIT</td>
@@ -206,7 +200,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>SG</td>
             </tr>
             <tr class="selected">
-                <td>1</td>
                 <td><img src="./assets/icon-england.svg" alt="Bandeira Inglaterra" /></td>
                 <td>Inglaterra</td>
                 <td>3</td>
@@ -219,7 +212,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>4</td>
             </tr>
             <tr class="selected">
-                <td>2</td>
                 <td><img src="./assets/icon-wales.svg" alt="Bandeira Gales" /></td>
                 <td>Gales</td>
                 <td>1</td>
@@ -232,7 +224,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td><img src="./assets/icon-united-states.svg" alt="Bandeira Estados Unidos" /></td>
                 <td>Estados Unidos</td>
                 <td>1</td>
@@ -245,7 +236,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td><img src="./assets/icon-iran.svg" alt="Bandeira Irã" /></td>
                 <td>Irã</td>
                 <td>0</td>
@@ -264,9 +254,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo C</h3>
         <table>
             <tr>
+                <td></td>
                 <td>Equipe</td>
-                <td></td>
-                <td></td>
                 <td>PTS</td>
                 <td>PJ</td>
                 <td>VIT</td>
@@ -274,10 +263,9 @@ document.querySelector("#classification").innerHTML = `
                 <td>DER</td>
                 <td>GM</td>
                 <td>GC</td>
-                <td>SG</td>
+                <td>SG</td> 
             </tr>
             <tr class="selected">
-                <td>1</td>
                 <td><img src="./assets/icon-saudi-arabia.svg" alt="Bandeira Arábia Saudita" /></td>
                 <td>Arábia Saudita</td>
                 <td>3</td>
@@ -290,7 +278,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>1</td>
             </tr>
             <tr class="selected">
-                <td>2</td>
                 <td><img src="./assets/icon-poland.svg" alt="Bandeira Polônia" /></td>
                 <td>Polônia</td>
                 <td>1</td>
@@ -303,7 +290,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td><img src="./assets/icon-mexico.svg" alt="Bandeira México" /></td>
                 <td>México</td>
                 <td>1</td>
@@ -316,7 +302,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td><img src="./assets/icon-argentina.svg" alt="Bandeira Argentina" /></td>
                 <td>Argentina</td>
                 <td>0</td>
@@ -335,9 +320,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo D</h3>
         <table>
             <tr>
+                <td></td>
                 <td>Equipe</td>
-                <td></td>
-                <td></td>
                 <td>PTS</td>
                 <td>PJ</td>
                 <td>VIT</td>
@@ -348,7 +332,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>SG</td>
             </tr>
             <tr class="selected">
-                <td>1</td>
                 <td><img src="./assets/icon-france.svg" alt="Bandeira França" /></td>
                 <td>França</td>
                 <td>3</td>
@@ -361,7 +344,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>3</td>
             </tr>
             <tr class="selected">
-                <td>2</td>
                 <td><img src="./assets/icon-tunisia.svg" alt="Bandeira Tunísia" /></td>
                 <td>Tunísia</td>
                 <td>1</td>
@@ -374,7 +356,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td><img src="./assets/icon-denmark.svg" alt="Bandeira Dinamarca" /></td>
                 <td>Dinamarca</td>
                 <td>1</td>
@@ -387,7 +368,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td><img src="./assets/icon-australia.svg" alt="Bandeira Austrália" /></td>
                 <td>Austrália</td>
                 <td>0</td>
@@ -406,9 +386,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo E</h3>
         <table>
             <tr>
+                <td></td>
                 <td>Equipe</td>
-                <td></td>
-                <td></td>
                 <td>PTS</td>
                 <td>PJ</td>
                 <td>VIT</td>
@@ -419,7 +398,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>SG</td>
             </tr>
             <tr class="selected">
-                <td>1</td>
                 <td><img src="./assets/icon-spain.svg" alt="Bandeira Espanha" /></td>
                 <td>Espanha</td>
                 <td>3</td>
@@ -432,7 +410,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>7</td>
             </tr>
             <tr class="selected">
-                <td>2</td>
                 <td><img src="./assets/icon-japan.svg" alt="Bandeira Japão" /></td>
                 <td>Japão</td>
                 <td>3</td>
@@ -445,7 +422,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>1</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td><img src="./assets/icon-germany.svg" alt="Bandeira Alemanha" /></td>
                 <td>Alemanha</td>
                 <td>0</td>
@@ -458,7 +434,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>-1</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td><img src="./assets/icon-costa-rica.svg" alt="Bandeira Costa Rica" /></td>
                 <td>Costa Rica</td>
                 <td>0</td>
@@ -477,9 +452,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo F</h3>
         <table>
             <tr>
+                <td></td>
                 <td>Equipe</td>
-                <td></td>
-                <td></td>
                 <td>PTS</td>
                 <td>PJ</td>
                 <td>VIT</td>
@@ -490,7 +464,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>SG</td>
             </tr>
             <tr class="selected">
-                <td>1</td>
                 <td><img src="./assets/icon-belgium.svg" alt="Bandeira Bélgica" /></td>
                 <td>Bélgica</td>
                 <td>3</td>
@@ -503,7 +476,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>1</td>
             </tr>
             <tr class="selected">
-                <td>2</td>
                 <td><img src="./assets/icon-croatia.svg" alt="Bandeira Croácia" /></td>
                 <td>Croácia</td>
                 <td>1</td>
@@ -516,7 +488,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td><img src="./assets/icon-morocco.svg" alt="Bandeira Marrocos" /></td>
                 <td>Marrocos</td>
                 <td>1</td>
@@ -529,7 +500,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td><img src="./assets/icon-canada.svg" alt="Bandeira Canadá" /></td>
                 <td>Canadá</td>
                 <td>0</td>
@@ -548,9 +518,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo G</h3>
         <table>
             <tr>
+                <td></td>
                 <td>Equipe</td>
-                <td></td>
-                <td></td>
                 <td>PTS</td>
                 <td>PJ</td>
                 <td>VIT</td>
@@ -561,7 +530,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>SG</td>
             </tr>
             <tr class="selected">
-                <td>1</td>
                 <td><img src="./assets/icon-switzerland.svg" alt="Bandeira Suíça" /></td>
                 <td>Suíça</td>
                 <td>3</td>
@@ -575,7 +543,6 @@ document.querySelector("#classification").innerHTML = `
                 
             </tr>
             <tr class="selected">
-                <td>2</td>
                 <td><img src="./assets/icon-brazil.svg" alt="Bandeira Brasil" /></td>
                 <td>Brasil</td>
                 <td>0</td>
@@ -588,7 +555,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td><img src="./assets/icon-serbia.svg" alt="Bandeira Sérvia" /></td>
                 <td>Sérvia</td>
                 <td>0</td>
@@ -601,7 +567,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td><img src="./assets/icon-cameroon.svg" alt="Bandeira Camarões" /></td>
                 <td>Camarões</td>
                 <td>0</td>
@@ -620,9 +585,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo H</h3>
         <table>
             <tr>
+                <td></td>
                 <td>Equipe</td>
-                <td></td>
-                <td></td>
                 <td>PTS</td>
                 <td>PJ</td>
                 <td>VIT</td>
@@ -633,7 +597,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>SG</td>
             </tr>
             <tr class="selected">
-                <td>1</td>
                 <td><img src="./assets/icon-south-korea.svg" alt="Bandeira Coréia do Sul" /></td>
                 <td>Coréia do Sul</td>
                 <td>1</td>
@@ -646,7 +609,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr class="selected">
-                <td>2</td>
                 <td><img src="./assets/icon-uruguay.svg" alt="Bandeira Uruguai" /></td>
                 <td>Uruguai</td>
                 <td>1</td>
@@ -659,7 +621,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td><img src="./assets/icon-ghana.svg" alt="Bandeira Gana" /></td>
                 <td>Gana</td>
                 <td>0</td>
@@ -672,7 +633,6 @@ document.querySelector("#classification").innerHTML = `
                 <td>0</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td><img src="./assets/icon-portugal.svg" alt="Bandeira Portugal" /></td>
                 <td>Portugal</td>
                 <td>0</td>
