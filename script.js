@@ -116,7 +116,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 24/11/2022 - 11h</span>
+    <span>Atualizado por último em: 24/11/2022 - 13h</span>
 
     <div class="card">
         <h3>Grupo A</h3>
