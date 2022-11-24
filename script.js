@@ -105,12 +105,8 @@ function rolarLegendas() {
 
 document.querySelector("#classification").innerHTML = `
     <header>
-        <img src="./assets/logo.svg" alt="Logo da NLW" />
-        <p>Copa Do Mundo</p>
-        <br />
+        <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
         <label>Será atualizado diariamente <br />durante a copa do mundo 2022</label><br /><br />
-        <h3>Feito por Filipe Bacof</h3>
-        <a href="https://github.com/Filipe-Bacof/Calendario-Jogos-Copa" target="_blank">Link para o Github</a>
         <button class="scroll-top-btn" onclick="sairDasClassificacoes()">VOLTAR</button>
         <button class="scroll-day-btn" onclick="rolarLegendas()">LEGENDAS</button>
     </header>

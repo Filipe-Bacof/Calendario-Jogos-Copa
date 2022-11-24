@@ -257,3 +257,8 @@ td img {
     justify-content: left;
     padding-left: 30px;
 }
+
+#classification header {
+    margin-bottom: 15px;
+    text-align: center;
+}
