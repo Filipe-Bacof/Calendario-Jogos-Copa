@@ -612,6 +612,15 @@ function escolherIndice(sigla) {
 
 // Funções para Refatorar
 
+//DEFINITIVA
+function rolagem(paraOnde, tipoDeRolagem) {
+    window.scrollTo({
+        top: paraOnde,
+        left: 0,
+        behavior: `${tipoDeRolagem}`,
+    })
+}
+
 function rolagemDia() {
     window.scrollTo({
         top: 2860,
@@ -754,7 +763,7 @@ document.querySelector("#classification").innerHTML = `
         <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
         <label>Será atualizado diariamente <br />durante a copa do mundo 2022</label><br /><br />
         <button class="scroll-top-btn" onclick="sairDasClassificacoes()">VOLTAR</button>
-        <button class="scroll-day-btn" onclick="rolarLegendas()">LEGENDAS</button>
+        <button class="scroll-day-btn" onclick="rolagem(10000, 'smooth')">LEGENDAS</button>
         <button class="classification-btn" onclick="irParaDatasDosJogos()">CALENDÁRIO</button>
         <button class="fases-finais-btn" onclick="irParaMataMata()">FASES FINAIS</button>
     </header>
@@ -1514,3 +1523,5 @@ document.querySelector("#play-offs").innerHTML = `
         </div>
     </main>
 `
+// ARMAZENAR A ROLAGEM DO CLIENTE NA TELA DO APP, pode ficar mais fluido do que rolar sempre para o mesmo dia, sem o scroll suave
+// ROLAGEM AUTOMATICA PARA CADA DIA - usar a função NEW DATE e tornar isso automatico
