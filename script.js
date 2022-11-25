@@ -417,91 +417,6 @@ const json = [
         }
     }
 ]
-
-// Funções Secundárias
-//Função que cria um jogo específico dentro de um card no APP principal do Calendário
-function createGame(player1, sigla1, hour, player2, sigla2, goal1, goal2) {
-    return `
-        <li>
-            <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" onclick="gerarNovosDados('${sigla1}', '${player1}')" />
-            <div><span>${sigla1}</span>${goal1 ? goal1 : ''}</div>
-            <strong>${hour}</strong>
-            <div><span>${sigla2}</span>${goal2 ? goal2 : ''}</div>
-            <img src="./assets/icon-${player2}.svg" alt="Bandeira ${player2}" onclick="gerarNovosDados('${sigla2}', '${player2}')" />
-        </li>
-    `
-}
-
-//função que cria os cards com um dia no APP principal do calendário
-function createCard(date, day, games) {
-    return `
-    <div class="card">
-        <h2>${date} <span>${day}</span></h2>
-        <ul>
-            ${games}
-        </ul>
-    </div>
-    `
-}
-
-//função que cria a tela com o nome dos jogadores de cada seleção
-function gerarNovosDados(sigla, nomePic) {
-    document.querySelector("#app").classList.remove("mostrar")
-    document.querySelector("#group").classList.remove("esconder")
-    document.querySelector("#app").classList.add("esconder")
-    document.querySelector("#group").classList.add("mostrar")
-    rolagemTopo();
-    document.querySelector("#group").innerHTML = `
-    <main id="cards">
-        ${rendenizarSelecao(sigla, nomePic)}
-    </main>
-`
-}
-
-// Função auxiliar da que está acima, pois gera cada um dos jogadores
-function gerarJogadores(quatidade, indice, tipoJogador) {
-    let listaJogadores = '';
-    for (let i = 0; i < quatidade; i++) {
-        listaJogadores += `<li>${json[indice].jogadores[tipoJogador][i]}</li>`
-    }
-    return listaJogadores;
-}
-
-// Outra função auxiliar que efetua a exibição dos nomes dos jogadores = PODE SER REFATORADO!!!
-function rendenizarSelecao(sigla, nomePic) {
-    let indice = escolherIndice(sigla);
-    let numGoleiros = json[indice].jogadores.goleiros.length;
-    let numZagueiros = json[indice].jogadores.zagueiros.length;
-    let numMeiosCampos = json[indice].jogadores.meioscampos.length;
-    let numAtacantes = json[indice].jogadores.atacantes.length;
-    return `
-    <div class="card">
-        <h1 onclick="voltarAoAPP()">VOLTAR</h1>
-        <h2>Grupo ${json[indice].grupo}</h2>
-        <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
-        <img src="./assets/icon-${nomePic}.svg" alt="Bandeira ${nomePic}" />
-        <h3>Técnico: <span>${json[indice].jogadores.tecnico}</span></h3>
-        <h3>Goleiros:</h3>
-        <ul>
-            ${gerarJogadores(numGoleiros, indice, "goleiros")}
-        </ul>
-        <h3>Zagueiros:</h3>
-        <ul>
-            ${gerarJogadores(numZagueiros, indice, "zagueiros")}
-        </ul>
-        <h3>Meios-Campos:</h3>
-        <ul>
-            ${gerarJogadores(numMeiosCampos, indice, "meioscampos")}
-        </ul>
-        <h3>Atacantes:</h3>
-        <ul>
-            ${gerarJogadores(numAtacantes, indice, "atacantes")}
-        </ul>
-        <h1 onclick="voltarAoAPP()">VOLTAR</h1>
-    </div>
-    `
-}
-
 // função que armazena a sigla dos times e o indice no array (array json)
 function escolherIndice(sigla) {
     let paisEscolhido;
@@ -609,6 +524,92 @@ function escolherIndice(sigla) {
     return paisEscolhido;
 }
 
+// Funções Secundárias
+//Função que cria um jogo específico dentro de um card no APP principal do Calendário
+function createGame(player1, sigla1, hour, player2, sigla2, goal1, goal2) {
+    return `
+        <li>
+            <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" onclick="gerarNovosDados('${sigla1}', '${player1}')" />
+            <div><span>${sigla1}</span>${goal1 ? goal1 : ''}</div>
+            <strong>${hour}</strong>
+            <div><span>${sigla2}</span>${goal2 ? goal2 : ''}</div>
+            <img src="./assets/icon-${player2}.svg" alt="Bandeira ${player2}" onclick="gerarNovosDados('${sigla2}', '${player2}')" />
+        </li>
+    `
+}
+
+//função que cria os cards com um dia no APP principal do calendário
+function createCard(date, day, games) {
+    return `
+    <div class="card">
+        <h2>${date} <span>${day}</span></h2>
+        <ul>
+            ${games}
+        </ul>
+    </div>
+    `
+}
+
+//função que cria a tela com o nome dos jogadores de cada seleção
+function gerarNovosDados(sigla, nomePic) {
+    document.querySelector("#app").classList.remove("mostrar")
+    document.querySelector("#group").classList.remove("esconder")
+    document.querySelector("#app").classList.add("esconder")
+    document.querySelector("#group").classList.add("mostrar")
+    rolagem(0, 'smooth');
+    document.querySelector("#group").innerHTML = `
+    <main id="cards">
+        ${rendenizarSelecao(sigla, nomePic)}
+    </main>
+`
+}
+
+// Função auxiliar da que está acima, pois gera cada um dos jogadores
+function gerarJogadores(quatidade, indice, tipoJogador) {
+    let listaJogadores = '';
+    for (let i = 0; i < quatidade; i++) {
+        listaJogadores += `<li>${json[indice].jogadores[tipoJogador][i]}</li>`
+    }
+    return listaJogadores;
+}
+
+// Outra função auxiliar que efetua a exibição dos nomes dos jogadores = PODE SER REFATORADO!!!
+function rendenizarSelecao(sigla, nomePic) {
+    let indice = escolherIndice(sigla);
+    let numGoleiros = json[indice].jogadores.goleiros.length;
+    let numZagueiros = json[indice].jogadores.zagueiros.length;
+    let numMeiosCampos = json[indice].jogadores.meioscampos.length;
+    let numAtacantes = json[indice].jogadores.atacantes.length;
+    return `
+    <div class="card">
+        <h1 onclick="voltarAoAPP()">VOLTAR</h1>
+        <h2>Grupo ${json[indice].grupo}</h2>
+        <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
+        <img src="./assets/icon-${nomePic}.svg" alt="Bandeira ${nomePic}" />
+        <h3>Técnico: <span>${json[indice].jogadores.tecnico}</span></h3>
+        <h3>Goleiros:</h3>
+        <ul>
+            ${gerarJogadores(numGoleiros, indice, "goleiros")}
+        </ul>
+        <h3>Zagueiros:</h3>
+        <ul>
+            ${gerarJogadores(numZagueiros, indice, "zagueiros")}
+        </ul>
+        <h3>Meios-Campos:</h3>
+        <ul>
+            ${gerarJogadores(numMeiosCampos, indice, "meioscampos")}
+        </ul>
+        <h3>Atacantes:</h3>
+        <ul>
+            ${gerarJogadores(numAtacantes, indice, "atacantes")}
+        </ul>
+        <h1 onclick="voltarAoAPP()">VOLTAR</h1>
+    </div>
+    `
+}
+
+
+
 
 // Funções para Refatorar
 
@@ -644,6 +645,18 @@ function rolarLegendas() {
     })
 }
 
+function mostrarOuEsconder(saindo, entrando, paraOnde, tipoDeRolagem) {
+    // #app #group #classification #play-offs
+    //saindo daqui
+    document.querySelector(saindo).classList.remove("mostrar");
+    document.querySelector(saindo).classList.add("esconder");
+    //entrando aqui
+    document.querySelector(entrando).classList.remove("esconder");
+    document.querySelector(entrando).classList.add("mostrar");
+    //rolagem
+    rolagem(paraOnde, tipoDeRolagem);
+}
+
 function voltarAoAPP() {
     document.querySelector("#app").classList.remove("esconder")
     document.querySelector("#group").classList.remove("mostrar")
@@ -665,7 +678,7 @@ function irParaClassificacao() {
     document.querySelector("#classification").classList.remove("esconder")
     document.querySelector("#app").classList.add("esconder")
     document.querySelector("#classification").classList.add("mostrar")
-    rolagemTopo()
+    rolagem(0, 'smooth');
 }
 
 function irParaDatasDosJogos() {
@@ -681,7 +694,7 @@ function irParaMataMata() {
     document.querySelector("#classification").classList.remove("mostrar")
     document.querySelector("#play-offs").classList.add("mostrar")
     document.querySelector("#classification").classList.add("esconder")
-    rolagemTopo();
+    rolagem(0, 'smooth');
 }
 
 function irParaClassificacoes() {
@@ -689,7 +702,7 @@ function irParaClassificacoes() {
     document.querySelector("#play-offs").classList.remove("mostrar")
     document.querySelector("#classification").classList.add("mostrar")
     document.querySelector("#play-offs").classList.add("esconder")
-    rolagemTopo();
+    rolagem(0, 'smooth');
 }
 
 function irParaCalendario() {
@@ -705,7 +718,7 @@ function irParaFasesFinais() {
     document.querySelector("#app").classList.remove("mostrar")
     document.querySelector("#play-offs").classList.add("mostrar")
     document.querySelector("#app").classList.add("esconder")
-    rolagemTopo();
+    rolagem(0, 'smooth');
 }
 
 // estas 2 linhas abaixo servem para exibir o scroll do proximo dia e executálo na inicialização
