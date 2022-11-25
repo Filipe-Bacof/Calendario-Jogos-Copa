@@ -437,6 +437,28 @@ function gerarCabecalhoTable() {
     `
 }
 
+// Função que gera todas as legendas do ultimo card nas classificações
+function gerarLegendas() {
+    return `
+    <div class="card legendas">
+        <h2>Legendas:</h2>
+        <p>Circulados em Verde = Classificados</p><br>
+        <p>PTS = Pontos</p><br>
+        <p>PJ = Partidas Jogadas</p><br>
+        <p>VIT = Vitórias</p><br>
+        <p>E = Empates</p><br>
+        <p>DER = Derrotas</p><br>
+        <p>GM = Gols Marcados</p><br>
+        <p>GC = Gols Contra</p><br>
+        <p>SG = Saldo de Gols</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    `
+}
+
 // função que armazena a sigla dos times e o indice no array (array json)
 function escolherIndice(sigla) {
     let paisEscolhido;
@@ -929,22 +951,7 @@ document.querySelector("#classification").innerHTML = `
             ${gerarEquipeNaTabela('ghana', 'Gana', 0, 1, 0, 0, 1, 1, 3, -2, false)}
         </table>
     </div>
-    <div class="card legendas">
-        <h2>Legendas:</h2>
-        <p>Circulados em Verde = Classificados</p><br>
-        <p>PTS = Pontos</p><br>
-        <p>PJ = Partidas Jogadas</p><br>
-        <p>VIT = Vitórias</p><br>
-        <p>E = Empates</p><br>
-        <p>DER = Derrotas</p><br>
-        <p>GM = Gols Marcados</p><br>
-        <p>GC = Gols Contra</p><br>
-        <p>SG = Saldo de Gols</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-    </div>
+    ${gerarLegendas()}
     </main>
 `
 
@@ -977,13 +984,11 @@ document.querySelector("#play-offs").innerHTML = `
                 ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
                 ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
             </div>
-
             <h3>Semi Finais</h3>
             <div class="games semifinais">
                 ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
                 ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
             </div>
-
             <h3>Terceiro Lugar e Final</h3>
             <div class="games final">
                 ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
