@@ -757,6 +757,43 @@ document.querySelector("#app").innerHTML = `
     </main>
 `
 
+//Função responsável por gerar apenas o cabeçalho de cada card das classificações
+function gerarCabecalhoTable() {
+    return `
+        <tr>
+            <td></td>
+            <td>Equipe</td>
+            <td>PTS</td>
+            <td>PJ</td>
+            <td>VIT</td>
+            <td>E</td>
+            <td>DER</td>
+            <td>GM</td>
+            <td>GC</td>
+            <td>SG</td>
+        </tr>
+    `
+}
+
+function gerarEquipeNaTabela(name, nome, pts, pj, vit, e, der, gm, gc, sg, selected) {
+    let classe = '';
+    selected ? classe = ` class="selected"` : '';
+    return `
+    <tr ${classe}>
+        <td><img src="./assets/icon-${name}.svg" alt="Bandeira ${nome}" /></td>
+        <td>${nome}</td>
+        <td>${pts}</td>
+        <td>${pj}</td>
+        <td>${vit}</td>
+        <td>${e}</td>
+        <td>${der}</td>
+        <td>${gm}</td>
+        <td>${gc}</td>
+        <td>${sg}</td>
+    </tr>
+    `
+}
+
 // Criador das Classificações = REFATORAR URGENTE!
 document.querySelector("#classification").innerHTML = `
     <header>
@@ -770,532 +807,84 @@ document.querySelector("#classification").innerHTML = `
 <main id="cards">
     <h1>Classificação</h1>
     <span>Atualizado por último em: 25/11/2022 - 10h</span>
-
     <div class="card">
         <h3>Grupo A</h3>
         <table>
-            <tr>
-                <td></td>
-                <td>Equipe</td>
-                <td>PTS</td>
-                <td>PJ</td>
-                <td>VIT</td>
-                <td>E</td>
-                <td>DER</td>
-                <td>GM</td>
-                <td>GC</td>
-                <td>SG</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-netherlands.svg" alt="Bandeira Holanda" /></td>
-                <td>Holanda</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>0</td>
-                <td>2</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-ecuador.svg" alt="Bandeira Equador" /></td>
-                <td>Equador</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>0</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-senegal.svg" alt="Bandeira Senegal" /></td>
-                <td>Senegal</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>2</td>
-                <td>-2</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-qatar.svg" alt="Bandeira Catar" /></td>
-                <td>Catar</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>2</td>
-                <td>-2</td>
-            </tr>
+            ${gerarCabecalhoTable()}
+            ${gerarEquipeNaTabela('netherlands', 'Holanda', 3, 1, 1, 0, 0, 2, 0, 2, true)}
+            ${gerarEquipeNaTabela('ecuador', 'Equador', 3, 1, 1, 0, 0, 2, 0, 2, true)}
+            ${gerarEquipeNaTabela('senegal', 'Senegal', 0, 1, 0, 0, 1, 0, 2, -2, false)}
+            ${gerarEquipeNaTabela('qatar', 'Catar', 0, 1, 0, 0, 1, 0, 2, -2, false)}
         </table>
     </div>
-
     <div class="card">
         <h3>Grupo B</h3>
         <table>
-            <tr>
-                <td></td>
-                <td>Equipe</td>
-                <td>PTS</td>
-                <td>PJ</td>
-                <td>VIT</td>
-                <td>E</td>
-                <td>DER</td>
-                <td>GM</td>
-                <td>GC</td>
-                <td>SG</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-england.svg" alt="Bandeira Inglaterra" /></td>
-                <td>Inglaterra</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>6</td>
-                <td>2</td>
-                <td>4</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-iran.svg" alt="Bandeira Irã" /></td>
-                <td>Irã</td>
-                <td>3</td>
-                <td>2</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>4</td>
-                <td>6</td>
-                <td>-2</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-united-states.svg" alt="Bandeira Estados Unidos" /></td>
-                <td>Estados Unidos</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-wales.svg" alt="Bandeira Gales" /></td>
-                <td>Gales</td>
-                <td>1</td>
-                <td>2</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>3</td>
-                <td>-2</td>
-            </tr>
+            ${gerarCabecalhoTable()}
+            ${gerarEquipeNaTabela('england', 'Inglaterra', 3, 1, 1, 0, 0, 6, 2, 4, true)}
+            ${gerarEquipeNaTabela('iran', 'Irã', 3, 2, 1, 0, 1, 4, 6, -2, true)}
+            ${gerarEquipeNaTabela('united-states', 'Estados Unidos', 1, 1, 0, 1, 0, 1, 1, 0, false)}
+            ${gerarEquipeNaTabela('wales', 'Gales', 1, 2, 0, 1, 1, 1, 3, -2, false)}
         </table>
     </div>
-
     <div class="card">
         <h3>Grupo C</h3>
         <table>
-            <tr>
-                <td></td>
-                <td>Equipe</td>
-                <td>PTS</td>
-                <td>PJ</td>
-                <td>VIT</td>
-                <td>E</td>
-                <td>DER</td>
-                <td>GM</td>
-                <td>GC</td>
-                <td>SG</td> 
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-saudi-arabia.svg" alt="Bandeira Arábia Saudita" /></td>
-                <td>Arábia Saudita</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-poland.svg" alt="Bandeira Polônia" /></td>
-                <td>Polônia</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-mexico.svg" alt="Bandeira México" /></td>
-                <td>México</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-argentina.svg" alt="Bandeira Argentina" /></td>
-                <td>Argentina</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>2</td>
-                <td>-1</td>
-            </tr>
+            ${gerarCabecalhoTable()}
+            ${gerarEquipeNaTabela('saudi-arabia', 'Arábia Saudita', 3, 1, 1, 0, 0, 2, 1, 1, true)}
+            ${gerarEquipeNaTabela('poland', 'Polônia', 1, 1, 0, 1, 0, 0, 0, 0, true)}
+            ${gerarEquipeNaTabela('mexico', 'México', 1, 1, 0, 1, 0, 0, 0, 0, false)}
+            ${gerarEquipeNaTabela('argentina', 'Argentina', 0, 1, 0, 0, 1, 1, 2, -1, false)}
         </table>
     </div>
-
     <div class="card">
         <h3>Grupo D</h3>
         <table>
-            <tr>
-                <td></td>
-                <td>Equipe</td>
-                <td>PTS</td>
-                <td>PJ</td>
-                <td>VIT</td>
-                <td>E</td>
-                <td>DER</td>
-                <td>GM</td>
-                <td>GC</td>
-                <td>SG</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-france.svg" alt="Bandeira França" /></td>
-                <td>França</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>4</td>
-                <td>1</td>
-                <td>3</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-tunisia.svg" alt="Bandeira Tunísia" /></td>
-                <td>Tunísia</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-denmark.svg" alt="Bandeira Dinamarca" /></td>
-                <td>Dinamarca</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-australia.svg" alt="Bandeira Austrália" /></td>
-                <td>Austrália</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>4</td>
-                <td>-3</td>
-            </tr>
+            ${gerarCabecalhoTable()}
+            ${gerarEquipeNaTabela('france', 'França', 3, 1, 1, 0, 0, 4, 1, 3, true)}
+            ${gerarEquipeNaTabela('tunisia', 'Tunísia', 1, 1, 0, 1, 0, 0, 0, 0, true)}
+            ${gerarEquipeNaTabela('denmark', 'Dinamarca', 1, 1, 0, 1, 0, 0, 0, 0, false)}
+            ${gerarEquipeNaTabela('australia', 'Austrália', 0, 1, 0, 0, 1, 1, 4, -3, false)}
         </table>
     </div>
-
     <div class="card">
         <h3>Grupo E</h3>
         <table>
-            <tr>
-                <td></td>
-                <td>Equipe</td>
-                <td>PTS</td>
-                <td>PJ</td>
-                <td>VIT</td>
-                <td>E</td>
-                <td>DER</td>
-                <td>GM</td>
-                <td>GC</td>
-                <td>SG</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-spain.svg" alt="Bandeira Espanha" /></td>
-                <td>Espanha</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>7</td>
-                <td>0</td>
-                <td>7</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-japan.svg" alt="Bandeira Japão" /></td>
-                <td>Japão</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-germany.svg" alt="Bandeira Alemanha" /></td>
-                <td>Alemanha</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>2</td>
-                <td>-1</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-costa-rica.svg" alt="Bandeira Costa Rica" /></td>
-                <td>Costa Rica</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>7</td>
-                <td>-7</td>
-            </tr>
+            ${gerarCabecalhoTable()}
+            ${gerarEquipeNaTabela('spain', 'Espanha', 3, 1, 1, 0, 0, 7, 0, 7, true)}
+            ${gerarEquipeNaTabela('japan', 'Japão', 3, 1, 1, 0, 0, 2, 1, 1, true)}
+            ${gerarEquipeNaTabela('germany', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false)}
+            ${gerarEquipeNaTabela('costa-rica', 'Costa Rica', 0, 1, 0, 0, 1, 0, 7, -7, false)}
         </table>
     </div>
-
     <div class="card">
         <h3>Grupo F</h3>
         <table>
-            <tr>
-                <td></td>
-                <td>Equipe</td>
-                <td>PTS</td>
-                <td>PJ</td>
-                <td>VIT</td>
-                <td>E</td>
-                <td>DER</td>
-                <td>GM</td>
-                <td>GC</td>
-                <td>SG</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-belgium.svg" alt="Bandeira Bélgica" /></td>
-                <td>Bélgica</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-croatia.svg" alt="Bandeira Croácia" /></td>
-                <td>Croácia</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-morocco.svg" alt="Bandeira Marrocos" /></td>
-                <td>Marrocos</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-canada.svg" alt="Bandeira Canadá" /></td>
-                <td>Canadá</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>-1</td>
-            </tr>
+            ${gerarCabecalhoTable()}
+            ${gerarEquipeNaTabela('belgium', 'Bélgica', 3, 1, 1, 0, 0, 1, 0, 1, true)}
+            ${gerarEquipeNaTabela('croatia', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, true)}
+            ${gerarEquipeNaTabela('morocco', 'Marrocos', 1, 1, 0, 1, 0, 0, 0, 0, false)}
+            ${gerarEquipeNaTabela('canada', 'Canadá', 0, 1, 0, 0, 1, 0, 1, -1, false)}
         </table>
     </div>
-
     <div class="card">
         <h3>Grupo G</h3>
         <table>
-            <tr>
-                <td></td>
-                <td>Equipe</td>
-                <td>PTS</td>
-                <td>PJ</td>
-                <td>VIT</td>
-                <td>E</td>
-                <td>DER</td>
-                <td>GM</td>
-                <td>GC</td>
-                <td>SG</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-brazil.svg" alt="Bandeira Brasil" /></td>
-                <td>Brasil</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>0</td>
-                <td>2</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-switzerland.svg" alt="Bandeira Suíça" /></td>
-                <td>Suíça</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-cameroon.svg" alt="Bandeira Camarões" /></td>
-                <td>Camarões</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>-1</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-serbia.svg" alt="Bandeira Sérvia" /></td>
-                <td>Sérvia</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>2</td>
-                <td>-2</td>
-            </tr>
+            ${gerarCabecalhoTable()}
+            ${gerarEquipeNaTabela('brazil', 'Brasil', 3, 1, 1, 0, 0, 2, 0, 2, true)}
+            ${gerarEquipeNaTabela('switzerland', 'Suíça', 3, 1, 1, 0, 0, 1, 0, 1, true)}
+            ${gerarEquipeNaTabela('cameroon', 'Camarões', 0, 1, 0, 0, 1, 0, 1, -1, false)}
+            ${gerarEquipeNaTabela('serbia', 'Sérvia', 0, 1, 0, 0, 1, 0, 2, -2, false)}
         </table>
     </div>
-
     <div class="card">
         <h3>Grupo H</h3>
         <table>
-            <tr>
-                <td></td>
-                <td>Equipe</td>
-                <td>PTS</td>
-                <td>PJ</td>
-                <td>VIT</td>
-                <td>E</td>
-                <td>DER</td>
-                <td>GM</td>
-                <td>GC</td>
-                <td>SG</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-portugal.svg" alt="Bandeira Portugal" /></td>
-                <td>Portugal</td>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>3</td>
-                <td>1</td>
-                <td>2</td>
-            </tr>
-            <tr class="selected">
-                <td><img src="./assets/icon-south-korea.svg" alt="Bandeira Coréia do Sul" /></td>
-                <td>Coréia do Sul</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-uruguay.svg" alt="Bandeira Uruguai" /></td>
-                <td>Uruguai</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td><img src="./assets/icon-ghana.svg" alt="Bandeira Gana" /></td>
-                <td>Gana</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>3</td>
-                <td>-2</td>
-            </tr>
+            ${gerarCabecalhoTable()}
+            ${gerarEquipeNaTabela('portugal', 'Portugal', 3, 1, 1, 0, 0, 3, 1, 2, true)}
+            ${gerarEquipeNaTabela('south-korea', 'Coréia do Sul', 1, 1, 0, 1, 0, 0, 0, 0, true)}
+            ${gerarEquipeNaTabela('uruguay', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false)}
+            ${gerarEquipeNaTabela('ghana', 'Gana', 0, 1, 0, 0, 1, 1, 3, -2, false)}
         </table>
     </div>
     <div class="card legendas">
