@@ -940,6 +940,10 @@ document.querySelector("#classification").innerHTML = `
         <p>GM = Gols Marcados</p><br>
         <p>GC = Gols Contra</p><br>
         <p>SG = Saldo de Gols</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
     </div>
     </main>
 `
@@ -952,8 +956,8 @@ document.querySelector("#play-offs").innerHTML = `
     </header>
     <main id="cards">
         <h1>Fases Finais</h1>
-        <span>Atualizado por último em: </span>
-        <span>AINDA ESTÁ EM TESTES</span>
+        <span>Atualizado por último em: NOVEMBRO</span>
+        <span>AINDA ESTÁ EM TESTES<br>Recomendado abrir no computador<br>Ou girar o celular e reduzir o zoom</span>
         <div class="card">
             <h3>Oitavas de Final</h3>
             <div class="games oitavas">
