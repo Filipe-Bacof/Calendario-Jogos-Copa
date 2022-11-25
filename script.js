@@ -654,8 +654,8 @@ document.querySelector("#app").innerHTML = `
         <a href="https://github.com/Filipe-Bacof/Calendario-Jogos-Copa" target="_blank">Link para o Github</a>
         <button class="scroll-top-btn" onclick="rolagem(0, 'smooth')">TOPO</button>
         <button class="scroll-day-btn" onclick="rolagem(diaDeHoje, 'smooth')">DIA ATUAL</button>
-        <button class="classification-btn" onclick="mostrarOuEsconder('#app', '#classification', 0, 'smooth')">CLASSIFICAÇÕES</button>
-        <button class="fases-finais-btn" onclick="mostrarOuEsconder('#app', '#play-offs', 0, 'smooth')">FASES FINAIS</button>
+        <button class="classification-btn" onclick="mostrarOuEsconder('#app', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
+        <button class="fases-finais-btn" onclick="mostrarOuEsconder('#app', '#play-offs', 0, 'auto')">FASES FINAIS</button>
     </header>
     <main id="cards">
         ${createCard("20/11", "domingo", createGame('qatar', 'QAT', '13:00', 'ecuador', 'ECU', '0', '2'))}
@@ -730,7 +730,7 @@ document.querySelector("#classification").innerHTML = `
         <button class="scroll-top-btn" onclick="mostrarOuEsconder('#classification', '#app', diaDeHoje, 'smooth')">VOLTAR</button>
         <button class="scroll-day-btn" onclick="rolagem(10000, 'smooth')">LEGENDAS</button>
         <button class="classification-btn" onclick="mostrarOuEsconder('#classification', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
-        <button class="fases-finais-btn" onclick="mostrarOuEsconder('#classification', '#play-offs', 0, 'smooth')">FASES FINAIS</button>
+        <button class="fases-finais-btn" onclick="mostrarOuEsconder('#classification', '#play-offs', 0, 'auto')">FASES FINAIS</button>
     </header>
 <main id="cards">
     <h1>Classificação</h1>
@@ -888,7 +888,7 @@ document.querySelector("#play-offs").innerHTML = `
                 ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
                 ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
             </div>
-            <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'smooth')">CLASSIFICAÇÕES</button>
+            <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
         </div>
     </main>
