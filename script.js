@@ -836,7 +836,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("22/11", "terça", createGame('argentina', 'ARG', '07:00', 'saudi-arabia', 'KSA', '1', '2') + createGame('denmark', 'DEN', '10:00', 'tunisia', 'TUN', '0', '0') + createGame('mexico', 'MEX', '13:00', 'poland', 'POL', '0', '0') + createGame('france', 'FRA', '16:00', 'australia', 'AUS', '4', '1'))}
         ${createCard("23/11", "quarta", createGame('morocco', 'MAR', '07:00', 'croatia', 'CRO', '0', '0') + createGame('germany', 'GER', '10:00', 'japan', 'JPN', '1', '2') + createGame('spain', 'ESP', '13:00', 'costa-rica', 'CRC', '7', '0') + createGame('belgium', 'BEL', '16:00', 'canada', 'CAN', '1', '0'))}
         ${createCard("24/11", "quinta", createGame('switzerland', 'SUI', '07:00', 'cameroon', 'CMR', '1', '0') + createGame('uruguay', 'URU', '10:00', 'south-korea', 'KOR', '0', '0') + createGame('portugal', 'POR', '13:00', 'ghana', 'GHA', '3', '2') + createGame('brazil', 'BRA', '16:00', 'serbia', 'SRB', '2', '0'))}
-        ${createCard("25/11", "sexta", createGame('wales', 'WAL', '07:00', 'iran', 'IRN', '0', '2') + createGame('qatar', 'QAT', '10:00', 'senegal', 'SEN', '1', '3') + createGame('netherlands', 'HOL', '13:00', 'ecuador', 'ECU', '1', '1') + createGame('england', 'ENG', '16:00', 'united-states', 'USA', '', ''))}
+        ${createCard("25/11", "sexta", createGame('wales', 'WAL', '07:00', 'iran', 'IRN', '0', '2') + createGame('qatar', 'QAT', '10:00', 'senegal', 'SEN', '1', '3') + createGame('netherlands', 'HOL', '13:00', 'ecuador', 'ECU', '1', '1') + createGame('england', 'ENG', '16:00', 'united-states', 'USA', '0', '0'))}
         ${createCard("26/11", "sabado", createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '', '') + createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '', '') + createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '', '') + createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
         ${createCard("27/11", "domingo", createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') + createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') + createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') + createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
         ${createCard("28/11", "segunda", createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '', '') + createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '', '') + createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '', '') + createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '', ''))}
@@ -870,7 +870,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 25/11/2022 - 15h</span>
+    <span>Atualizado por último em: 25/11/2022 - 18h</span>
     <div class="card">
         <h3>Grupo A</h3>
         <table>
@@ -885,9 +885,9 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo B</h3>
         <table>
             ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('england', 'Inglaterra', 3, 1, 1, 0, 0, 6, 2, 4, true)}
+            ${gerarEquipeNaTabela('england', 'Inglaterra', 4, 2, 1, 1, 0, 6, 2, 4, true)}
             ${gerarEquipeNaTabela('iran', 'Irã', 3, 2, 1, 0, 1, 4, 6, -2, true)}
-            ${gerarEquipeNaTabela('united-states', 'Estados Unidos', 1, 1, 0, 1, 0, 1, 1, 0, false)}
+            ${gerarEquipeNaTabela('united-states', 'Estados Unidos', 2, 2, 0, 2, 0, 1, 1, 0, false)}
             ${gerarEquipeNaTabela('wales', 'Gales', 1, 2, 0, 1, 1, 1, 3, -2, false)}
         </table>
     </div>
