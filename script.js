@@ -759,7 +759,7 @@ function rendenizarSelecao(sigla, nomePic) {
         <ul>
             ${gerarJogadores(numAtacantes, indice, "atacantes")}
         </ul>
-        <h1 onclick="voltarAoAPP()">VOLTAR</h1>
+        <h1 onclick="mostrarOuEsconder('#group', '#app', diaDeHoje, 'smooth')">VOLTAR</h1>
     </div>
     `
 }
