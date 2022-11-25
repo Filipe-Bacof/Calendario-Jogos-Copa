@@ -417,6 +417,26 @@ const json = [
         }
     }
 ]
+
+// Funções Secundárias
+//Função responsável por gerar apenas o cabeçalho de cada card das classificações
+function gerarCabecalhoTable() {
+    return `
+        <tr>
+            <td></td>
+            <td>Equipe</td>
+            <td>PTS</td>
+            <td>PJ</td>
+            <td>VIT</td>
+            <td>E</td>
+            <td>DER</td>
+            <td>GM</td>
+            <td>GC</td>
+            <td>SG</td>
+        </tr>
+    `
+}
+
 // função que armazena a sigla dos times e o indice no array (array json)
 function escolherIndice(sigla) {
     let paisEscolhido;
@@ -623,26 +643,6 @@ function diaAtual() {
     return rolagem;
 }
 
-// Funções Secundárias
-
-//Função responsável por gerar apenas o cabeçalho de cada card das classificações
-function gerarCabecalhoTable() {
-    return `
-        <tr>
-            <td></td>
-            <td>Equipe</td>
-            <td>PTS</td>
-            <td>PJ</td>
-            <td>VIT</td>
-            <td>E</td>
-            <td>DER</td>
-            <td>GM</td>
-            <td>GC</td>
-            <td>SG</td>
-        </tr>
-    `
-}
-
 //Função responsável por gerar as informações de cada time dentro da tabela de cada card das classificações
 function gerarEquipeNaTabela(name, nome, pts, pj, vit, e, der, gm, gc, sg, selected) {
     let classe = '';
@@ -786,15 +786,13 @@ function mostrarOuEsconder(saindo, entrando, paraOnde, tipoDeRolagem) {
     rolagem(paraOnde, tipoDeRolagem);
 }
 
-// estas 2 linhas abaixo servem para exibir o scroll do proximo dia e executálo na inicialização
-console.log(window.scrollX);
+// executa o scroll na inicialização
 setTimeout(() => rolagem(diaDeHoje, 'smooth'), 1500);
 
-// Variável que eu transformarei em uma função que retorna o dia atual
+// Variável usada em diversas funções sobre o dia atual
 let diaDeHoje = diaAtual();
 
 // RENDENIZADORES
-
 // Criador do App Principal de Calendário
 document.querySelector("#app").innerHTML = `
     <header>
