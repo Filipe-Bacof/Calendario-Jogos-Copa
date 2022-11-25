@@ -830,7 +830,24 @@ document.querySelector("#classification").innerHTML = `
     </main>
 `
 
-// Criador da tela de Mata-Mata = REFATORAR URGENTE!
+function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda) {
+    let borda = '';
+    semBorda ? borda = ` sem-borda` : '';
+    return `
+        <div class="game ${borda}">
+            <div class="fotos">
+                <img src="./assets/icon-${name1}.svg" alt="Bandeira ${nome1}" />
+                <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" /><br>
+            </div>
+            <div class="siglas">
+                <div><span>${sigla1 ? sigla1 : ''}</span>${goal1 ? goal1 : ''}</div>
+                <div><span>${sigla2 ? sigla2 : ''}</span>${goal2 ? goal2 : ''}</div>
+            </div>
+        </div>
+    `
+}
+
+// Criador da tela de Mata-Mata
 document.querySelector("#play-offs").innerHTML = `
     <header>
         <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
@@ -843,197 +860,33 @@ document.querySelector("#play-offs").innerHTML = `
         <div class="card">
             <h3>Oitavas de Final</h3>
             <div class="games oitavas">
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span>1A</span></div>
-                        <div><span>2B</span></div>
-                    </div>
-                </div>
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span>1C</span></div>
-                        <div><span>2D</span></div>
-                    </div>
-                </div>
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span>1E</span></div>
-                        <div><span>2F</span></div>
-                    </div>
-                </div>
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span>1G</span></div>
-                        <div><span>2H</span></div>
-                    </div>
-                </div>
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span>1B</span></div>
-                        <div><span>2A</span></div>
-                    </div>
-                </div>
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span>1D</span></div>
-                        <div><span>2C</span></div>
-                    </div>
-                </div>
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span>1F</span></div>
-                        <div><span>2E</span></div>
-                    </div>
-                </div>
-
-                <div class="game sem-borda">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span>1H</span></div>
-                        <div><span>2G</span></div>
-                    </div>
-                </div>
-            
+                ${gerarGameMataMata('empty', 'empty', '1A', 'empty', 'empty', '2B', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '1C', 'empty', 'empty', '2D', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '1E', 'empty', 'empty', '2F', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '1G', 'empty', 'empty', '2H', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '1B', 'empty', 'empty', '2A', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '1D', 'empty', 'empty', '2C', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '1H', 'empty', 'empty', '2G', '', '', true)}
             </div>
-
             <h3>Quartas de Final</h3>
             <div class="games quartas">
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                    </div>
-                </div>
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                    </div>
-                </div>
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                    </div>
-                </div>
-
-                <div class="game sem-borda">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                    </div>
-                </div>
-            
+                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
             </div>
 
             <h3>Semi Finais</h3>
             <div class="games semifinais">
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                    </div>
-                </div>
-
-                <div class="game sem-borda">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                    </div>
-                </div>
-            
+                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
             </div>
 
             <h3>Terceiro Lugar e Final</h3>
             <div class="games final">
-
-                <div class="game">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                    </div>
-                </div>
-
-                <div class="game sem-borda">
-                    <div class="fotos">
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" />
-                        <img src="./assets/icon-empty.svg" alt="Bandeira aa" /><br>
-                    </div>
-                    <div class="siglas">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                    </div>
-                </div>
+                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
+                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
             </div>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'smooth')">CLASSIFICAÇÕES</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
