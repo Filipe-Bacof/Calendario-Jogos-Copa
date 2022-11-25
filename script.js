@@ -582,7 +582,7 @@ function rendenizarSelecao(sigla, nomePic) {
     let numAtacantes = json[indice].jogadores.atacantes.length;
     return `
     <div class="card">
-        <h1 onclick="voltarAoAPP()">VOLTAR</h1>
+        <h1 onclick="mostrarOuEsconder('#group', '#app', diaDeHoje, 'smooth')">VOLTAR</h1>
         <h2>Grupo ${json[indice].grupo}</h2>
         <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
         <img src="./assets/icon-${nomePic}.svg" alt="Bandeira ${nomePic}" />
@@ -608,12 +608,7 @@ function rendenizarSelecao(sigla, nomePic) {
     `
 }
 
-
-
-
-// Funções para Refatorar
-
-//DEFINITIVA
+//Função base de Scroll
 function rolagem(paraOnde, tipoDeRolagem) {
     window.scrollTo({
         top: paraOnde,
@@ -622,29 +617,7 @@ function rolagem(paraOnde, tipoDeRolagem) {
     })
 }
 
-function rolagemDia() {
-    window.scrollTo({
-        top: 2860,
-        left: 0,
-        behavior: 'smooth',
-    })
-}
-function rolagemTopo() {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-    })
-}
-
-function rolarLegendas() {
-    window.scrollTo({
-        top: 10000,
-        left: 0,
-        behavior: 'smooth',
-    })
-}
-
+// Função base para Navegar dentro das telas
 function mostrarOuEsconder(saindo, entrando, paraOnde, tipoDeRolagem) {
     // #app #group #classification #play-offs
     //saindo daqui
@@ -657,73 +630,15 @@ function mostrarOuEsconder(saindo, entrando, paraOnde, tipoDeRolagem) {
     rolagem(paraOnde, tipoDeRolagem);
 }
 
-function voltarAoAPP() {
-    document.querySelector("#app").classList.remove("esconder")
-    document.querySelector("#group").classList.remove("mostrar")
-    document.querySelector("#app").classList.add("mostrar")
-    document.querySelector("#group").classList.add("esconder")
-    rolagemDia()
-}
-
-function sairDasClassificacoes() {
-    document.querySelector("#app").classList.remove("esconder")
-    document.querySelector("#classification").classList.remove("mostrar")
-    document.querySelector("#app").classList.add("mostrar")
-    document.querySelector("#classification").classList.add("esconder")
-    rolagemDia()
-}
-
-function irParaClassificacao() {
-    document.querySelector("#app").classList.remove("mostrar")
-    document.querySelector("#classification").classList.remove("esconder")
-    document.querySelector("#app").classList.add("esconder")
-    document.querySelector("#classification").classList.add("mostrar")
-    rolagem(0, 'smooth');
-}
-
-function irParaDatasDosJogos() {
-    document.querySelector("#app").classList.remove("esconder")
-    document.querySelector("#classification").classList.remove("mostrar")
-    document.querySelector("#app").classList.add("mostrar")
-    document.querySelector("#classification").classList.add("esconder")
-    rolagemDia();
-}
-
-function irParaMataMata() {
-    document.querySelector("#play-offs").classList.remove("esconder")
-    document.querySelector("#classification").classList.remove("mostrar")
-    document.querySelector("#play-offs").classList.add("mostrar")
-    document.querySelector("#classification").classList.add("esconder")
-    rolagem(0, 'smooth');
-}
-
-function irParaClassificacoes() {
-    document.querySelector("#classification").classList.remove("esconder")
-    document.querySelector("#play-offs").classList.remove("mostrar")
-    document.querySelector("#classification").classList.add("mostrar")
-    document.querySelector("#play-offs").classList.add("esconder")
-    rolagem(0, 'smooth');
-}
-
-function irParaCalendario() {
-    document.querySelector("#app").classList.remove("esconder")
-    document.querySelector("#play-offs").classList.remove("mostrar")
-    document.querySelector("#app").classList.add("mostrar")
-    document.querySelector("#play-offs").classList.add("esconder")
-    rolagemDia();
-}
-
-function irParaFasesFinais() {
-    document.querySelector("#play-offs").classList.remove("esconder")
-    document.querySelector("#app").classList.remove("mostrar")
-    document.querySelector("#play-offs").classList.add("mostrar")
-    document.querySelector("#app").classList.add("esconder")
-    rolagem(0, 'smooth');
-}
-
 // estas 2 linhas abaixo servem para exibir o scroll do proximo dia e executálo na inicialização
 console.log(window.scrollY);
-setTimeout(rolagemDia, 3000);
+setTimeout(() => rolagem(diaDeHoje, 'smooth'), 1500);
+
+// Variável que eu transformarei em uma função que retorna o dia atual
+let diaDeHoje = 2860;
+
+// ARMAZENAR A ROLAGEM DO CLIENTE NA TELA DO APP, pode ficar mais fluido do que rolar sempre para o mesmo dia, sem o scroll suave
+// ROLAGEM AUTOMATICA PARA CADA DIA - usar a função NEW DATE e tornar isso automatico
 
 // RENDENIZADORES
 
@@ -737,10 +652,10 @@ document.querySelector("#app").innerHTML = `
         <label class="destaque">NOVIDADE: Gráfico das Finais no site</label><br/><br/>
         <h3>Feito por Filipe Bacof</h3>
         <a href="https://github.com/Filipe-Bacof/Calendario-Jogos-Copa" target="_blank">Link para o Github</a>
-        <button class="scroll-top-btn" onclick="rolagemTopo()">TOPO</button>
-        <button class="scroll-day-btn" onclick="rolagemDia()">DIA ATUAL</button>
-        <button class="classification-btn" onclick="irParaClassificacao()">CLASSIFICAÇÕES</button>
-        <button class="fases-finais-btn" onclick="irParaFasesFinais()">FASES FINAIS</button>
+        <button class="scroll-top-btn" onclick="rolagem(0, 'smooth')">TOPO</button>
+        <button class="scroll-day-btn" onclick="rolagem(diaDeHoje, 'smooth')">DIA ATUAL</button>
+        <button class="classification-btn" onclick="mostrarOuEsconder('#app', '#classification', 0, 'smooth')">CLASSIFICAÇÕES</button>
+        <button class="fases-finais-btn" onclick="mostrarOuEsconder('#app', '#play-offs', 0, 'smooth')">FASES FINAIS</button>
     </header>
     <main id="cards">
         ${createCard("20/11", "domingo", createGame('qatar', 'QAT', '13:00', 'ecuador', 'ECU', '0', '2'))}
@@ -807,15 +722,15 @@ function gerarEquipeNaTabela(name, nome, pts, pj, vit, e, der, gm, gc, sg, selec
     `
 }
 
-// Criador das Classificações = REFATORAR URGENTE!
+// Criador das Classificações com a Pontuação de cada time
 document.querySelector("#classification").innerHTML = `
     <header>
         <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
         <label>Será atualizado diariamente <br />durante a copa do mundo 2022</label><br /><br />
-        <button class="scroll-top-btn" onclick="sairDasClassificacoes()">VOLTAR</button>
+        <button class="scroll-top-btn" onclick="mostrarOuEsconder('#classification', '#app', diaDeHoje, 'smooth')">VOLTAR</button>
         <button class="scroll-day-btn" onclick="rolagem(10000, 'smooth')">LEGENDAS</button>
-        <button class="classification-btn" onclick="irParaDatasDosJogos()">CALENDÁRIO</button>
-        <button class="fases-finais-btn" onclick="irParaMataMata()">FASES FINAIS</button>
+        <button class="classification-btn" onclick="mostrarOuEsconder('#classification', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
+        <button class="fases-finais-btn" onclick="mostrarOuEsconder('#classification', '#play-offs', 0, 'smooth')">FASES FINAIS</button>
     </header>
 <main id="cards">
     <h1>Classificação</h1>
@@ -1120,10 +1035,8 @@ document.querySelector("#play-offs").innerHTML = `
                     </div>
                 </div>
             </div>
-            <button class="btn-nav" onclick="irParaClassificacoes()">CLASSIFICAÇÕES</button>
-            <button class="btn-nav" onclick="irParaCalendario()">CALENDÁRIO</button>
+            <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'smooth')">CLASSIFICAÇÕES</button>
+            <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
         </div>
     </main>
 `
-// ARMAZENAR A ROLAGEM DO CLIENTE NA TELA DO APP, pode ficar mais fluido do que rolar sempre para o mesmo dia, sem o scroll suave
-// ROLAGEM AUTOMATICA PARA CADA DIA - usar a função NEW DATE e tornar isso automatico
