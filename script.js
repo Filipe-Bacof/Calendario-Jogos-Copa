@@ -524,7 +524,163 @@ function escolherIndice(sigla) {
     return paisEscolhido;
 }
 
+// Função que automatiza a rolagem durante os dias da copa - fora da copa vai para o topo
+function diaAtual() {
+    const d = new Date();
+    const milisegundos = d.getTime();
+    let rolagem = 0;
+    if (milisegundos > 1668913200000 && milisegundos < 1668999600000){
+        //dia 20/11
+        rolagem = 400;
+    } else if (milisegundos > 1668999600001 && milisegundos < 1669086000000 ) {
+        //dia 21/11
+        rolagem = 666;
+    } else if (milisegundos > 1669086000001 && milisegundos < 1669172400000) {
+        //dia 22/11
+        rolagem = 1199;
+    } else if (milisegundos > 1669172400001 && milisegundos < 1669258800000) {
+        //dia 23/11
+        rolagem = 1732;
+    } else if (milisegundos > 1669258800001 && milisegundos < 1669345200000) {
+        //dia 24/11
+        rolagem = 2305;
+    } else if (milisegundos > 1669345200001 && milisegundos < 1669431600000) {
+        //dia 25/11
+        rolagem = 2860;
+    } else if (milisegundos > 1669431600001 && milisegundos < 1669518000000) {
+        //dia 26/11
+        rolagem = 3440;
+    } else if (milisegundos > 1669518000001 && milisegundos < 1669604400000) {
+        //dia 27/11
+        rolagem = 4815;
+    } else if (milisegundos > 1669604400001 && milisegundos < 1669690800000) {
+        //dia 28/11
+        rolagem = 4580;
+    } else if (milisegundos > 1669690800001 && milisegundos < 1669777200000) {
+        //dia 29/11
+        rolagem = 5160;
+    } else if (milisegundos > 1669777200001 && milisegundos < 1669863600000) {
+        //dia 30/11
+        rolagem = 5720;
+    } else if (milisegundos > 1669863600001 && milisegundos < 1669950000000) {
+        //dia 01/12
+        rolagem = 6290;
+    } else if (milisegundos > 1669950000001 && milisegundos < 1670036400000) {
+        //dia 02/12
+        rolagem = 6850;
+    } else if (milisegundos > 1670036400001 && milisegundos < 1670122800000) {
+        //dia 03/12
+        rolagem = 7464;
+    } else if (milisegundos > 1670122800001 && milisegundos < 1670209200000) {
+        //dia 04/12
+        rolagem = 7905;
+    } else if (milisegundos > 1670209200001 && milisegundos < 1670295600000) {
+        //dia 05/12
+        rolagem = 8304;
+    } else if (milisegundos > 1670295600001 && milisegundos < 1670382000000) {
+        //dia 06/12
+        rolagem = 8730;
+    } else if (milisegundos > 1670382000001 && milisegundos < 1670468400000) {
+        //dia 07/12 DATA SEM JOGOS
+        rolagem = 9129;
+    } else if (milisegundos > 1670468400001 && milisegundos < 1670554800000) {
+        //dia 08/12 DATA SEM JOGOS
+        rolagem = 9129;
+    } else if (milisegundos > 1670554800001 && milisegundos < 1670641200000) {
+        //dia 09/12
+        rolagem = 9129;
+    } else if (milisegundos > 1670641200001 && milisegundos < 1670727600000) {
+        //dia 10/12
+        rolagem = 9570;
+    } else if (milisegundos > 1670727600001 && milisegundos < 1670814000000) {
+        //dia 11/12 DATA SEM JOGOS
+        rolagem = 9966;
+    } else if (milisegundos > 1670814000001 && milisegundos < 1670900400000) {
+        //dia 12/12 DATA SEM JOGOS
+        rolagem = 9966;
+    } else if (milisegundos > 1670900400001 && milisegundos < 1670986800000) {
+        //dia 13/12
+        rolagem = 9966;
+    } else if (milisegundos > 1670986800001 && milisegundos < 1671073200000) {
+        //dia 14/12
+        rolagem = 10270;
+    } else if (milisegundos > 1671073200001 && milisegundos < 1671159600000) {
+        //dia 15/12 DATA SEM JOGOS
+        rolagem = 10596;
+    } else if (milisegundos > 1671159600001 && milisegundos < 1671246000000) {
+        //dia 16/12 DATA SEM JOGOS
+        rolagem = 10596;
+    } else if (milisegundos > 1671246000001 && milisegundos < 1671332400000) {
+        //dia 17/12
+        rolagem = 10596;
+    } else if (milisegundos > 1671332400001 && milisegundos < 1671418800000) {
+        //dia 18/12 FINAL
+        rolagem = 10600;
+    } else {
+        //Qualquer outro dia = pode ir para o topo
+        rolagem = 0;
+    }
+    return rolagem;
+}
+
 // Funções Secundárias
+
+//Função responsável por gerar apenas o cabeçalho de cada card das classificações
+function gerarCabecalhoTable() {
+    return `
+        <tr>
+            <td></td>
+            <td>Equipe</td>
+            <td>PTS</td>
+            <td>PJ</td>
+            <td>VIT</td>
+            <td>E</td>
+            <td>DER</td>
+            <td>GM</td>
+            <td>GC</td>
+            <td>SG</td>
+        </tr>
+    `
+}
+
+//Função responsável por gerar as informações de cada time dentro da tabela de cada card das classificações
+function gerarEquipeNaTabela(name, nome, pts, pj, vit, e, der, gm, gc, sg, selected) {
+    let classe = '';
+    selected ? classe = ` class="selected"` : '';
+    return `
+    <tr ${classe}>
+        <td><img src="./assets/icon-${name}.svg" alt="Bandeira ${nome}" /></td>
+        <td>${nome}</td>
+        <td>${pts}</td>
+        <td>${pj}</td>
+        <td>${vit}</td>
+        <td>${e}</td>
+        <td>${der}</td>
+        <td>${gm}</td>
+        <td>${gc}</td>
+        <td>${sg}</td>
+    </tr>
+    `
+}
+
+// Função que automatiza a criação de uma partida de mata-mata
+function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda) {
+    let borda = '';
+    semBorda ? borda = ` sem-borda` : '';
+    return `
+        <div class="game ${borda}">
+            <div class="fotos">
+                <img src="./assets/icon-${name1}.svg" alt="Bandeira ${nome1}" />
+                <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" /><br>
+            </div>
+            <div class="siglas">
+                <div><span>${sigla1 ? sigla1 : ''}</span>${goal1 ? goal1 : ''}</div>
+                <div><span>${sigla2 ? sigla2 : ''}</span>${goal2 ? goal2 : ''}</div>
+            </div>
+        </div>
+    `
+}
+
 //Função que cria um jogo específico dentro de um card no APP principal do Calendário
 function createGame(player1, sigla1, hour, player2, sigla2, goal1, goal2) {
     return `
@@ -637,107 +793,6 @@ setTimeout(() => rolagem(diaDeHoje, 'smooth'), 1500);
 // Variável que eu transformarei em uma função que retorna o dia atual
 let diaDeHoje = diaAtual();
 
-
-function diaAtual() {
-    const d = new Date() //2022, 11, 04
-    const milisegundos = d.getTime()
-    let rolagem = 0;
-    if (milisegundos > 1668913200000 && milisegundos < 1668999600000){
-        //dia 20/11
-        rolagem = 400;
-    } else if (milisegundos > 1668999600001 && milisegundos < 1669086000000 ) {
-        //dia 21/11
-        rolagem = 666;
-    } else if (milisegundos > 1669086000001 && milisegundos < 1669172400000) {
-        //dia 22/11
-        rolagem = 1199;
-    } else if (milisegundos > 1669172400001 && milisegundos < 1669258800000) {
-        //dia 23/11
-        rolagem = 1732;
-    } else if (milisegundos > 1669258800001 && milisegundos < 1669345200000) {
-        //dia 24/11
-        rolagem = 2305;
-    } else if (milisegundos > 1669345200001 && milisegundos < 1669431600000) {
-        //dia 25/11
-        rolagem = 2860; //parei aqui
-    } else if (milisegundos > 1669431600001 && milisegundos < 1669518000000) {
-        //dia 26/11
-        rolagem = 3440;
-    } else if (milisegundos > 1669518000001 && milisegundos < 1669604400000) {
-        //dia 27/11
-        rolagem = 4815;
-    } else if (milisegundos > 1669604400001 && milisegundos < 1669690800000) {
-        //dia 28/11
-        rolagem = 4580;
-    } else if (milisegundos > 1669690800001 && milisegundos < 1669777200000) {
-        //dia 29/11
-        rolagem = 5160;
-    } else if (milisegundos > 1669777200001 && milisegundos < 1669863600000) {
-        //dia 30/11
-        rolagem = 5720;
-    } else if (milisegundos > 1669863600001 && milisegundos < 1669950000000) {
-        //dia 01/12
-        rolagem = 6290;
-    } else if (milisegundos > 1669950000001 && milisegundos < 1670036400000) {
-        //dia 02/12
-        rolagem = 6850;
-    } else if (milisegundos > 1670036400001 && milisegundos < 1670122800000) {
-        //dia 03/12
-        rolagem = 7464;
-    } else if (milisegundos > 1670122800001 && milisegundos < 1670209200000) {
-        //dia 04/12
-        rolagem = 7905;
-    } else if (milisegundos > 1670209200001 && milisegundos < 1670295600000) {
-        //dia 05/12
-        rolagem = 8304;
-    } else if (milisegundos > 1670295600001 && milisegundos < 1670382000000) {
-        //dia 06/12
-        rolagem = 8730;
-    } else if (milisegundos > 1670382000001 && milisegundos < 1670468400000) {
-        //dia 07/12 DATA SEM JOGOS
-        rolagem = 9129;
-    } else if (milisegundos > 1670468400001 && milisegundos < 1670554800000) {
-        //dia 08/12 DATA SEM JOGOS
-        rolagem = 9129;
-    } else if (milisegundos > 1670554800001 && milisegundos < 1670641200000) {
-        //dia 09/12
-        rolagem = 9129;
-    } else if (milisegundos > 1670641200001 && milisegundos < 1670727600000) {
-        //dia 10/12
-        rolagem = 9570;
-    } else if (milisegundos > 1670727600001 && milisegundos < 1670814000000) {
-        //dia 11/12 DATA SEM JOGOS
-        rolagem = 9966;
-    } else if (milisegundos > 1670814000001 && milisegundos < 1670900400000) {
-        //dia 12/12 DATA SEM JOGOS
-        rolagem = 9966;
-    } else if (milisegundos > 1670900400001 && milisegundos < 1670986800000) {
-        //dia 13/12
-        rolagem = 9966;
-    } else if (milisegundos > 1670986800001 && milisegundos < 1671073200000) {
-        //dia 14/12
-        rolagem = 10270;
-    } else if (milisegundos > 1671073200001 && milisegundos < 1671159600000) {
-        //dia 15/12 DATA SEM JOGOS
-        rolagem = 10596;
-    } else if (milisegundos > 1671159600001 && milisegundos < 1671246000000) {
-        //dia 16/12 DATA SEM JOGOS
-        rolagem = 10596;
-    } else if (milisegundos > 1671246000001 && milisegundos < 1671332400000) {
-        //dia 17/12
-        rolagem = 10596;
-    } else if (milisegundos > 1671332400001 && milisegundos < 1671418800000) {
-        //dia 18/12 FINAL
-        rolagem = 10600;
-    } else {
-        //Qualquer outro dia = pode ir para o topo
-        rolagem = 0;
-    }
-    return rolagem;
-}
-
-// ARMAZENAR A ROLAGEM DO CLIENTE NA TELA DO APP, pode ficar mais fluido do que rolar sempre para o mesmo dia, sem o scroll suave
-
 // RENDENIZADORES
 
 // Criador do App Principal de Calendário
@@ -782,43 +837,6 @@ document.querySelector("#app").innerHTML = `
         ${createCard("18/12", "domingo", '<p>Final</p>' + createGame('empty', '', '12:00', 'empty', '', '', ''))}
     </main>
 `
-
-//Função responsável por gerar apenas o cabeçalho de cada card das classificações
-function gerarCabecalhoTable() {
-    return `
-        <tr>
-            <td></td>
-            <td>Equipe</td>
-            <td>PTS</td>
-            <td>PJ</td>
-            <td>VIT</td>
-            <td>E</td>
-            <td>DER</td>
-            <td>GM</td>
-            <td>GC</td>
-            <td>SG</td>
-        </tr>
-    `
-}
-
-function gerarEquipeNaTabela(name, nome, pts, pj, vit, e, der, gm, gc, sg, selected) {
-    let classe = '';
-    selected ? classe = ` class="selected"` : '';
-    return `
-    <tr ${classe}>
-        <td><img src="./assets/icon-${name}.svg" alt="Bandeira ${nome}" /></td>
-        <td>${nome}</td>
-        <td>${pts}</td>
-        <td>${pj}</td>
-        <td>${vit}</td>
-        <td>${e}</td>
-        <td>${der}</td>
-        <td>${gm}</td>
-        <td>${gc}</td>
-        <td>${sg}</td>
-    </tr>
-    `
-}
 
 // Criador das Classificações com a Pontuação de cada time
 document.querySelector("#classification").innerHTML = `
@@ -927,23 +945,6 @@ document.querySelector("#classification").innerHTML = `
     </div>
     </main>
 `
-
-function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda) {
-    let borda = '';
-    semBorda ? borda = ` sem-borda` : '';
-    return `
-        <div class="game ${borda}">
-            <div class="fotos">
-                <img src="./assets/icon-${name1}.svg" alt="Bandeira ${nome1}" />
-                <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" /><br>
-            </div>
-            <div class="siglas">
-                <div><span>${sigla1 ? sigla1 : ''}</span>${goal1 ? goal1 : ''}</div>
-                <div><span>${sigla2 ? sigla2 : ''}</span>${goal2 ? goal2 : ''}</div>
-            </div>
-        </div>
-    `
-}
 
 // Criador da tela de Mata-Mata
 document.querySelector("#play-offs").innerHTML = `
