@@ -777,7 +777,7 @@ function createCard(date, day, games) {
 
 //função que cria a tela com o nome dos jogadores de cada seleção
 function gerarNovosDados(sigla, nomePic, telaAnterior) {
-    mostrarOuEsconder(`#${telaAnterior}`, '#group', 0, 'auto')
+    mostrarOuEsconder(`#${telaAnterior}`, '#group', 0 , 'auto');
     document.querySelector("#group").innerHTML = `
     <main id="cards">
         ${rendenizarSelecao(sigla, nomePic, telaAnterior)}
@@ -803,7 +803,7 @@ function rendenizarSelecao(sigla, nomePic, telaAnterior) {
     let numAtacantes = json[indice].jogadores.atacantes.length;
     return `
     <div class="card">
-        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', 0, 'auto')">VOLTAR</h1>
+        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', ${(telaAnterior == 'app' ? diaDeHoje : 0)}, 'auto')">VOLTAR</h1>
         <h2>Grupo ${json[indice].grupo}</h2>
         <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
         <img src="./assets/icon-${nomePic}.svg" alt="Bandeira ${nomePic}" />
@@ -824,7 +824,7 @@ function rendenizarSelecao(sigla, nomePic, telaAnterior) {
         <ul>
             ${gerarJogadores(numAtacantes, indice, "atacantes")}
         </ul>
-        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', 0, 'auto')">VOLTAR</h1>
+        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', ${(telaAnterior == 'app' ? diaDeHoje : 0)}, 'auto')">VOLTAR</h1>
     </div>
     `
 }
