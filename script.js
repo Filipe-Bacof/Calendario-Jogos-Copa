@@ -716,6 +716,16 @@ function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, go
     `
 }
 
+// Função responsável por criar UMA LINHA dentro do único card na tela MATA-MATA
+function gerarCardMataMata(titulo, jogoClass, games) {
+    return `
+        <h3>${titulo}</h3>
+        <div class="games ${jogoClass}">
+            ${games}
+        </div>
+    `
+}
+
 // Função Responsável por Gerar um card dentro das ESTATÍSTICAS
 function gerarCartaoEstatisticas(title, players) {
     return `
@@ -851,7 +861,7 @@ setTimeout(() => rolagem(diaDeHoje, 'smooth'), 1500);
 // Variável usada em diversas funções sobre o dia atual
 let diaDeHoje = diaAtual();
 
-// RENDENIZADORES
+// RENDENIZADORES      VULGO = Parte Editável do Código (diariamente)
 // Criador do App Principal de Calendário
 document.querySelector("#app").innerHTML = `
     <header>
@@ -1029,34 +1039,26 @@ document.querySelector("#play-offs").innerHTML = `
         <span>Atualizado por último em: NOVEMBRO</span>
         <span>AINDA ESTÁ EM TESTES<br>Recomendado abrir no computador<br>Ou girar o celular e reduzir o zoom</span>
         <div class="card">
-            <h3>Oitavas de Final</h3>
-            <div class="games oitavas">
-                ${gerarGameMataMata('empty', 'empty', '1A', 'empty', 'empty', '2B', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '1C', 'empty', 'empty', '2D', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '1E', 'empty', 'empty', '2F', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '1G', 'empty', 'empty', '2H', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '1B', 'empty', 'empty', '2A', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '1D', 'empty', 'empty', '2C', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '1H', 'empty', 'empty', '2G', '', '', true)}
-            </div>
-            <h3>Quartas de Final</h3>
-            <div class="games quartas">
-                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
-            </div>
-            <h3>Semi Finais</h3>
-            <div class="games semifinais">
-                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
-            </div>
-            <h3>Terceiro Lugar e Final</h3>
-            <div class="games final">
-                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false)}
-                ${gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true)}
-            </div>
+            ${gerarCardMataMata('Oitavas de Final', 'oitavas',
+                gerarGameMataMata('empty', 'empty', '1A', 'empty', 'empty', '2B', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '1C', 'empty', 'empty', '2D', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '1E', 'empty', 'empty', '2F', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '1G', 'empty', 'empty', '2H', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '1B', 'empty', 'empty', '2A', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '1D', 'empty', 'empty', '2C', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '1H', 'empty', 'empty', '2G', '', '', true) )}
+            ${gerarCardMataMata('Quartas de Final', 'quartas',
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
+            ${gerarCardMataMata('Semi Finais', 'semifinais',
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
+            ${gerarCardMataMata('Terceiro Lugar e Final', 'final',
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
