@@ -991,10 +991,9 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('wales', 'WAL', 'Gales', 1, 2, 0, 1, 1, 1, 3, -2, false) )}
     ${gerarGrupoCard('C',
         gerarEquipeNaTabela('poland', 'POL', 'Polônia', 4, 2, 1, 1, 0, 2, 0, 2, true) +
-        gerarEquipeNaTabela('argentina', 'ARG', 'Argentina', 3, 2, 1, 0, 1, 3, 2, 1, false) +
-        gerarEquipeNaTabela('saudi-arabia', 'KSA', 'Arábia Saudita', 3, 2, 1, 0, 1, 2, 3, -1, true) +
+        gerarEquipeNaTabela('argentina', 'ARG', 'Argentina', 3, 2, 1, 0, 1, 3, 2, 1, true) +
+        gerarEquipeNaTabela('saudi-arabia', 'KSA', 'Arábia Saudita', 3, 2, 1, 0, 1, 2, 3, -1, false) +
         gerarEquipeNaTabela('mexico', 'MEX', 'México', 1, 2, 0, 1, 1, 0, 2, -2, false) )}
-        
     ${gerarGrupoCard('D',
         gerarEquipeNaTabela('france', 'FRA', 'França', 6, 2, 2, 0, 0, 6, 2, 4, true) +
         gerarEquipeNaTabela('australia', 'AUS', 'Austrália', 3, 2, 1, 0, 1, 2, 4, -2, true) +
