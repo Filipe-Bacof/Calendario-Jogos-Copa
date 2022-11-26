@@ -386,3 +386,9 @@ td img {
 #stats #cards .card ul li h3 {
     color: #e1e1e6;
 }
+
+#stats #cards .card ul li div {
+    background-color: #121214;
+    height: 80px;
+    width: 60px;
+}

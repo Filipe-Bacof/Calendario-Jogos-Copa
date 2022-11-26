@@ -725,7 +725,11 @@ function gerarCartaoEstatisticas(title, players) {
 function gerarJogadorEstatistica(nome, player, quantidade, info, sigla) {
     return `
         <li>
-            <img src="./assets/icon-${nome}.svg" alt="Bandeira ${nome}" onclick="gerarNovosDados('${sigla}', '${nome}', 'stats')" />
+            <div>
+                <img src="./assets/icon-${nome}.svg" alt="Bandeira ${nome}" onclick="gerarNovosDados('${sigla}', '${nome}', 'stats')" />
+                <span>${sigla}</span>
+            </div>
+
             <h3>${player}</h3>
             <p><span>${quantidade}</span> ${info}</p>
         </li>
@@ -1056,7 +1060,7 @@ document.querySelector("#stats").innerHTML = `
     <main id="cards">
         <h1>Estatísticas</h1>
         <span>Atualizado por último em: 26/11/2022</span>
-        ${gerarCartaoEstatisticas('Jogadores com Mais Gols',
+        ${gerarCartaoEstatisticas('Artilheiros',
             gerarJogadorEstatistica('ecuador', 'Enner Valencia', '3', 'gols', 'ECU') +
             gerarJogadorEstatistica('france', 'Kylian Mbappé', '3', 'gols', 'FRA') +
             gerarJogadorEstatistica('england', 'Bukayo Saka', '2', 'gols', 'ENG') +
