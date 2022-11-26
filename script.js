@@ -685,6 +685,19 @@ function gerarEquipeNaTabela(name, nome, pts, pj, vit, e, der, gm, gc, sg, selec
     `
 }
 
+// Função que gera cada CARD na tela de CLASSIFICAÇÕES
+function gerarGrupoCard(grupo, paises) {
+    return `
+    <div class="card">
+        <h3>Grupo ${grupo}</h3>
+        <table>
+            ${gerarCabecalhoTable()}
+            ${paises}
+        </table>
+    </div>
+    `
+}
+
 // Função que automatiza a criação de uma partida de mata-mata
 function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda) {
     let borda = '';
@@ -917,7 +930,6 @@ document.querySelector("#app").innerHTML = `
             createGame('ghana', 'GHA', '12:00', 'uruguay', 'URU', '', '') +
             createGame('serbia', 'SRB', '16:00', 'switzerland', 'SUI', '', '') +
             createGame('brazil', 'BRA', '16:00', 'cameroon', 'CMR', '', ''))}
-
         <p>Será Atualizado Em Breve!</p>
         ${createCard("03/12", "sabado", '<p>Oitavas de Final</p>' +
             createGame('empty', '', '12:00', 'empty', '', '', '') +
@@ -962,86 +974,46 @@ document.querySelector("#classification").innerHTML = `
 <main id="cards">
     <h1>Classificação</h1>
     <span>Atualizado por último em: 26/11/2022 - 12h</span>
-    <div class="card">
-        <h3>Grupo A</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('netherlands', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true)}
-            ${gerarEquipeNaTabela('ecuador', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true)}
-            ${gerarEquipeNaTabela('senegal', 'Senegal', 3, 2, 1, 0, 1, 3, 3, 0, false)}
-            ${gerarEquipeNaTabela('qatar', 'Catar', 0, 2, 0, 0, 2, 1, 5, -4, false)}
-        </table>
-    </div>
-    <div class="card">
-        <h3>Grupo B</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('england', 'Inglaterra', 4, 2, 1, 1, 0, 6, 2, 4, true)}
-            ${gerarEquipeNaTabela('iran', 'Irã', 3, 2, 1, 0, 1, 4, 6, -2, true)}
-            ${gerarEquipeNaTabela('united-states', 'Estados Unidos', 2, 2, 0, 2, 0, 1, 1, 0, false)}
-            ${gerarEquipeNaTabela('wales', 'Gales', 1, 2, 0, 1, 1, 1, 3, -2, false)}
-        </table>
-    </div>
-    <div class="card">
-        <h3>Grupo C</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('poland', 'Polônia', 4, 2, 1, 1, 0, 2, 0, 2, true)}
-            ${gerarEquipeNaTabela('saudi-arabia', 'Arábia Saudita', 3, 2, 1, 0, 1, 2, 3, -1, true)}
-            ${gerarEquipeNaTabela('mexico', 'México', 1, 1, 0, 1, 0, 0, 0, 0, false)}
-            ${gerarEquipeNaTabela('argentina', 'Argentina', 0, 1, 0, 0, 1, 1, 2, -1, false)}
-        </table>
-    </div>
-    <div class="card">
-        <h3>Grupo D</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('france', 'França', 3, 1, 1, 0, 0, 4, 1, 3, true)}
-            ${gerarEquipeNaTabela('australia', 'Austrália', 3, 2, 1, 0, 1, 2, 4, -2, true)}
-            ${gerarEquipeNaTabela('denmark', 'Dinamarca', 1, 1, 0, 1, 0, 0, 0, 0, false)}
-            ${gerarEquipeNaTabela('tunisia', 'Tunísia', 1, 2, 0, 1, 1, 0, 1, -1, false)}
-        </table>
-    </div>
-    <div class="card">
-        <h3>Grupo E</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('spain', 'Espanha', 3, 1, 1, 0, 0, 7, 0, 7, true)}
-            ${gerarEquipeNaTabela('japan', 'Japão', 3, 1, 1, 0, 0, 2, 1, 1, true)}
-            ${gerarEquipeNaTabela('germany', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false)}
-            ${gerarEquipeNaTabela('costa-rica', 'Costa Rica', 0, 1, 0, 0, 1, 0, 7, -7, false)}
-        </table>
-    </div>
-    <div class="card">
-        <h3>Grupo F</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('belgium', 'Bélgica', 3, 1, 1, 0, 0, 1, 0, 1, true)}
-            ${gerarEquipeNaTabela('croatia', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, true)}
-            ${gerarEquipeNaTabela('morocco', 'Marrocos', 1, 1, 0, 1, 0, 0, 0, 0, false)}
-            ${gerarEquipeNaTabela('canada', 'Canadá', 0, 1, 0, 0, 1, 0, 1, -1, false)}
-        </table>
-    </div>
-    <div class="card">
-        <h3>Grupo G</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('brazil', 'Brasil', 3, 1, 1, 0, 0, 2, 0, 2, true)}
-            ${gerarEquipeNaTabela('switzerland', 'Suíça', 3, 1, 1, 0, 0, 1, 0, 1, true)}
-            ${gerarEquipeNaTabela('cameroon', 'Camarões', 0, 1, 0, 0, 1, 0, 1, -1, false)}
-            ${gerarEquipeNaTabela('serbia', 'Sérvia', 0, 1, 0, 0, 1, 0, 2, -2, false)}
-        </table>
-    </div>
-    <div class="card">
-        <h3>Grupo H</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('portugal', 'Portugal', 3, 1, 1, 0, 0, 3, 1, 2, true)}
-            ${gerarEquipeNaTabela('south-korea', 'Coréia do Sul', 1, 1, 0, 1, 0, 0, 0, 0, true)}
-            ${gerarEquipeNaTabela('uruguay', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false)}
-            ${gerarEquipeNaTabela('ghana', 'Gana', 0, 1, 0, 0, 1, 1, 3, -2, false)}
-        </table>
-    </div>
+    ${gerarGrupoCard('A',
+        gerarEquipeNaTabela('netherlands', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
+        gerarEquipeNaTabela('ecuador', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
+        gerarEquipeNaTabela('senegal', 'Senegal', 3, 2, 1, 0, 1, 3, 3, 0, false) +
+        gerarEquipeNaTabela('qatar', 'Catar', 0, 2, 0, 0, 2, 1, 5, -4, false) )}
+    ${gerarGrupoCard('B',
+        gerarEquipeNaTabela('england', 'Inglaterra', 4, 2, 1, 1, 0, 6, 2, 4, true) +
+        gerarEquipeNaTabela('iran', 'Irã', 3, 2, 1, 0, 1, 4, 6, -2, true) +
+        gerarEquipeNaTabela('united-states', 'Estados Unidos', 2, 2, 0, 2, 0, 1, 1, 0, false) +
+        gerarEquipeNaTabela('wales', 'Gales', 1, 2, 0, 1, 1, 1, 3, -2, false) )}
+    ${gerarGrupoCard('C',
+        gerarEquipeNaTabela('poland', 'Polônia', 4, 2, 1, 1, 0, 2, 0, 2, true) +
+        gerarEquipeNaTabela('saudi-arabia', 'Arábia Saudita', 3, 2, 1, 0, 1, 2, 3, -1, true) +
+        gerarEquipeNaTabela('mexico', 'México', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('argentina', 'Argentina', 0, 1, 0, 0, 1, 1, 2, -1, false) )}
+    ${gerarGrupoCard('D',
+        gerarEquipeNaTabela('france', 'França', 3, 1, 1, 0, 0, 4, 1, 3, true) +
+        gerarEquipeNaTabela('australia', 'Austrália', 3, 2, 1, 0, 1, 2, 4, -2, true) +
+        gerarEquipeNaTabela('denmark', 'Dinamarca', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('tunisia', 'Tunísia', 1, 2, 0, 1, 1, 0, 1, -1, false) )}
+    ${gerarGrupoCard('E',
+        gerarEquipeNaTabela('spain', 'Espanha', 3, 1, 1, 0, 0, 7, 0, 7, true) +
+        gerarEquipeNaTabela('japan', 'Japão', 3, 1, 1, 0, 0, 2, 1, 1, true) +
+        gerarEquipeNaTabela('germany', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false) +
+        gerarEquipeNaTabela('costa-rica', 'Costa Rica', 0, 1, 0, 0, 1, 0, 7, -7, false) )}
+    ${gerarGrupoCard('F',
+        gerarEquipeNaTabela('belgium', 'Bélgica', 3, 1, 1, 0, 0, 1, 0, 1, true) +
+        gerarEquipeNaTabela('croatia', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, true) +
+        gerarEquipeNaTabela('morocco', 'Marrocos', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('canada', 'Canadá', 0, 1, 0, 0, 1, 0, 1, -1, false) )}
+    ${gerarGrupoCard('G',
+        gerarEquipeNaTabela('brazil', 'Brasil', 3, 1, 1, 0, 0, 2, 0, 2, true) +
+        gerarEquipeNaTabela('switzerland', 'Suíça', 3, 1, 1, 0, 0, 1, 0, 1, true) +
+        gerarEquipeNaTabela('cameroon', 'Camarões', 0, 1, 0, 0, 1, 0, 1, -1, false) +
+        gerarEquipeNaTabela('serbia', 'Sérvia', 0, 1, 0, 0, 1, 0, 2, -2, false) )}
+    ${gerarGrupoCard('G',
+        gerarEquipeNaTabela('portugal', 'Portugal', 3, 1, 1, 0, 0, 3, 1, 2, true) +
+        gerarEquipeNaTabela('south-korea', 'Coréia do Sul', 1, 1, 0, 1, 0, 0, 0, 0, true) +
+        gerarEquipeNaTabela('uruguay', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('ghana', 'Gana', 0, 1, 0, 0, 1, 1, 3, -2, false) )}
     ${gerarLegendas()}
     </main>
 `
@@ -1113,7 +1085,6 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('iran', 'Mehdi Taremi', '2', 'gols') +
             gerarJogadorEstatistica('france', 'Olivier Giroud', '2', 'gols') +
             gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols') )}
-        
         ${gerarCartaoEstatisticas('Cartões Amarelos',
             gerarJogadorEstatistica('saudi-arabia', 'Abdulellah Al-Malki', '2', 'cartões') +
             gerarJogadorEstatistica('iran', 'Alireza Jahanbakhsh', '2', 'cartões') +
@@ -1130,7 +1101,6 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('united-states', 'Tim Ream', '1', 'cartão') +
             gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') +
             gerarJogadorEstatistica('united-states', 'Weston McKennie', '1', 'cartão') )}
-        
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
             gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') )}
     </main>
