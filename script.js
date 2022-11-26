@@ -1080,6 +1080,7 @@ document.querySelector("#stats").innerHTML = `
         <span>Atualizado por último em: 26/11/2022</span>
         ${gerarCartaoEstatisticas('Jogadores com Mais Gols',
             gerarJogadorEstatistica('ecuador', 'Enner Valencia', '3', 'gols') +
+            gerarJogadorEstatistica('france', 'Kylian Mbappé', '3', 'gols') +
             gerarJogadorEstatistica('england', 'Bukayo Saka', '2', 'gols') +
             gerarJogadorEstatistica('netherlands', 'Cody Gakpo', '2', 'gols') +
             gerarJogadorEstatistica('spain', 'Ferran Torres', '2', 'gols') +
