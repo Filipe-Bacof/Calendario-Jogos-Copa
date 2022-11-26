@@ -1061,31 +1061,31 @@ document.querySelector("#stats").innerHTML = `
         <h1>Estatísticas</h1>
         <span>Atualizado por último em: 26/11/2022</span>
         ${gerarCartaoEstatisticas('Artilheiros',
-            gerarJogadorEstatistica('ecuador', 'Enner Valencia', '3', 'gols', 'ECU') +
-            gerarJogadorEstatistica('france', 'Kylian Mbappé', '3', 'gols', 'FRA') +
-            gerarJogadorEstatistica('england', 'Bukayo Saka', '2', 'gols', 'ENG') +
-            gerarJogadorEstatistica('netherlands', 'Cody Gakpo', '2', 'gols', 'HOL') +
-            gerarJogadorEstatistica('spain', 'Ferran Torres', '2', 'gols', 'ESP') +
-            gerarJogadorEstatistica('iran', 'Mehdi Taremi', '2', 'gols', 'IRN') +
-            gerarJogadorEstatistica('france', 'Olivier Giroud', '2', 'gols', 'FRA') +
+            gerarJogadorEstatistica('ecuador', 'Enner<br>Valencia', '3', 'gols', 'ECU') +
+            gerarJogadorEstatistica('france', 'Kylian<br>Mbappé', '3', 'gols', 'FRA') +
+            gerarJogadorEstatistica('england', 'Bukayo<br>Saka', '2', 'gols', 'ENG') +
+            gerarJogadorEstatistica('netherlands', 'Cody<br>Gakpo', '2', 'gols', 'HOL') +
+            gerarJogadorEstatistica('spain', 'Ferran<br>Torres', '2', 'gols', 'ESP') +
+            gerarJogadorEstatistica('iran', 'Mehdi<br>Taremi', '2', 'gols', 'IRN') +
+            gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '2', 'gols', 'FRA') +
             gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols', 'BRA') )}
         ${gerarCartaoEstatisticas('Cartões Amarelos',
-            gerarJogadorEstatistica('saudi-arabia', 'Abdulellah Al-Malki', '2', 'cartões', 'KSA') +
-            gerarJogadorEstatistica('iran', 'Alireza Jahanbakhsh', '2', 'cartões', 'IRN') +
-            gerarJogadorEstatistica('ecuador', 'Jhegson Méndez', '2', 'cartões', 'ECU') +
-            gerarJogadorEstatistica('senegal', 'Boulaye Dia', '1', 'cartão', 'SEN') +
-            gerarJogadorEstatistica('qatar', 'Homan Ahmed', '1', 'cartão', 'QAT') +
-            gerarJogadorEstatistica('senegal', 'Ismail Jakobs', '1', 'cartão', 'SEN') +
-            gerarJogadorEstatistica('wales', 'Joe Rodon', '1', 'cartão', 'WAL') +
-            gerarJogadorEstatistica('netherlands', 'Matthijs de Ligt', '1', 'cartão', 'HOL') +
-            gerarJogadorEstatistica('ecuador', 'Moisés Caicedo', '1', 'cartão', 'ECU') +
-            gerarJogadorEstatistica('iran', 'Morteza Pouraliganji', '1', 'cartão', 'IRN') +
-            gerarJogadorEstatistica('senegal', 'Nampalys Mendy', '1', 'cartão', 'SEN') +
-            gerarJogadorEstatistica('united-states', 'Sergiño Dest', '1', 'cartão', 'USA') +
-            gerarJogadorEstatistica('united-states', 'Tim Ream', '1', 'cartão', 'USA') +
-            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão', 'WAL') +
-            gerarJogadorEstatistica('united-states', 'Weston McKennie', '1', 'cartão', 'USA') )}
+            gerarJogadorEstatistica('saudi-arabia', 'Abdulellah<br>Al-Malki', '2', 'cartões', 'KSA') +
+            gerarJogadorEstatistica('iran', 'Alireza<br>Jahanbakhsh', '2', 'cartões', 'IRN') +
+            gerarJogadorEstatistica('ecuador', 'Jhegson<br>Méndez', '2', 'cartões', 'ECU') +
+            gerarJogadorEstatistica('senegal', 'Boulaye<br>Dia', '1', 'cartão', 'SEN') +
+            gerarJogadorEstatistica('qatar', 'Homan<br>Ahmed', '1', 'cartão', 'QAT') +
+            gerarJogadorEstatistica('senegal', 'Ismail<br>Jakobs', '1', 'cartão', 'SEN') +
+            gerarJogadorEstatistica('wales', 'Joe<br>Rodon', '1', 'cartão', 'WAL') +
+            gerarJogadorEstatistica('netherlands', 'Matthijs<br>de Ligt', '1', 'cartão', 'HOL') +
+            gerarJogadorEstatistica('ecuador', 'Moisés<br>Caicedo', '1', 'cartão', 'ECU') +
+            gerarJogadorEstatistica('iran', 'Morteza<br>Pouraliganji', '1', 'cartão', 'IRN') +
+            gerarJogadorEstatistica('senegal', 'Nampalys<br>Mendy', '1', 'cartão', 'SEN') +
+            gerarJogadorEstatistica('united-states', 'Sergiño<br>Dest', '1', 'cartão', 'USA') +
+            gerarJogadorEstatistica('united-states', 'Tim<br>Ream', '1', 'cartão', 'USA') +
+            gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') +
+            gerarJogadorEstatistica('united-states', 'Weston<br>McKennie', '1', 'cartão', 'USA') )}
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
-            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão', 'WAL') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
+            gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>
 `
