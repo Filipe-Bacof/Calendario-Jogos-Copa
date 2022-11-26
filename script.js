@@ -666,12 +666,12 @@ function diaAtual() {
 }
 
 //Função responsável por gerar as informações de cada time dentro da tabela de cada card das classificações
-function gerarEquipeNaTabela(name, nome, pts, pj, vit, e, der, gm, gc, sg, selected) {
+function gerarEquipeNaTabela(name, sigla, nome, pts, pj, vit, e, der, gm, gc, sg, selected) {
     let classe = '';
     selected ? classe = ` class="selected"` : '';
     return `
     <tr ${classe}>
-        <td><img src="./assets/icon-${name}.svg" alt="Bandeira ${nome}" /></td>
+        <td><img src="./assets/icon-${name}.svg" alt="Bandeira ${nome}" onclick="gerarNovosDados('${sigla}', '${name}', 'classification')" /></td>
         <td>${nome}</td>
         <td>${pts}</td>
         <td>${pj}</td>
@@ -705,8 +705,8 @@ function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, go
     return `
         <div class="game ${borda}">
             <div class="fotos">
-                <img src="./assets/icon-${name1}.svg" alt="Bandeira ${nome1}" />
-                <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" /><br>
+                <img src="./assets/icon-${name1}.svg" alt="Bandeira ${nome1}" onclick="gerarNovosDados('${sigla1}', '${name1}', 'play-offs')" />
+                <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" onclick="gerarNovosDados('${sigla2}', '${name2}', 'play-offs')" /><br>
             </div>
             <div class="siglas">
                 <div><span>${sigla1 ? sigla1 : ''}</span>${goal1 ? goal1 : ''}</div>
@@ -740,10 +740,10 @@ function gerarCartaoEstatisticas(title, players) {
 }
 
 // Função Responsável por Gerar UM JOGADOR dentro de um card nas ESTATÍSTICAS
-function gerarJogadorEstatistica(nome, player, quantidade, info) {
+function gerarJogadorEstatistica(nome, player, quantidade, info, sigla) {
     return `
         <li>
-            <img src="./assets/icon-${nome}.svg" alt="Bandeira ${nome}" />
+            <img src="./assets/icon-${nome}.svg" alt="Bandeira ${nome}" onclick="gerarNovosDados('${sigla}', '${nome}', 'stats')" />
             <h3>${player}</h3>
             <p><span>${quantidade}</span> ${info}</p>
         </li>
@@ -754,11 +754,11 @@ function gerarJogadorEstatistica(nome, player, quantidade, info) {
 function createGame(player1, sigla1, hour, player2, sigla2, goal1, goal2) {
     return `
         <li>
-            <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" onclick="gerarNovosDados('${sigla1}', '${player1}')" />
+            <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" onclick="gerarNovosDados('${sigla1}', '${player1}', 'app')" />
             <div><span>${sigla1}</span>${goal1 ? goal1 : ''}</div>
             <strong>${hour}</strong>
             <div><span>${sigla2}</span>${goal2 ? goal2 : ''}</div>
-            <img src="./assets/icon-${player2}.svg" alt="Bandeira ${player2}" onclick="gerarNovosDados('${sigla2}', '${player2}')" />
+            <img src="./assets/icon-${player2}.svg" alt="Bandeira ${player2}" onclick="gerarNovosDados('${sigla2}', '${player2}', 'app')" />
         </li>
     `
 }
@@ -776,15 +776,11 @@ function createCard(date, day, games) {
 }
 
 //função que cria a tela com o nome dos jogadores de cada seleção
-function gerarNovosDados(sigla, nomePic) {
-    document.querySelector("#app").classList.remove("mostrar")
-    document.querySelector("#group").classList.remove("esconder")
-    document.querySelector("#app").classList.add("esconder")
-    document.querySelector("#group").classList.add("mostrar")
-    rolagem(0, 'smooth');
+function gerarNovosDados(sigla, nomePic, telaAnterior) {
+    mostrarOuEsconder('#app', '#group', 0, 'auto')
     document.querySelector("#group").innerHTML = `
     <main id="cards">
-        ${rendenizarSelecao(sigla, nomePic)}
+        ${rendenizarSelecao(sigla, nomePic, telaAnterior)}
     </main>
 `
 }
@@ -799,7 +795,7 @@ function gerarJogadores(quatidade, indice, tipoJogador) {
 }
 
 // Outra função auxiliar que efetua a exibição dos nomes dos jogadores = PODE SER REFATORADO!!!
-function rendenizarSelecao(sigla, nomePic) {
+function rendenizarSelecao(sigla, nomePic, telaAnterior) {
     let indice = escolherIndice(sigla);
     let numGoleiros = json[indice].jogadores.goleiros.length;
     let numZagueiros = json[indice].jogadores.zagueiros.length;
@@ -807,7 +803,7 @@ function rendenizarSelecao(sigla, nomePic) {
     let numAtacantes = json[indice].jogadores.atacantes.length;
     return `
     <div class="card">
-        <h1 onclick="mostrarOuEsconder('#group', '#app', diaDeHoje, 'smooth')">VOLTAR</h1>
+        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', 0, 'auto')">VOLTAR</h1>
         <h2>Grupo ${json[indice].grupo}</h2>
         <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
         <img src="./assets/icon-${nomePic}.svg" alt="Bandeira ${nomePic}" />
@@ -828,7 +824,7 @@ function rendenizarSelecao(sigla, nomePic) {
         <ul>
             ${gerarJogadores(numAtacantes, indice, "atacantes")}
         </ul>
-        <h1 onclick="mostrarOuEsconder('#group', '#app', diaDeHoje, 'smooth')">VOLTAR</h1>
+        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', 0, 'auto')">VOLTAR</h1>
     </div>
     `
 }
@@ -984,45 +980,45 @@ document.querySelector("#classification").innerHTML = `
     <h1>Classificação</h1>
     <span>Atualizado por último em: 26/11/2022 - 15h</span>
     ${gerarGrupoCard('A',
-        gerarEquipeNaTabela('netherlands', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
-        gerarEquipeNaTabela('ecuador', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
-        gerarEquipeNaTabela('senegal', 'Senegal', 3, 2, 1, 0, 1, 3, 3, 0, false) +
-        gerarEquipeNaTabela('qatar', 'Catar', 0, 2, 0, 0, 2, 1, 5, -4, false) )}
+        gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
+        gerarEquipeNaTabela('ecuador', 'ECU', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
+        gerarEquipeNaTabela('senegal', 'SEN', 'Senegal', 3, 2, 1, 0, 1, 3, 3, 0, false) +
+        gerarEquipeNaTabela('qatar', 'QAT', 'Catar', 0, 2, 0, 0, 2, 1, 5, -4, false) )}
     ${gerarGrupoCard('B',
-        gerarEquipeNaTabela('england', 'Inglaterra', 4, 2, 1, 1, 0, 6, 2, 4, true) +
-        gerarEquipeNaTabela('iran', 'Irã', 3, 2, 1, 0, 1, 4, 6, -2, true) +
-        gerarEquipeNaTabela('united-states', 'Estados Unidos', 2, 2, 0, 2, 0, 1, 1, 0, false) +
-        gerarEquipeNaTabela('wales', 'Gales', 1, 2, 0, 1, 1, 1, 3, -2, false) )}
+        gerarEquipeNaTabela('england', 'ENG', 'Inglaterra', 4, 2, 1, 1, 0, 6, 2, 4, true) +
+        gerarEquipeNaTabela('iran', 'IRN', 'Irã', 3, 2, 1, 0, 1, 4, 6, -2, true) +
+        gerarEquipeNaTabela('united-states', 'USA', 'Estados Unidos', 2, 2, 0, 2, 0, 1, 1, 0, false) +
+        gerarEquipeNaTabela('wales', 'WAL', 'Gales', 1, 2, 0, 1, 1, 1, 3, -2, false) )}
     ${gerarGrupoCard('C',
-        gerarEquipeNaTabela('poland', 'Polônia', 4, 2, 1, 1, 0, 2, 0, 2, true) +
-        gerarEquipeNaTabela('saudi-arabia', 'Arábia Saudita', 3, 2, 1, 0, 1, 2, 3, -1, true) +
-        gerarEquipeNaTabela('mexico', 'México', 1, 1, 0, 1, 0, 0, 0, 0, false) +
-        gerarEquipeNaTabela('argentina', 'Argentina', 0, 1, 0, 0, 1, 1, 2, -1, false) )}
+        gerarEquipeNaTabela('poland', 'POL', 'Polônia', 4, 2, 1, 1, 0, 2, 0, 2, true) +
+        gerarEquipeNaTabela('saudi-arabia', 'KSA', 'Arábia Saudita', 3, 2, 1, 0, 1, 2, 3, -1, true) +
+        gerarEquipeNaTabela('mexico', 'MEX', 'México', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('argentina', 'ARG', 'Argentina', 0, 1, 0, 0, 1, 1, 2, -1, false) )}
     ${gerarGrupoCard('D',
-        gerarEquipeNaTabela('france', 'França', 6, 2, 2, 0, 0, 6, 2, 4, true) +
-        gerarEquipeNaTabela('australia', 'Austrália', 3, 2, 1, 0, 1, 2, 4, -2, true) +
-        gerarEquipeNaTabela('denmark', 'Dinamarca', 1, 2, 0, 1, 1, 1, 2, -1, false) +
-        gerarEquipeNaTabela('tunisia', 'Tunísia', 1, 2, 0, 1, 1, 0, 1, -1, false) )}
+        gerarEquipeNaTabela('france', 'FRA', 'França', 6, 2, 2, 0, 0, 6, 2, 4, true) +
+        gerarEquipeNaTabela('australia', 'AUS', 'Austrália', 3, 2, 1, 0, 1, 2, 4, -2, true) +
+        gerarEquipeNaTabela('denmark', 'DEN', 'Dinamarca', 1, 2, 0, 1, 1, 1, 2, -1, false) +
+        gerarEquipeNaTabela('tunisia', 'TUN', 'Tunísia', 1, 2, 0, 1, 1, 0, 1, -1, false) )}
     ${gerarGrupoCard('E',
-        gerarEquipeNaTabela('spain', 'Espanha', 3, 1, 1, 0, 0, 7, 0, 7, true) +
-        gerarEquipeNaTabela('japan', 'Japão', 3, 1, 1, 0, 0, 2, 1, 1, true) +
-        gerarEquipeNaTabela('germany', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false) +
-        gerarEquipeNaTabela('costa-rica', 'Costa Rica', 0, 1, 0, 0, 1, 0, 7, -7, false) )}
+        gerarEquipeNaTabela('spain', 'ESP', 'Espanha', 3, 1, 1, 0, 0, 7, 0, 7, true) +
+        gerarEquipeNaTabela('japan', 'JAP', 'Japão', 3, 1, 1, 0, 0, 2, 1, 1, true) +
+        gerarEquipeNaTabela('germany', 'GER', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false) +
+        gerarEquipeNaTabela('costa-rica', 'CRC', 'Costa Rica', 0, 1, 0, 0, 1, 0, 7, -7, false) )}
     ${gerarGrupoCard('F',
-        gerarEquipeNaTabela('belgium', 'Bélgica', 3, 1, 1, 0, 0, 1, 0, 1, true) +
-        gerarEquipeNaTabela('croatia', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, true) +
-        gerarEquipeNaTabela('morocco', 'Marrocos', 1, 1, 0, 1, 0, 0, 0, 0, false) +
-        gerarEquipeNaTabela('canada', 'Canadá', 0, 1, 0, 0, 1, 0, 1, -1, false) )}
+        gerarEquipeNaTabela('belgium', 'BEL', 'Bélgica', 3, 1, 1, 0, 0, 1, 0, 1, true) +
+        gerarEquipeNaTabela('croatia', 'CRO', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, true) +
+        gerarEquipeNaTabela('morocco', 'MAR', 'Marrocos', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('canada', 'CAN', 'Canadá', 0, 1, 0, 0, 1, 0, 1, -1, false) )}
     ${gerarGrupoCard('G',
-        gerarEquipeNaTabela('brazil', 'Brasil', 3, 1, 1, 0, 0, 2, 0, 2, true) +
-        gerarEquipeNaTabela('switzerland', 'Suíça', 3, 1, 1, 0, 0, 1, 0, 1, true) +
-        gerarEquipeNaTabela('cameroon', 'Camarões', 0, 1, 0, 0, 1, 0, 1, -1, false) +
-        gerarEquipeNaTabela('serbia', 'Sérvia', 0, 1, 0, 0, 1, 0, 2, -2, false) )}
+        gerarEquipeNaTabela('brazil', 'BRA', 'Brasil', 3, 1, 1, 0, 0, 2, 0, 2, true) +
+        gerarEquipeNaTabela('switzerland', 'SUI', 'Suíça', 3, 1, 1, 0, 0, 1, 0, 1, true) +
+        gerarEquipeNaTabela('cameroon', 'CMR', 'Camarões', 0, 1, 0, 0, 1, 0, 1, -1, false) +
+        gerarEquipeNaTabela('serbia', 'SRB', 'Sérvia', 0, 1, 0, 0, 1, 0, 2, -2, false) )}
     ${gerarGrupoCard('G',
-        gerarEquipeNaTabela('portugal', 'Portugal', 3, 1, 1, 0, 0, 3, 1, 2, true) +
-        gerarEquipeNaTabela('south-korea', 'Coréia do Sul', 1, 1, 0, 1, 0, 0, 0, 0, true) +
-        gerarEquipeNaTabela('uruguay', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false) +
-        gerarEquipeNaTabela('ghana', 'Gana', 0, 1, 0, 0, 1, 1, 3, -2, false) )}
+        gerarEquipeNaTabela('portugal', 'POR', 'Portugal', 3, 1, 1, 0, 0, 3, 1, 2, true) +
+        gerarEquipeNaTabela('south-korea', 'KOR', 'Coréia do Sul', 1, 1, 0, 1, 0, 0, 0, 0, true) +
+        gerarEquipeNaTabela('uruguay', 'URU', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('ghana', 'GHA', 'Gana', 0, 1, 0, 0, 1, 1, 3, -2, false) )}
     ${gerarLegendas()}
     </main>
 `
@@ -1079,31 +1075,31 @@ document.querySelector("#stats").innerHTML = `
         <h1>Estatísticas</h1>
         <span>Atualizado por último em: 26/11/2022</span>
         ${gerarCartaoEstatisticas('Jogadores com Mais Gols',
-            gerarJogadorEstatistica('ecuador', 'Enner Valencia', '3', 'gols') +
-            gerarJogadorEstatistica('france', 'Kylian Mbappé', '3', 'gols') +
-            gerarJogadorEstatistica('england', 'Bukayo Saka', '2', 'gols') +
-            gerarJogadorEstatistica('netherlands', 'Cody Gakpo', '2', 'gols') +
-            gerarJogadorEstatistica('spain', 'Ferran Torres', '2', 'gols') +
-            gerarJogadorEstatistica('iran', 'Mehdi Taremi', '2', 'gols') +
-            gerarJogadorEstatistica('france', 'Olivier Giroud', '2', 'gols') +
-            gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols') )}
+            gerarJogadorEstatistica('ecuador', 'Enner Valencia', '3', 'gols', 'ECU') +
+            gerarJogadorEstatistica('france', 'Kylian Mbappé', '3', 'gols', 'FRA') +
+            gerarJogadorEstatistica('england', 'Bukayo Saka', '2', 'gols', 'ENG') +
+            gerarJogadorEstatistica('netherlands', 'Cody Gakpo', '2', 'gols', 'HOL') +
+            gerarJogadorEstatistica('spain', 'Ferran Torres', '2', 'gols', 'ESP') +
+            gerarJogadorEstatistica('iran', 'Mehdi Taremi', '2', 'gols', 'IRN') +
+            gerarJogadorEstatistica('france', 'Olivier Giroud', '2', 'gols', 'FRA') +
+            gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols', 'BRA') )}
         ${gerarCartaoEstatisticas('Cartões Amarelos',
-            gerarJogadorEstatistica('saudi-arabia', 'Abdulellah Al-Malki', '2', 'cartões') +
-            gerarJogadorEstatistica('iran', 'Alireza Jahanbakhsh', '2', 'cartões') +
-            gerarJogadorEstatistica('ecuador', 'Jhegson Méndez', '2', 'cartões') +
-            gerarJogadorEstatistica('senegal', 'Boulaye Dia', '1', 'cartão') +
-            gerarJogadorEstatistica('qatar', 'Homan Ahmed', '1', 'cartão') +
-            gerarJogadorEstatistica('senegal', 'Ismail Jakobs', '1', 'cartão') +
-            gerarJogadorEstatistica('wales', 'Joe Rodon', '1', 'cartão') +
-            gerarJogadorEstatistica('netherlands', 'Matthijs de Ligt', '1', 'cartão') +
-            gerarJogadorEstatistica('ecuador', 'Moisés Caicedo', '1', 'cartão') +
-            gerarJogadorEstatistica('iran', 'Morteza Pouraliganji', '1', 'cartão') +
-            gerarJogadorEstatistica('senegal', 'Nampalys Mendy', '1', 'cartão') +
-            gerarJogadorEstatistica('united-states', 'Sergiño Dest', '1', 'cartão') +
-            gerarJogadorEstatistica('united-states', 'Tim Ream', '1', 'cartão') +
-            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') +
-            gerarJogadorEstatistica('united-states', 'Weston McKennie', '1', 'cartão') )}
+            gerarJogadorEstatistica('saudi-arabia', 'Abdulellah Al-Malki', '2', 'cartões', 'KSA') +
+            gerarJogadorEstatistica('iran', 'Alireza Jahanbakhsh', '2', 'cartões', 'IRN') +
+            gerarJogadorEstatistica('ecuador', 'Jhegson Méndez', '2', 'cartões', 'ECU') +
+            gerarJogadorEstatistica('senegal', 'Boulaye Dia', '1', 'cartão', 'SEN') +
+            gerarJogadorEstatistica('qatar', 'Homan Ahmed', '1', 'cartão', 'QAT') +
+            gerarJogadorEstatistica('senegal', 'Ismail Jakobs', '1', 'cartão', 'SEN') +
+            gerarJogadorEstatistica('wales', 'Joe Rodon', '1', 'cartão', 'WAL') +
+            gerarJogadorEstatistica('netherlands', 'Matthijs de Ligt', '1', 'cartão', 'HOL') +
+            gerarJogadorEstatistica('ecuador', 'Moisés Caicedo', '1', 'cartão', 'ECU') +
+            gerarJogadorEstatistica('iran', 'Morteza Pouraliganji', '1', 'cartão', 'IRN') +
+            gerarJogadorEstatistica('senegal', 'Nampalys Mendy', '1', 'cartão', 'SEN') +
+            gerarJogadorEstatistica('united-states', 'Sergiño Dest', '1', 'cartão', 'USA') +
+            gerarJogadorEstatistica('united-states', 'Tim Ream', '1', 'cartão', 'USA') +
+            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão', 'WAL') +
+            gerarJogadorEstatistica('united-states', 'Weston McKennie', '1', 'cartão', 'USA') )}
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
-            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
+            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão', 'WAL') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>
 `

@@ -263,6 +263,7 @@ table tr * {
 td img {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 #classification #cards span,
@@ -295,6 +296,10 @@ td img {
 #classification header {
     margin-bottom: 15px;
     text-align: center;
+}
+
+.game .fotos img {
+    cursor: pointer;
 }
 
 .fotos,
