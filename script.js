@@ -837,7 +837,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("23/11", "quarta", createGame('morocco', 'MAR', '07:00', 'croatia', 'CRO', '0', '0') + createGame('germany', 'GER', '10:00', 'japan', 'JPN', '1', '2') + createGame('spain', 'ESP', '13:00', 'costa-rica', 'CRC', '7', '0') + createGame('belgium', 'BEL', '16:00', 'canada', 'CAN', '1', '0'))}
         ${createCard("24/11", "quinta", createGame('switzerland', 'SUI', '07:00', 'cameroon', 'CMR', '1', '0') + createGame('uruguay', 'URU', '10:00', 'south-korea', 'KOR', '0', '0') + createGame('portugal', 'POR', '13:00', 'ghana', 'GHA', '3', '2') + createGame('brazil', 'BRA', '16:00', 'serbia', 'SRB', '2', '0'))}
         ${createCard("25/11", "sexta", createGame('wales', 'WAL', '07:00', 'iran', 'IRN', '0', '2') + createGame('qatar', 'QAT', '10:00', 'senegal', 'SEN', '1', '3') + createGame('netherlands', 'HOL', '13:00', 'ecuador', 'ECU', '1', '1') + createGame('england', 'ENG', '16:00', 'united-states', 'USA', '0', '0'))}
-        ${createCard("26/11", "sabado", createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '', '') + createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '', '') + createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '', '') + createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
+        ${createCard("26/11", "sabado", createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '0', '1') + createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '2', '0') + createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '', '') + createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
         ${createCard("27/11", "domingo", createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') + createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') + createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') + createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
         ${createCard("28/11", "segunda", createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '', '') + createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '', '') + createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '', '') + createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '', ''))}
         ${createCard("29/11", "terça", createGame('ecuador', 'ECU', '12:00', 'senegal', 'SEN', '', '') + createGame('netherlands', 'HOL', '12:00', 'qatar', 'QAT', '', '') + createGame('iran', 'IRN', '16:00', 'united-states', 'USA', '', '') + createGame('wales', 'WAL', '16:00', 'england', 'ENG', '', ''))}
@@ -870,7 +870,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 25/11/2022 - 18h</span>
+    <span>Atualizado por último em: 26/11/2022 - 12h</span>
     <div class="card">
         <h3>Grupo A</h3>
         <table>
@@ -895,8 +895,8 @@ document.querySelector("#classification").innerHTML = `
         <h3>Grupo C</h3>
         <table>
             ${gerarCabecalhoTable()}
-            ${gerarEquipeNaTabela('saudi-arabia', 'Arábia Saudita', 3, 1, 1, 0, 0, 2, 1, 1, true)}
-            ${gerarEquipeNaTabela('poland', 'Polônia', 1, 1, 0, 1, 0, 0, 0, 0, true)}
+            ${gerarEquipeNaTabela('poland', 'Polônia', 4, 2, 1, 1, 0, 2, 0, 2, true)}
+            ${gerarEquipeNaTabela('saudi-arabia', 'Arábia Saudita', 3, 2, 1, 0, 1, 2, 3, -1, true)}
             ${gerarEquipeNaTabela('mexico', 'México', 1, 1, 0, 1, 0, 0, 0, 0, false)}
             ${gerarEquipeNaTabela('argentina', 'Argentina', 0, 1, 0, 0, 1, 1, 2, -1, false)}
         </table>
@@ -906,9 +906,9 @@ document.querySelector("#classification").innerHTML = `
         <table>
             ${gerarCabecalhoTable()}
             ${gerarEquipeNaTabela('france', 'França', 3, 1, 1, 0, 0, 4, 1, 3, true)}
-            ${gerarEquipeNaTabela('tunisia', 'Tunísia', 1, 1, 0, 1, 0, 0, 0, 0, true)}
+            ${gerarEquipeNaTabela('australia', 'Austrália', 3, 2, 1, 0, 1, 2, 4, -2, true)}
             ${gerarEquipeNaTabela('denmark', 'Dinamarca', 1, 1, 0, 1, 0, 0, 0, 0, false)}
-            ${gerarEquipeNaTabela('australia', 'Austrália', 0, 1, 0, 0, 1, 1, 4, -3, false)}
+            ${gerarEquipeNaTabela('tunisia', 'Tunísia', 1, 2, 0, 1, 1, 0, 1, -1, false)}
         </table>
     </div>
     <div class="card">
