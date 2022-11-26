@@ -703,6 +703,30 @@ function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, go
     `
 }
 
+// Função Responsável por Gerar um card dentro das ESTATÍSTICAS
+function gerarCartaoEstatisticas(title, players) {
+    return `
+        <div class="card">
+            <h2>${title}</h2>
+            <ul>
+                ${players}
+            </ul>
+        </div>
+    `
+    
+}
+
+// Função Responsável por Gerar UM JOGADOR dentro de um card nas ESTATÍSTICAS
+function gerarJogadorEstatistica(nome, player, quantidade, info) {
+    return `
+        <li>
+            <img src="./assets/icon-${nome}.svg" alt="Bandeira ${nome}" />
+            <h3>${player}</h3>
+            <p><span>${quantidade}</span> ${info}</p>
+        </li>
+    `
+}
+
 //Função que cria um jogo específico dentro de um card no APP principal do Calendário
 function createGame(player1, sigla1, hour, player2, sigla2, goal1, goal2) {
     return `
@@ -829,32 +853,98 @@ document.querySelector("#app").innerHTML = `
         <button class="scroll-day-btn" onclick="rolagem(diaDeHoje, 'smooth')">DIA ATUAL</button>
         <button class="classification-btn" onclick="mostrarOuEsconder('#app', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
         <button class="fases-finais-btn" onclick="mostrarOuEsconder('#app', '#play-offs', 0, 'auto')">FASES FINAIS</button>
+        <button class="stats-btn" onclick="mostrarOuEsconder('#app', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
     </header>
     <main id="cards">
-        ${createCard("20/11", "domingo", createGame('qatar', 'QAT', '13:00', 'ecuador', 'ECU', '0', '2'))}
-        ${createCard("21/11", "segunda", createGame('england', 'ENG', '10:00', 'iran', 'IRN', '6', '2') + createGame('senegal', 'SEN', '13:00', 'netherlands', 'HOL', '0', '2') + createGame('united-states', 'USA', '16:00', 'wales', 'WAL', '1', '1'))}
-        ${createCard("22/11", "terça", createGame('argentina', 'ARG', '07:00', 'saudi-arabia', 'KSA', '1', '2') + createGame('denmark', 'DEN', '10:00', 'tunisia', 'TUN', '0', '0') + createGame('mexico', 'MEX', '13:00', 'poland', 'POL', '0', '0') + createGame('france', 'FRA', '16:00', 'australia', 'AUS', '4', '1'))}
-        ${createCard("23/11", "quarta", createGame('morocco', 'MAR', '07:00', 'croatia', 'CRO', '0', '0') + createGame('germany', 'GER', '10:00', 'japan', 'JPN', '1', '2') + createGame('spain', 'ESP', '13:00', 'costa-rica', 'CRC', '7', '0') + createGame('belgium', 'BEL', '16:00', 'canada', 'CAN', '1', '0'))}
-        ${createCard("24/11", "quinta", createGame('switzerland', 'SUI', '07:00', 'cameroon', 'CMR', '1', '0') + createGame('uruguay', 'URU', '10:00', 'south-korea', 'KOR', '0', '0') + createGame('portugal', 'POR', '13:00', 'ghana', 'GHA', '3', '2') + createGame('brazil', 'BRA', '16:00', 'serbia', 'SRB', '2', '0'))}
-        ${createCard("25/11", "sexta", createGame('wales', 'WAL', '07:00', 'iran', 'IRN', '0', '2') + createGame('qatar', 'QAT', '10:00', 'senegal', 'SEN', '1', '3') + createGame('netherlands', 'HOL', '13:00', 'ecuador', 'ECU', '1', '1') + createGame('england', 'ENG', '16:00', 'united-states', 'USA', '0', '0'))}
-        ${createCard("26/11", "sabado", createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '0', '1') + createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '2', '0') + createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '', '') + createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
-        ${createCard("27/11", "domingo", createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') + createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') + createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') + createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
-        ${createCard("28/11", "segunda", createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '', '') + createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '', '') + createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '', '') + createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '', ''))}
-        ${createCard("29/11", "terça", createGame('ecuador', 'ECU', '12:00', 'senegal', 'SEN', '', '') + createGame('netherlands', 'HOL', '12:00', 'qatar', 'QAT', '', '') + createGame('iran', 'IRN', '16:00', 'united-states', 'USA', '', '') + createGame('wales', 'WAL', '16:00', 'england', 'ENG', '', ''))}
-        ${createCard("30/11", "quarta", createGame('tunisia', 'TUN', '12:00', 'france', 'FRA', '', '') + createGame('australia', 'AUS', '12:00', 'denmark', 'DEN', '', '') + createGame('poland', 'POL', '16:00', 'argentina', 'ARG', '', '') + createGame('saudi-arabia', 'KSA', '16:00', 'mexico', 'MEX', '', ''))}
-        ${createCard("01/12", "quinta", createGame('croatia', 'CRO', '12:00', 'belgium', 'BEL', '', '') + createGame('canada', 'CAN', '12:00', 'morocco', 'MAR', '', '') + createGame('japan', 'JPN', '16:00', 'spain', 'ESP', '', '') + createGame('costa-rica', 'CRC', '16:00', 'germany', 'GER', '', ''))}
-        ${createCard("02/12", "sexta", createGame('south-korea', 'KOR', '12:00', 'portugal', 'POR', '', '') + createGame('ghana', 'GHA', '12:00', 'uruguay', 'URU', '', '') + createGame('serbia', 'SRB', '16:00', 'switzerland', 'SUI', '', '') + createGame('brazil', 'BRA', '16:00', 'cameroon', 'CMR', '', ''))}
+        ${createCard("20/11", "domingo",
+            createGame('qatar', 'QAT', '13:00', 'ecuador', 'ECU', '0', '2'))}
+        ${createCard("21/11", "segunda",
+            createGame('england', 'ENG', '10:00', 'iran', 'IRN', '6', '2') +
+            createGame('senegal', 'SEN', '13:00', 'netherlands', 'HOL', '0', '2') +
+            createGame('united-states', 'USA', '16:00', 'wales', 'WAL', '1', '1'))}
+        ${createCard("22/11", "terça",
+            createGame('argentina', 'ARG', '07:00', 'saudi-arabia', 'KSA', '1', '2') +
+            createGame('denmark', 'DEN', '10:00', 'tunisia', 'TUN', '0', '0') +
+            createGame('mexico', 'MEX', '13:00', 'poland', 'POL', '0', '0') +
+            createGame('france', 'FRA', '16:00', 'australia', 'AUS', '4', '1'))}
+        ${createCard("23/11", "quarta",
+            createGame('morocco', 'MAR', '07:00', 'croatia', 'CRO', '0', '0') +
+            createGame('germany', 'GER', '10:00', 'japan', 'JPN', '1', '2') +
+            createGame('spain', 'ESP', '13:00', 'costa-rica', 'CRC', '7', '0') +
+            createGame('belgium', 'BEL', '16:00', 'canada', 'CAN', '1', '0'))}
+        ${createCard("24/11", "quinta",
+            createGame('switzerland', 'SUI', '07:00', 'cameroon', 'CMR', '1', '0') +
+            createGame('uruguay', 'URU', '10:00', 'south-korea', 'KOR', '0', '0') +
+            createGame('portugal', 'POR', '13:00', 'ghana', 'GHA', '3', '2') +
+            createGame('brazil', 'BRA', '16:00', 'serbia', 'SRB', '2', '0'))}
+        ${createCard("25/11", "sexta",
+            createGame('wales', 'WAL', '07:00', 'iran', 'IRN', '0', '2') +
+            createGame('qatar', 'QAT', '10:00', 'senegal', 'SEN', '1', '3') +
+            createGame('netherlands', 'HOL', '13:00', 'ecuador', 'ECU', '1', '1') +
+            createGame('england', 'ENG', '16:00', 'united-states', 'USA', '0', '0'))}
+        ${createCard("26/11", "sabado",
+            createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '0', '1') +
+            createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '2', '0') +
+            createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '', '') +
+            createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
+        ${createCard("27/11", "domingo",
+            createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') +
+            createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') +
+            createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') +
+            createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
+        ${createCard("28/11", "segunda",
+            createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '', '') +
+            createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '', '') +
+            createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '', '') +
+            createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '', ''))}
+        ${createCard("29/11", "terça",
+            createGame('ecuador', 'ECU', '12:00', 'senegal', 'SEN', '', '') +
+            createGame('netherlands', 'HOL', '12:00', 'qatar', 'QAT', '', '') +
+            createGame('iran', 'IRN', '16:00', 'united-states', 'USA', '', '') +
+            createGame('wales', 'WAL', '16:00', 'england', 'ENG', '', ''))}
+        ${createCard("30/11", "quarta",
+            createGame('tunisia', 'TUN', '12:00', 'france', 'FRA', '', '') +
+            createGame('australia', 'AUS', '12:00', 'denmark', 'DEN', '', '') +
+            createGame('poland', 'POL', '16:00', 'argentina', 'ARG', '', '') +
+            createGame('saudi-arabia', 'KSA', '16:00', 'mexico', 'MEX', '', ''))}
+        ${createCard("01/12", "quinta",
+            createGame('croatia', 'CRO', '12:00', 'belgium', 'BEL', '', '') +
+            createGame('canada', 'CAN', '12:00', 'morocco', 'MAR', '', '') +
+            createGame('japan', 'JPN', '16:00', 'spain', 'ESP', '', '') +
+            createGame('costa-rica', 'CRC', '16:00', 'germany', 'GER', '', ''))}
+        ${createCard("02/12", "sexta",
+            createGame('south-korea', 'KOR', '12:00', 'portugal', 'POR', '', '') +
+            createGame('ghana', 'GHA', '12:00', 'uruguay', 'URU', '', '') +
+            createGame('serbia', 'SRB', '16:00', 'switzerland', 'SUI', '', '') +
+            createGame('brazil', 'BRA', '16:00', 'cameroon', 'CMR', '', ''))}
+
         <p>Será Atualizado Em Breve!</p>
-        ${createCard("03/12", "sabado", '<p>Oitavas de Final</p>' + createGame('empty', '', '12:00', 'empty', '', '', '') + createGame('empty', '', '16:00', 'empty', '', '', ''))}
-        ${createCard("04/12", "domingo", '<p>Oitavas de Final</p>' + createGame('empty', '', '12:00', 'empty', '', '', '') + createGame('empty', '', '16:00', 'empty', '', '', ''))}
-        ${createCard("05/12", "segunda", '<p>Oitavas de Final</p>' + createGame('empty', '', '12:00', 'empty', '', '', '') + createGame('empty', '', '16:00', 'empty', '', '', ''))}
-        ${createCard("06/12", "terça", '<p>Oitavas de Final</p>' + createGame('empty', '', '12:00', 'empty', '', '', '') + createGame('empty', '', '16:00', 'empty', '', '', ''))}
-        ${createCard("09/12", "sexta", '<p>Quartas de Final</p>' + createGame('empty', '', '12:00', 'empty', '', '', '') + createGame('empty', '', '16:00', 'empty', '', '', ''))}
-        ${createCard("10/12", "sabado", '<p>Quartas de Final</p>' + createGame('empty', '', '12:00', 'empty', '', '', '') + createGame('empty', '', '16:00', 'empty', '', '', ''))}
-        ${createCard("13/12", "terça", '<p>Semi Finais</p>' + createGame('empty', '', '16:00', 'empty', '', '', ''))}
-        ${createCard("14/12", "quarta", '<p>Semi Finais</p>' + createGame('empty', '', '16:00', 'empty', '', '', ''))}
-        ${createCard("17/12", "sabado", '<p>Disputa de Terceiro Lugar</p>' + createGame('empty', '', '12:00', 'empty', '', '', ''))}
-        ${createCard("18/12", "domingo", '<p>Final</p>' + createGame('empty', '', '12:00', 'empty', '', '', ''))}
+        ${createCard("03/12", "sabado", '<p>Oitavas de Final</p>' +
+            createGame('empty', '', '12:00', 'empty', '', '', '') +
+            createGame('empty', '', '16:00', 'empty', '', '', ''))}
+        ${createCard("04/12", "domingo", '<p>Oitavas de Final</p>' +
+            createGame('empty', '', '12:00', 'empty', '', '', '') +
+            createGame('empty', '', '16:00', 'empty', '', '', ''))}
+        ${createCard("05/12", "segunda", '<p>Oitavas de Final</p>' +
+            createGame('empty', '', '12:00', 'empty', '', '', '') +
+            createGame('empty', '', '16:00', 'empty', '', '', ''))}
+        ${createCard("06/12", "terça", '<p>Oitavas de Final</p>' +
+            createGame('empty', '', '12:00', 'empty', '', '', '') +
+            createGame('empty', '', '16:00', 'empty', '', '', ''))}
+        ${createCard("09/12", "sexta", '<p>Quartas de Final</p>' +
+            createGame('empty', '', '12:00', 'empty', '', '', '') +
+            createGame('empty', '', '16:00', 'empty', '', '', ''))}
+        ${createCard("10/12", "sabado", '<p>Quartas de Final</p>' +
+            createGame('empty', '', '12:00', 'empty', '', '', '') +
+            createGame('empty', '', '16:00', 'empty', '', '', ''))}
+        ${createCard("13/12", "terça", '<p>Semi Finais</p>' +
+            createGame('empty', '', '16:00', 'empty', '', '', ''))}
+        ${createCard("14/12", "quarta", '<p>Semi Finais</p>' +
+            createGame('empty', '', '16:00', 'empty', '', '', ''))}
+        ${createCard("17/12", "sabado", '<p>Disputa de Terceiro Lugar</p>' +
+            createGame('empty', '', '12:00', 'empty', '', '', ''))}
+        ${createCard("18/12", "domingo", '<p>Final</p>' +
+            createGame('empty', '', '12:00', 'empty', '', '', ''))}
     </main>
 `
 
@@ -867,6 +957,7 @@ document.querySelector("#classification").innerHTML = `
         <button class="scroll-day-btn" onclick="rolagem(10000, 'smooth')">LEGENDAS</button>
         <button class="classification-btn" onclick="mostrarOuEsconder('#classification', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
         <button class="fases-finais-btn" onclick="mostrarOuEsconder('#classification', '#play-offs', 0, 'auto')">FASES FINAIS</button>
+        <button class="stats-btn" onclick="mostrarOuEsconder('#classification', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
     </header>
 <main id="cards">
     <h1>Classificação</h1>
@@ -996,6 +1087,51 @@ document.querySelector("#play-offs").innerHTML = `
             </div>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
+            <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
         </div>
+    </main>
+`
+
+// Criador da tela de Estatísticas
+document.querySelector("#stats").innerHTML = `
+    <header>
+        <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
+        <label>Será atualizado diariamente <br />durante a copa do mundo 2022</label><br /><br />
+        <button class="scroll-day-btn" onclick="rolagem(0, 'smooth')">TOPO</button>
+        <button class="classification-btn" onclick="mostrarOuEsconder('#stats', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
+        <button class="fases-finais-btn" onclick="mostrarOuEsconder('#stats', '#play-offs', 0, 'auto')">FASES FINAIS</button>
+        <button class="stats-btn" onclick="mostrarOuEsconder('#stats', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
+    </header>
+    <main id="cards">
+        <h1>Estatísticas</h1>
+        <span>Atualizado por último em: 26/11/2022</span>
+        ${gerarCartaoEstatisticas('Jogadores com Mais Gols',
+            gerarJogadorEstatistica('ecuador', 'Enner Valencia', '3', 'gols') +
+            gerarJogadorEstatistica('england', 'Bukayo Saka', '2', 'gols') +
+            gerarJogadorEstatistica('netherlands', 'Cody Gakpo', '2', 'gols') +
+            gerarJogadorEstatistica('spain', 'Ferran Torres', '2', 'gols') +
+            gerarJogadorEstatistica('iran', 'Mehdi Taremi', '2', 'gols') +
+            gerarJogadorEstatistica('france', 'Olivier Giroud', '2', 'gols') +
+            gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols') )}
+        
+        ${gerarCartaoEstatisticas('Cartões Amarelos',
+            gerarJogadorEstatistica('saudi-arabia', 'Abdulellah Al-Malki', '2', 'cartões') +
+            gerarJogadorEstatistica('iran', 'Alireza Jahanbakhsh', '2', 'cartões') +
+            gerarJogadorEstatistica('ecuador', 'Jhegson Méndez', '2', 'cartões') +
+            gerarJogadorEstatistica('senegal', 'Boulaye Dia', '1', 'cartão') +
+            gerarJogadorEstatistica('qatar', 'Homan Ahmed', '1', 'cartão') +
+            gerarJogadorEstatistica('senegal', 'Ismail Jakobs', '1', 'cartão') +
+            gerarJogadorEstatistica('wales', 'Joe Rodon', '1', 'cartão') +
+            gerarJogadorEstatistica('netherlands', 'Matthijs de Ligt', '1', 'cartão') +
+            gerarJogadorEstatistica('ecuador', 'Moisés Caicedo', '1', 'cartão') +
+            gerarJogadorEstatistica('iran', 'Morteza Pouraliganji', '1', 'cartão') +
+            gerarJogadorEstatistica('senegal', 'Nampalys Mendy', '1', 'cartão') +
+            gerarJogadorEstatistica('united-states', 'Sergiño Dest', '1', 'cartão') +
+            gerarJogadorEstatistica('united-states', 'Tim Ream', '1', 'cartão') +
+            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') +
+            gerarJogadorEstatistica('united-states', 'Weston McKennie', '1', 'cartão') )}
+        
+        ${gerarCartaoEstatisticas('Cartões Vermelhos',
+            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') )}
     </main>
 `

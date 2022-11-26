@@ -22,7 +22,8 @@ body * {
 #app,
 #group,
 #classification,
-#play-offs {
+#play-offs,
+#stats {
     width: fit-content;
     margin: 52px auto;
 }
@@ -193,6 +194,19 @@ li img {
     bottom: 50px;
 }
 
+.stats-btn {
+    width: 150px;
+    height: 30px;
+    background-color: #121214;
+    color: #b4b4f6;
+    border: 2px solid #f7dd43;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom: 90px;
+}
+
 .mostrar {
     display: block;
 }
@@ -338,4 +352,32 @@ td img {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 30px;
+}
+
+#stats #cards .card ul li p span {
+    color: #f7dd43;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#stats #cards .card ul li * {
+    vertical-align: middle;
+}
+
+#stats #cards h1 {
+    text-align: center;
+    color: #f7dd43;
+}
+
+#stats #cards span {
+    text-align: center;
+    color: #e1e1e6;
+}
+
+#stats header {
+    margin-bottom: 20px;
+}
+
+#stats #cards .card ul li h3 {
+    color: #e1e1e6;
 }
