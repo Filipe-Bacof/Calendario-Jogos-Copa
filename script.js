@@ -904,7 +904,7 @@ document.querySelector("#app").innerHTML = `
             createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '0', '1') +
             createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '2', '0') +
             createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '2', '1') +
-            createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
+            createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '2', '0'))}
         ${createCard("27/11", "domingo",
             createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') +
             createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') +
@@ -978,7 +978,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 26/11/2022 - 15h</span>
+    <span>Atualizado por último em: 26/11/2022 - 18h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('ecuador', 'ECU', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
@@ -991,9 +991,10 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('wales', 'WAL', 'Gales', 1, 2, 0, 1, 1, 1, 3, -2, false) )}
     ${gerarGrupoCard('C',
         gerarEquipeNaTabela('poland', 'POL', 'Polônia', 4, 2, 1, 1, 0, 2, 0, 2, true) +
+        gerarEquipeNaTabela('argentina', 'ARG', 'Argentina', 3, 2, 1, 0, 1, 3, 2, 1, false) +
         gerarEquipeNaTabela('saudi-arabia', 'KSA', 'Arábia Saudita', 3, 2, 1, 0, 1, 2, 3, -1, true) +
-        gerarEquipeNaTabela('mexico', 'MEX', 'México', 1, 1, 0, 1, 0, 0, 0, 0, false) +
-        gerarEquipeNaTabela('argentina', 'ARG', 'Argentina', 0, 1, 0, 0, 1, 1, 2, -1, false) )}
+        gerarEquipeNaTabela('mexico', 'MEX', 'México', 1, 2, 0, 1, 1, 0, 2, -2, false) )}
+        
     ${gerarGrupoCard('D',
         gerarEquipeNaTabela('france', 'FRA', 'França', 6, 2, 2, 0, 0, 6, 2, 4, true) +
         gerarEquipeNaTabela('australia', 'AUS', 'Austrália', 3, 2, 1, 0, 1, 2, 4, -2, true) +
