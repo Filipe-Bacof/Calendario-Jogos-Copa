@@ -966,7 +966,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("17/12", "sabado", '<p>Disputa de Terceiro Lugar</p>' +
             createGame('empty', '', '12:00', 'empty', '', '', ''))}
         ${createCard("18/12", "domingo", '<p>Final</p>' +
-            createGame('empty', '', '12:00', 'empty', '', '', ''))}
+            createGame('empty', '', '12:00', 'empty', '', '', '') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>
 `
 
@@ -1104,6 +1104,6 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') +
             gerarJogadorEstatistica('united-states', 'Weston McKennie', '1', 'cartão') )}
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
-            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') )}
+            gerarJogadorEstatistica('wales', 'Wayne Hennessey', '1', 'cartão') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>
 `
