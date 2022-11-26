@@ -717,7 +717,7 @@ function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, go
 }
 
 // Função responsável por criar UMA LINHA dentro do único card na tela MATA-MATA
-function gerarCardMataMata(titulo, jogoClass, games) {
+function gerarLinhaMataMata(titulo, jogoClass, games) {
     return `
         <h3>${titulo}</h3>
         <div class="games ${jogoClass}">
@@ -868,8 +868,7 @@ document.querySelector("#app").innerHTML = `
         <img src="./assets/logo.svg" alt="Logo da NLW" />
         <p>Copa Do Mundo</p><br/>
         <label>Será atualizado diariamente <br/>durante a copa do mundo 2022</label><br/><br/>
-        <label class="destaque">NOVIDADE: Classificações no site</label><br/><br/>
-        <label class="destaque">NOVIDADE: Gráfico das Finais no site</label><br/><br/>
+        <label class="destaque">NOVIDADE: Classificações no site<br/>NOVIDADE: Gráfico das Finais no site<br/>NOVIDADE: Estatísticas no site</label><br/><br/>
         <h3>Feito por Filipe Bacof</h3>
         <a href="https://github.com/Filipe-Bacof/Calendario-Jogos-Copa" target="_blank">Link para o Github</a>
         <button class="scroll-top-btn" onclick="rolagem(0, 'smooth')">TOPO</button>
@@ -908,7 +907,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("26/11", "sabado",
             createGame('tunisia', 'TUN', '07:00', 'australia', 'AUS', '0', '1') +
             createGame('poland', 'POL', '10:00', 'saudi-arabia', 'KSA', '2', '0') +
-            createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '', '') +
+            createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '2', '1') +
             createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '', ''))}
         ${createCard("27/11", "domingo",
             createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') +
@@ -983,7 +982,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 26/11/2022 - 12h</span>
+    <span>Atualizado por último em: 26/11/2022 - 15h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('ecuador', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
@@ -1000,9 +999,9 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('mexico', 'México', 1, 1, 0, 1, 0, 0, 0, 0, false) +
         gerarEquipeNaTabela('argentina', 'Argentina', 0, 1, 0, 0, 1, 1, 2, -1, false) )}
     ${gerarGrupoCard('D',
-        gerarEquipeNaTabela('france', 'França', 3, 1, 1, 0, 0, 4, 1, 3, true) +
+        gerarEquipeNaTabela('france', 'França', 6, 2, 2, 0, 0, 6, 2, 4, true) +
         gerarEquipeNaTabela('australia', 'Austrália', 3, 2, 1, 0, 1, 2, 4, -2, true) +
-        gerarEquipeNaTabela('denmark', 'Dinamarca', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('denmark', 'Dinamarca', 1, 2, 0, 1, 1, 1, 2, -1, false) +
         gerarEquipeNaTabela('tunisia', 'Tunísia', 1, 2, 0, 1, 1, 0, 1, -1, false) )}
     ${gerarGrupoCard('E',
         gerarEquipeNaTabela('spain', 'Espanha', 3, 1, 1, 0, 0, 7, 0, 7, true) +
@@ -1039,7 +1038,7 @@ document.querySelector("#play-offs").innerHTML = `
         <span>Atualizado por último em: NOVEMBRO</span>
         <span>AINDA ESTÁ EM TESTES<br>Recomendado abrir no computador<br>Ou girar o celular e reduzir o zoom</span>
         <div class="card">
-            ${gerarCardMataMata('Oitavas de Final', 'oitavas',
+            ${gerarLinhaMataMata('Oitavas de Final', 'oitavas',
                 gerarGameMataMata('empty', 'empty', '1A', 'empty', 'empty', '2B', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '1C', 'empty', 'empty', '2D', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '1E', 'empty', 'empty', '2F', '', '', false) +
@@ -1048,15 +1047,15 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('empty', 'empty', '1D', 'empty', 'empty', '2C', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '1H', 'empty', 'empty', '2G', '', '', true) )}
-            ${gerarCardMataMata('Quartas de Final', 'quartas',
+            ${gerarLinhaMataMata('Quartas de Final', 'quartas',
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
-            ${gerarCardMataMata('Semi Finais', 'semifinais',
+            ${gerarLinhaMataMata('Semi Finais', 'semifinais',
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
-            ${gerarCardMataMata('Terceiro Lugar e Final', 'final',
+            ${gerarLinhaMataMata('Terceiro Lugar e Final', 'final',
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
