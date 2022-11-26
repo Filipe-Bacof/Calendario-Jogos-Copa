@@ -622,38 +622,20 @@ function diaAtual() {
     } else if (milisegundos > 1670295600001 && milisegundos < 1670382000000) {
         //dia 06/12
         rolagem = 8730;
-    } else if (milisegundos > 1670382000001 && milisegundos < 1670468400000) {
-        //dia 07/12 DATA SEM JOGOS
-        rolagem = 9129;
-    } else if (milisegundos > 1670468400001 && milisegundos < 1670554800000) {
-        //dia 08/12 DATA SEM JOGOS
-        rolagem = 9129;
-    } else if (milisegundos > 1670554800001 && milisegundos < 1670641200000) {
-        //dia 09/12
+    } else if (milisegundos > 1670382000001 && milisegundos < 1670641200000) {
+        //dia 07/12 e 08/12 DATA SEM JOGOS = dia 09/12
         rolagem = 9129;
     } else if (milisegundos > 1670641200001 && milisegundos < 1670727600000) {
         //dia 10/12
         rolagem = 9570;
-    } else if (milisegundos > 1670727600001 && milisegundos < 1670814000000) {
-        //dia 11/12 DATA SEM JOGOS
-        rolagem = 9966;
-    } else if (milisegundos > 1670814000001 && milisegundos < 1670900400000) {
-        //dia 12/12 DATA SEM JOGOS
-        rolagem = 9966;
-    } else if (milisegundos > 1670900400001 && milisegundos < 1670986800000) {
-        //dia 13/12
+    } else if (milisegundos > 1670727600001 && milisegundos < 1670986800000) {
+        //dia 11/12 e 12/12 DATA SEM JOGOS = dia 13/12
         rolagem = 9966;
     } else if (milisegundos > 1670986800001 && milisegundos < 1671073200000) {
         //dia 14/12
         rolagem = 10270;
-    } else if (milisegundos > 1671073200001 && milisegundos < 1671159600000) {
-        //dia 15/12 DATA SEM JOGOS
-        rolagem = 10596;
-    } else if (milisegundos > 1671159600001 && milisegundos < 1671246000000) {
-        //dia 16/12 DATA SEM JOGOS
-        rolagem = 10596;
-    } else if (milisegundos > 1671246000001 && milisegundos < 1671332400000) {
-        //dia 17/12
+    } else if (milisegundos > 1671073200001 && milisegundos < 1671332400000) {
+        //dia 15/12 e 16/12 DATA SEM JOGOS = dia 17/12
         rolagem = 10596;
     } else if (milisegundos > 1671332400001 && milisegundos < 1671418800000) {
         //dia 18/12 FINAL
