@@ -777,7 +777,7 @@ function createCard(date, day, games) {
 
 //função que cria a tela com o nome dos jogadores de cada seleção
 function gerarNovosDados(sigla, nomePic, telaAnterior) {
-    mostrarOuEsconder('#app', '#group', 0, 'auto')
+    mostrarOuEsconder(`#${telaAnterior}`, '#group', 0, 'auto')
     document.querySelector("#group").innerHTML = `
     <main id="cards">
         ${rendenizarSelecao(sigla, nomePic, telaAnterior)}
