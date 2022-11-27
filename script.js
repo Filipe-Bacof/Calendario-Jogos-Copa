@@ -47,7 +47,7 @@ document.querySelector("#app").innerHTML = `
             createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '2', '1') +
             createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '2', '0'))}
         ${createCard("27/11", "domingo",
-            createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') +
+            createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '0', '1') +
             createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') +
             createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') +
             createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
@@ -118,7 +118,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 26/11/2022 - 18h</span>
+    <span>Atualizado por último em: 27/11/2022 - 09h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('ecuador', 'ECU', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
@@ -141,9 +141,9 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('tunisia', 'TUN', 'Tunísia', 1, 2, 0, 1, 1, 0, 1, -1, false) )}
     ${gerarGrupoCard('E',
         gerarEquipeNaTabela('spain', 'ESP', 'Espanha', 3, 1, 1, 0, 0, 7, 0, 7, true) +
-        gerarEquipeNaTabela('japan', 'JAP', 'Japão', 3, 1, 1, 0, 0, 2, 1, 1, true) +
-        gerarEquipeNaTabela('germany', 'GER', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false) +
-        gerarEquipeNaTabela('costa-rica', 'CRC', 'Costa Rica', 0, 1, 0, 0, 1, 0, 7, -7, false) )}
+        gerarEquipeNaTabela('japan', 'JAP', 'Japão', 3, 2, 1, 0, 1, 2, 2, 0, true) +
+        gerarEquipeNaTabela('costa-rica', 'CRC', 'Costa Rica', 3, 2, 1, 0, 1, 1, 7, -6, false) +
+        gerarEquipeNaTabela('germany', 'GER', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false) )}
     ${gerarGrupoCard('F',
         gerarEquipeNaTabela('belgium', 'BEL', 'Bélgica', 3, 1, 1, 0, 0, 1, 0, 1, true) +
         gerarEquipeNaTabela('croatia', 'CRO', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, true) +
@@ -211,7 +211,7 @@ document.querySelector("#stats").innerHTML = `
     </header>
     <main id="cards">
         <h1>Estatísticas</h1>
-        <span>Atualizado por último em: 26/11/2022</span>
+        <span>Atualizado por último em: 27/11/2022</span>
         ${gerarCartaoEstatisticas('Artilheiros',
             gerarJogadorEstatistica('ecuador', 'Enner<br>Valencia', '3', 'gols', 'ECU') +
             gerarJogadorEstatistica('france', 'Kylian<br>Mbappé', '3', 'gols', 'FRA') +
