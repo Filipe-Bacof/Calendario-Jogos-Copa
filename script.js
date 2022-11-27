@@ -49,7 +49,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("27/11", "domingo",
             createGame('japan', 'JPN', '07:00', 'costa-rica', 'CRC', '0', '1') +
             createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '0', '2') +
-            createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') +
+            createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '4', '1') +
             createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
         ${createCard("28/11", "segunda",
             createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '', '') +
@@ -118,7 +118,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 27/11/2022 - 12h</span>
+    <span>Atualizado por último em: 27/11/2022 - 15h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('ecuador', 'ECU', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
@@ -145,10 +145,10 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('costa-rica', 'CRC', 'Costa Rica', 3, 2, 1, 0, 1, 1, 7, -6, false) +
         gerarEquipeNaTabela('germany', 'GER', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false) )}
     ${gerarGrupoCard('F',
+        gerarEquipeNaTabela('croatia', 'CRO', 'Croácia', 4, 2, 1, 1, 0, 4, 1, 3, true) +
         gerarEquipeNaTabela('morocco', 'MAR', 'Marrocos', 4, 2, 1, 1, 0, 2, 0, 2, true) +
-        gerarEquipeNaTabela('belgium', 'BEL', 'Bélgica', 3, 2, 1, 0, 1, 1, 2, -1, true) +
-        gerarEquipeNaTabela('croatia', 'CRO', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, false) +
-        gerarEquipeNaTabela('canada', 'CAN', 'Canadá', 0, 1, 0, 0, 1, 0, 1, -1, false) )}
+        gerarEquipeNaTabela('belgium', 'BEL', 'Bélgica', 3, 2, 1, 0, 1, 1, 2, -1, false) +
+        gerarEquipeNaTabela('canada', 'CAN', 'Canadá', 0, 2, 0, 0, 2, 1, 5, -4, false) )}
     ${gerarGrupoCard('G',
         gerarEquipeNaTabela('brazil', 'BRA', 'Brasil', 3, 1, 1, 0, 0, 2, 0, 2, true) +
         gerarEquipeNaTabela('switzerland', 'SUI', 'Suíça', 3, 1, 1, 0, 0, 1, 0, 1, true) +
@@ -215,6 +215,7 @@ document.querySelector("#stats").innerHTML = `
         ${gerarCartaoEstatisticas('Artilheiros',
             gerarJogadorEstatistica('ecuador', 'Enner<br>Valencia', '3', 'gols', 'ECU') +
             gerarJogadorEstatistica('france', 'Kylian<br>Mbappé', '3', 'gols', 'FRA') +
+            gerarJogadorEstatistica('croatia', 'Andrej<br>Kramarić', '2', 'gols', 'CRO') +
             gerarJogadorEstatistica('england', 'Bukayo<br>Saka', '2', 'gols', 'ENG') +
             gerarJogadorEstatistica('netherlands', 'Cody<br>Gakpo', '2', 'gols', 'HOL') +
             gerarJogadorEstatistica('spain', 'Ferran<br>Torres', '2', 'gols', 'ESP') +
