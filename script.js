@@ -154,7 +154,7 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('switzerland', 'SUI', 'Suíça', 3, 1, 1, 0, 0, 1, 0, 1, true) +
         gerarEquipeNaTabela('cameroon', 'CMR', 'Camarões', 0, 1, 0, 0, 1, 0, 1, -1, false) +
         gerarEquipeNaTabela('serbia', 'SRB', 'Sérvia', 0, 1, 0, 0, 1, 0, 2, -2, false) )}
-    ${gerarGrupoCard('G',
+    ${gerarGrupoCard('H',
         gerarEquipeNaTabela('portugal', 'POR', 'Portugal', 3, 1, 1, 0, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('south-korea', 'KOR', 'Coréia do Sul', 1, 1, 0, 1, 0, 0, 0, 0, true) +
         gerarEquipeNaTabela('uruguay', 'URU', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false) +
