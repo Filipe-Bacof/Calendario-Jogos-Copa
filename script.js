@@ -47,7 +47,7 @@ document.querySelector("#app").innerHTML = `
             createGame('france', 'FRA', '13:00', 'denmark', 'DEN', '2', '1') +
             createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '2', '0'))}
         ${createCard("27/11", "domingo",
-            createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '', '') +
+            createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '1', '1') +
             createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') +
             createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') +
             createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
