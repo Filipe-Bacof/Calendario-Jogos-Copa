@@ -1,3 +1,11 @@
+// COMENTÁRIO PARA ME AJUDAR DEPOIS QUANDO FOR EDITAR PELO CELULAR
+//
+// Os Rendenizadores Começam na linha 854
+// Calendário linha 855
+// Classificações linha 962
+// Mata-Mata linha 1020
+// Estatísticas linha 1058
+
 // JSON com o nome de todos os grupos, siglas e nomes dos jogadores
 const json = [
     {
