@@ -1,5 +1,5 @@
 // RENDENIZADORES      VULGO = Parte Editável do Código (diariamente)
-// Criador do App Principal de Calendário
+// Criador do App Principal de Calendário aaa
 document.querySelector("#app").innerHTML = `
     <header>
         <img src="./assets/logo.svg" alt="Logo da NLW" />
