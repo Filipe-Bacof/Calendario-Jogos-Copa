@@ -992,13 +992,13 @@ function diaAtual() {
         rolagem = 3440;
     } else if (milisegundos > 1669518000001 && milisegundos < 1669604400000) {
         //dia 27/11
-        rolagem = 4815;
+        rolagem = 4000;
     } else if (milisegundos > 1669604400001 && milisegundos < 1669690800000) {
         //dia 28/11
         rolagem = 4580;
     } else if (milisegundos > 1669690800001 && milisegundos < 1669777200000) {
         //dia 29/11
-        rolagem = 5160;
+        rolagem = 5150;
     } else if (milisegundos > 1669777200001 && milisegundos < 1669863600000) {
         //dia 30/11
         rolagem = 5720;
