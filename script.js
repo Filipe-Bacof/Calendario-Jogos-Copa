@@ -48,7 +48,7 @@ document.querySelector("#app").innerHTML = `
             createGame('argentina', 'ARG', '16:00', 'mexico', 'MEX', '2', '0'))}
         ${createCard("27/11", "domingo",
             createGame('japan', 'JAP', '07:00', 'costa-rica', 'CRC', '0', '1') +
-            createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '', '') +
+            createGame('belgium', 'BEL', '10:00', 'morocco', 'MAR', '0', '2') +
             createGame('croatia', 'CRO', '13:00', 'canada', 'CAN', '', '') +
             createGame('spain', 'ESP', '16:00', 'germany', 'GER', '', ''))}
         ${createCard("28/11", "segunda",
@@ -118,7 +118,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 27/11/2022 - 09h</span>
+    <span>Atualizado por último em: 27/11/2022 - 12h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('ecuador', 'ECU', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
@@ -145,9 +145,9 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('costa-rica', 'CRC', 'Costa Rica', 3, 2, 1, 0, 1, 1, 7, -6, false) +
         gerarEquipeNaTabela('germany', 'GER', 'Alemanha', 0, 1, 0, 0, 1, 1, 2, -1, false) )}
     ${gerarGrupoCard('F',
-        gerarEquipeNaTabela('belgium', 'BEL', 'Bélgica', 3, 1, 1, 0, 0, 1, 0, 1, true) +
-        gerarEquipeNaTabela('croatia', 'CRO', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, true) +
-        gerarEquipeNaTabela('morocco', 'MAR', 'Marrocos', 1, 1, 0, 1, 0, 0, 0, 0, false) +
+        gerarEquipeNaTabela('morocco', 'MAR', 'Marrocos', 4, 2, 1, 1, 0, 2, 0, 2, true) +
+        gerarEquipeNaTabela('belgium', 'BEL', 'Bélgica', 3, 2, 1, 0, 1, 1, 2, -1, true) +
+        gerarEquipeNaTabela('croatia', 'CRO', 'Croácia', 1, 1, 0, 1, 0, 0, 0, 0, false) +
         gerarEquipeNaTabela('canada', 'CAN', 'Canadá', 0, 1, 0, 0, 1, 0, 1, -1, false) )}
     ${gerarGrupoCard('G',
         gerarEquipeNaTabela('brazil', 'BRA', 'Brasil', 3, 1, 1, 0, 0, 2, 0, 2, true) +
