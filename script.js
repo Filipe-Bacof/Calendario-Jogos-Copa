@@ -103,8 +103,7 @@ document.querySelector("#app").innerHTML = `
             createGame('empty', '', '12:00', 'empty', '', '', ''))}
         ${createCard("18/12", "domingo", '<p>Final</p>' +
             createGame('empty', '', '12:00', 'empty', '', '', '') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
-    </main>
-`
+    </main>`
 
 // Criador das Classificações com a Pontuação de cada time
 document.querySelector("#classification").innerHTML = `
@@ -161,8 +160,7 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('uruguay', 'URU', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false) +
         gerarEquipeNaTabela('ghana', 'GHA', 'Gana', 0, 1, 0, 0, 1, 1, 3, -2, false) )}
     ${gerarLegendas()}
-    </main>
-`
+    </main>`
 
 // Criador da tela de Mata-Mata
 document.querySelector("#play-offs").innerHTML = `
@@ -199,8 +197,7 @@ document.querySelector("#play-offs").innerHTML = `
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
         </div>
-    </main>
-`
+    </main>`
 
 // Criador da tela de Estatísticas
 document.querySelector("#stats").innerHTML = `
@@ -242,27 +239,9 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('united-states', 'Weston<br>McKennie', '1', 'cartão', 'USA') )}
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
             gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
-    </main>
-`
+    </main>`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//PARTE AUXILIAR DO CÓDIGO (JSON + FUNÇÕES + ROLAGEM + VARIÁVEL)
 // JSON com o nome de todos os grupos, siglas e nomes dos jogadores
 const json = [
     {
@@ -683,48 +662,7 @@ const json = [
     }
 ]
 
-// Funções Secundárias
-//Função responsável por gerar apenas o cabeçalho de cada card das classificações
-function gerarCabecalhoTable() {
-    return `
-        <tr>
-            <td></td>
-            <td>Equipe</td>
-            <td>PTS</td>
-            <td>PJ</td>
-            <td>VIT</td>
-            <td>E</td>
-            <td>DER</td>
-            <td>GM</td>
-            <td>GC</td>
-            <td>SG</td>
-        </tr>
-    `
-}
-
-// Função que gera todas as legendas do ultimo card nas classificações
-function gerarLegendas() {
-    return `
-    <div class="card legendas">
-        <h2>Legendas:</h2>
-        <p>Circulados em Verde = Classificados</p><br>
-        <p>PTS = Pontos</p><br>
-        <p>PJ = Partidas Jogadas</p><br>
-        <p>VIT = Vitórias</p><br>
-        <p>E = Empates</p><br>
-        <p>DER = Derrotas</p><br>
-        <p>GM = Gols Marcados</p><br>
-        <p>GC = Gols Contra</p><br>
-        <p>SG = Saldo de Gols</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-    </div>
-    `
-}
-
-// função que armazena a sigla dos times e o indice no array (array json)
+// Função AUXILIAR PARA ARRAY JSON
 function escolherIndice(sigla) {
     let paisEscolhido;
     switch (sigla) {
@@ -831,6 +769,201 @@ function escolherIndice(sigla) {
     return paisEscolhido;
 }
 
+// Função CABEÇALHO - CLASSIFICAÇÕES
+function gerarCabecalhoTable() {
+    return `
+        <tr>
+            <td></td>
+            <td>Equipe</td>
+            <td>PTS</td>
+            <td>PJ</td>
+            <td>VIT</td>
+            <td>E</td>
+            <td>DER</td>
+            <td>GM</td>
+            <td>GC</td>
+            <td>SG</td>
+        </tr>`
+}
+
+// Função LEGENDAS - CLASSIFICAÇÕES
+function gerarLegendas() {
+    return `
+    <div class="card legendas">
+        <h2>Legendas:</h2>
+        <p>Circulados em Verde = Classificados</p><br>
+        <p>PTS = Pontos</p><br>
+        <p>PJ = Partidas Jogadas</p><br>
+        <p>VIT = Vitórias</p><br>
+        <p>E = Empates</p><br>
+        <p>DER = Derrotas</p><br>
+        <p>GM = Gols Marcados</p><br>
+        <p>GC = Gols Contra</p><br>
+        <p>SG = Saldo de Gols</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>`
+}
+
+//Função CADA TIME - CLASSIFICAÇÕES
+function gerarEquipeNaTabela(name, sigla, nome, pts, pj, vit, e, der, gm, gc, sg, selected) {
+    let classe = '';
+    selected ? classe = ` class="selected"` : '';
+    return `
+    <tr ${classe}>
+        <td><img src="./assets/icon-${name}.svg" alt="Bandeira ${nome}" onclick="gerarNovosDados('${sigla}', '${name}', 'classification')" /></td>
+        <td>${nome}</td>
+        <td>${pts}</td>
+        <td>${pj}</td>
+        <td>${vit}</td>
+        <td>${e}</td>
+        <td>${der}</td>
+        <td>${gm}</td>
+        <td>${gc}</td>
+        <td>${sg}</td>
+    </tr>`
+}
+
+// Função CARD - CLASSIFICAÇÕES
+function gerarGrupoCard(grupo, paises) {
+    return `
+    <div class="card">
+        <h3>Grupo ${grupo}</h3>
+        <table>
+            ${gerarCabecalhoTable()}
+            ${paises}
+        </table>
+    </div>`
+}
+
+// Função PARTIDA - MATAMATA
+function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda) {
+    let borda = '';
+    semBorda ? borda = ` sem-borda` : '';
+    return `
+        <div class="game ${borda}">
+            <div class="fotos">
+                <img src="./assets/icon-${name1}.svg" alt="Bandeira ${nome1}" onclick="gerarNovosDados('${sigla1}', '${name1}', 'play-offs')" />
+                <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" onclick="gerarNovosDados('${sigla2}', '${name2}', 'play-offs')" /><br>
+            </div>
+            <div class="siglas">
+                <div><span>${sigla1 ? sigla1 : ''}</span>${goal1 ? goal1 : ''}</div>
+                <div><span>${sigla2 ? sigla2 : ''}</span>${goal2 ? goal2 : ''}</div>
+            </div>
+        </div>`
+}
+
+// Função LINHA CHEIA DE PARTIDAS - MATAMATA
+function gerarLinhaMataMata(titulo, jogoClass, games) {
+    return `
+        <h3>${titulo}</h3>
+        <div class="games ${jogoClass}">
+            ${games}
+        </div>`
+}
+
+// Função CARD - ESTATÍSTICAS
+function gerarCartaoEstatisticas(title, players) {
+    return `
+        <div class="card">
+            <h2>${title}</h2>
+            <ul>
+                ${players}
+            </ul>
+        </div>`
+}
+
+// Função CADA JOGADOR - ESTATÍSTICAS
+function gerarJogadorEstatistica(nome, player, quantidade, info, sigla) {
+    return `
+        <li>
+            <div>
+                <img src="./assets/icon-${nome}.svg" alt="Bandeira ${nome}" onclick="gerarNovosDados('${sigla}', '${nome}', 'stats')" />
+                <span>${sigla}</span>
+            </div>
+
+            <h3>${player}</h3>
+            <p><span>${quantidade}</span> ${info}</p>
+        </li>`
+}
+
+//Função CADA JOGO - CALENDÁRIO
+function createGame(player1, sigla1, hour, player2, sigla2, goal1, goal2) {
+    return `
+        <li>
+            <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" onclick="gerarNovosDados('${sigla1}', '${player1}', 'app')" />
+            <div><span>${sigla1}</span>${goal1 ? goal1 : ''}</div>
+            <strong>${hour}</strong>
+            <div><span>${sigla2}</span>${goal2 ? goal2 : ''}</div>
+            <img src="./assets/icon-${player2}.svg" alt="Bandeira ${player2}" onclick="gerarNovosDados('${sigla2}', '${player2}', 'app')" />
+        </li>`
+}
+
+//função CARD - CALENDÁRIO
+function createCard(date, day, games) {
+    return `
+    <div class="card">
+        <h2>${date} <span>${day}</span></h2>
+        <ul>
+            ${games}
+        </ul>
+    </div>`
+}
+
+// Função TELA INTEIRA - GROUP
+function gerarNovosDados(sigla, nomePic, telaAnterior) {
+    mostrarOuEsconder(`#${telaAnterior}`, '#group', 0 , 'auto');
+    document.querySelector("#group").innerHTML = `
+    <main id="cards">
+        ${rendenizarSelecao(sigla, nomePic, telaAnterior)}
+    </main>`
+}
+
+// Função TODOS OS PLAYERS - GROUP
+function gerarJogadores(quatidade, indice, tipoJogador) {
+    let listaJogadores = '';
+    for (let i = 0; i < quatidade; i++) {
+        listaJogadores += `<li>${json[indice].jogadores[tipoJogador][i]}</li>`
+    }
+    return listaJogadores;
+}
+
+// Função AUXILIAR TELA INTEIRA - GROUP (PODE SER REFATORADO!!!)
+function rendenizarSelecao(sigla, nomePic, telaAnterior) {
+    let indice = escolherIndice(sigla);
+    let numGoleiros = json[indice].jogadores.goleiros.length;
+    let numZagueiros = json[indice].jogadores.zagueiros.length;
+    let numMeiosCampos = json[indice].jogadores.meioscampos.length;
+    let numAtacantes = json[indice].jogadores.atacantes.length;
+    return `
+    <div class="card">
+        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', ${(telaAnterior == 'app' ? diaDeHoje : 0)}, 'auto')">VOLTAR</h1>
+        <h2>Grupo ${json[indice].grupo}</h2>
+        <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
+        <img src="./assets/icon-${nomePic}.svg" alt="Bandeira ${nomePic}" />
+        <h3>Técnico: <span>${json[indice].jogadores.tecnico}</span></h3>
+        <h3>Goleiros:</h3>
+        <ul>
+            ${gerarJogadores(numGoleiros, indice, "goleiros")}
+        </ul>
+        <h3>Zagueiros:</h3>
+        <ul>
+            ${gerarJogadores(numZagueiros, indice, "zagueiros")}
+        </ul>
+        <h3>Meios-Campos:</h3>
+        <ul>
+            ${gerarJogadores(numMeiosCampos, indice, "meioscampos")}
+        </ul>
+        <h3>Atacantes:</h3>
+        <ul>
+            ${gerarJogadores(numAtacantes, indice, "atacantes")}
+        </ul>
+        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', ${(telaAnterior == 'app' ? diaDeHoje : 0)}, 'auto')">VOLTAR</h1>
+    </div>`
+}
+
 // Função que automatiza a rolagem durante os dias da copa - fora da copa vai para o topo
 function diaAtual() {
     const d = new Date();
@@ -912,175 +1045,7 @@ function diaAtual() {
     return rolagem;
 }
 
-//Função responsável por gerar as informações de cada time dentro da tabela de cada card das classificações
-function gerarEquipeNaTabela(name, sigla, nome, pts, pj, vit, e, der, gm, gc, sg, selected) {
-    let classe = '';
-    selected ? classe = ` class="selected"` : '';
-    return `
-    <tr ${classe}>
-        <td><img src="./assets/icon-${name}.svg" alt="Bandeira ${nome}" onclick="gerarNovosDados('${sigla}', '${name}', 'classification')" /></td>
-        <td>${nome}</td>
-        <td>${pts}</td>
-        <td>${pj}</td>
-        <td>${vit}</td>
-        <td>${e}</td>
-        <td>${der}</td>
-        <td>${gm}</td>
-        <td>${gc}</td>
-        <td>${sg}</td>
-    </tr>
-    `
-}
-
-// Função que gera cada CARD na tela de CLASSIFICAÇÕES
-function gerarGrupoCard(grupo, paises) {
-    return `
-    <div class="card">
-        <h3>Grupo ${grupo}</h3>
-        <table>
-            ${gerarCabecalhoTable()}
-            ${paises}
-        </table>
-    </div>
-    `
-}
-
-// Função que automatiza a criação de uma partida de mata-mata
-function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda) {
-    let borda = '';
-    semBorda ? borda = ` sem-borda` : '';
-    return `
-        <div class="game ${borda}">
-            <div class="fotos">
-                <img src="./assets/icon-${name1}.svg" alt="Bandeira ${nome1}" onclick="gerarNovosDados('${sigla1}', '${name1}', 'play-offs')" />
-                <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" onclick="gerarNovosDados('${sigla2}', '${name2}', 'play-offs')" /><br>
-            </div>
-            <div class="siglas">
-                <div><span>${sigla1 ? sigla1 : ''}</span>${goal1 ? goal1 : ''}</div>
-                <div><span>${sigla2 ? sigla2 : ''}</span>${goal2 ? goal2 : ''}</div>
-            </div>
-        </div>
-    `
-}
-
-// Função responsável por criar UMA LINHA dentro do único card na tela MATA-MATA
-function gerarLinhaMataMata(titulo, jogoClass, games) {
-    return `
-        <h3>${titulo}</h3>
-        <div class="games ${jogoClass}">
-            ${games}
-        </div>
-    `
-}
-
-// Função Responsável por Gerar um card dentro das ESTATÍSTICAS
-function gerarCartaoEstatisticas(title, players) {
-    return `
-        <div class="card">
-            <h2>${title}</h2>
-            <ul>
-                ${players}
-            </ul>
-        </div>
-    `
-    
-}
-
-// Função Responsável por Gerar UM JOGADOR dentro de um card nas ESTATÍSTICAS
-function gerarJogadorEstatistica(nome, player, quantidade, info, sigla) {
-    return `
-        <li>
-            <div>
-                <img src="./assets/icon-${nome}.svg" alt="Bandeira ${nome}" onclick="gerarNovosDados('${sigla}', '${nome}', 'stats')" />
-                <span>${sigla}</span>
-            </div>
-
-            <h3>${player}</h3>
-            <p><span>${quantidade}</span> ${info}</p>
-        </li>
-    `
-}
-
-//Função que cria um jogo específico dentro de um card no APP principal do Calendário
-function createGame(player1, sigla1, hour, player2, sigla2, goal1, goal2) {
-    return `
-        <li>
-            <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}" onclick="gerarNovosDados('${sigla1}', '${player1}', 'app')" />
-            <div><span>${sigla1}</span>${goal1 ? goal1 : ''}</div>
-            <strong>${hour}</strong>
-            <div><span>${sigla2}</span>${goal2 ? goal2 : ''}</div>
-            <img src="./assets/icon-${player2}.svg" alt="Bandeira ${player2}" onclick="gerarNovosDados('${sigla2}', '${player2}', 'app')" />
-        </li>
-    `
-}
-
-//função que cria os cards com um dia no APP principal do calendário
-function createCard(date, day, games) {
-    return `
-    <div class="card">
-        <h2>${date} <span>${day}</span></h2>
-        <ul>
-            ${games}
-        </ul>
-    </div>
-    `
-}
-
-//função que cria a tela com o nome dos jogadores de cada seleção
-function gerarNovosDados(sigla, nomePic, telaAnterior) {
-    mostrarOuEsconder(`#${telaAnterior}`, '#group', 0 , 'auto');
-    document.querySelector("#group").innerHTML = `
-    <main id="cards">
-        ${rendenizarSelecao(sigla, nomePic, telaAnterior)}
-    </main>
-`
-}
-
-// Função auxiliar da que está acima, pois gera cada um dos jogadores
-function gerarJogadores(quatidade, indice, tipoJogador) {
-    let listaJogadores = '';
-    for (let i = 0; i < quatidade; i++) {
-        listaJogadores += `<li>${json[indice].jogadores[tipoJogador][i]}</li>`
-    }
-    return listaJogadores;
-}
-
-// Outra função auxiliar que efetua a exibição dos nomes dos jogadores = PODE SER REFATORADO!!!
-function rendenizarSelecao(sigla, nomePic, telaAnterior) {
-    let indice = escolherIndice(sigla);
-    let numGoleiros = json[indice].jogadores.goleiros.length;
-    let numZagueiros = json[indice].jogadores.zagueiros.length;
-    let numMeiosCampos = json[indice].jogadores.meioscampos.length;
-    let numAtacantes = json[indice].jogadores.atacantes.length;
-    return `
-    <div class="card">
-        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', ${(telaAnterior == 'app' ? diaDeHoje : 0)}, 'auto')">VOLTAR</h1>
-        <h2>Grupo ${json[indice].grupo}</h2>
-        <h2>${json[indice].pais} <span>${json[indice].sigla}</span></h2>
-        <img src="./assets/icon-${nomePic}.svg" alt="Bandeira ${nomePic}" />
-        <h3>Técnico: <span>${json[indice].jogadores.tecnico}</span></h3>
-        <h3>Goleiros:</h3>
-        <ul>
-            ${gerarJogadores(numGoleiros, indice, "goleiros")}
-        </ul>
-        <h3>Zagueiros:</h3>
-        <ul>
-            ${gerarJogadores(numZagueiros, indice, "zagueiros")}
-        </ul>
-        <h3>Meios-Campos:</h3>
-        <ul>
-            ${gerarJogadores(numMeiosCampos, indice, "meioscampos")}
-        </ul>
-        <h3>Atacantes:</h3>
-        <ul>
-            ${gerarJogadores(numAtacantes, indice, "atacantes")}
-        </ul>
-        <h1 onclick="mostrarOuEsconder('#group', '#${telaAnterior}', ${(telaAnterior == 'app' ? diaDeHoje : 0)}, 'auto')">VOLTAR</h1>
-    </div>
-    `
-}
-
-//Função base de Scroll
+//Função SCROLL
 function rolagem(paraOnde, tipoDeRolagem) {
     window.scrollTo({
         top: paraOnde,
@@ -1089,22 +1054,17 @@ function rolagem(paraOnde, tipoDeRolagem) {
     })
 }
 
-// Função base para Navegar dentro das telas
+// Função NAVEGAÇÃO HTML
 function mostrarOuEsconder(saindo, entrando, paraOnde, tipoDeRolagem) {
-    // #app #group #classification #play-offs
-    //saindo daqui
     document.querySelector(saindo).classList.remove("mostrar");
     document.querySelector(saindo).classList.add("esconder");
-    //entrando aqui
     document.querySelector(entrando).classList.remove("esconder");
     document.querySelector(entrando).classList.add("mostrar");
-    //rolagem
     rolagem(paraOnde, tipoDeRolagem);
 }
 
-// executa o scroll na inicialização
+// Executa o scroll na inicialização
 setTimeout(() => rolagem(diaDeHoje, 'smooth'), 1500);
 
 // Variável usada em diversas funções sobre o dia atual
 let diaDeHoje = diaAtual();
-
