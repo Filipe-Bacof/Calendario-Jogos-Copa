@@ -167,11 +167,11 @@ document.querySelector("#play-offs").innerHTML = `
     <header>
         <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
         <label>Será atualizado diariamente <br />durante a copa do mundo 2022</label><br /><br />
+        <span>Pode travar um pouco no celular<br>Recomendado abrir no computador<br>Ou girar o celular e reduzir o zoom</span><br /><br />
+        <h1>Fases Finais</h1>
+        <span>Atualizado por último em: 28/11</span>
     </header>
     <main id="cards">
-        <h1>Fases Finais</h1>
-        <span>Atualizado por último em: NOVEMBRO</span>
-        <span>AINDA ESTÁ EM TESTES<br>Recomendado abrir no computador<br>Ou girar o celular e reduzir o zoom</span>
         <div class="card">
             ${gerarLinhaMataMata('Oitavas de Final', 'oitavas',
                 //name1, nome1, cla1, sigla1, name2, nome2, cla2, sigla2, goal1, goal2, semBorda, data, horário

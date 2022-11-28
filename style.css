@@ -247,7 +247,7 @@ h2 {
 }
 
 #classification #cards h1,
-#play-offs #cards h1 {
+#play-offs header h1 {
     color: #e1e1e6;
     justify-content: center;
     text-align: center;
@@ -267,7 +267,7 @@ td img {
 }
 
 #classification #cards span,
-#play-offs #cards span {
+#play-offs header span {
     color: #f7dd43;
     justify-content: center;
     text-align: center;
