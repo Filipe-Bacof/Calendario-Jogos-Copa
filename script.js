@@ -177,9 +177,9 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('empty', 'empty', '1A', 'empty', 'empty', '2B', '', '', false, '03/12', '12h') +
                 gerarGameMataMata('empty', 'empty', '1C', 'empty', 'empty', '2D', '', '', false, '03/12', '16h') +
                 gerarGameMataMata('empty', 'empty', '1E', 'empty', 'empty', '2F', '', '', false, '05/12', '12h') +
-                gerarGameMataMata('brazil', 'Brasil', '1G<br>BRA', 'empty', 'empty', '2H', '', '', false, '05/12', '16h') +
+                gerarGameMataMata('brazil', 'Brasil', 'BRA<br>1G', 'empty', 'empty', '2H', '', '', false, '05/12', '16h') +
                 gerarGameMataMata('empty', 'empty', '1B', 'empty', 'empty', '2A', '', '', false, '04/12', '12h') +
-                gerarGameMataMata('france', 'França', '1D<br>FRA', 'empty', 'empty', '2C', '', '', false, '04/12', '16h') +
+                gerarGameMataMata('france', 'França', 'FRA<br>1D', 'empty', 'empty', '2C', '', '', false, '04/12', '16h') +
                 gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false, '06/12', '12h') +
                 gerarGameMataMata('empty', 'empty', '1H', 'empty', 'empty', '2G', '', '', true, '06/12', '16h')
                  ) + '<br><p>é possivel que sofra alteração</p>'}
