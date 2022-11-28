@@ -174,26 +174,27 @@ document.querySelector("#play-offs").innerHTML = `
         <span>AINDA ESTÁ EM TESTES<br>Recomendado abrir no computador<br>Ou girar o celular e reduzir o zoom</span>
         <div class="card">
             ${gerarLinhaMataMata('Oitavas de Final', 'oitavas',
-                gerarGameMataMata('empty', 'empty', '1A', 'empty', 'empty', '2B', '', '', false, '03/12', '12h') +
-                gerarGameMataMata('empty', 'empty', '1C', 'empty', 'empty', '2D', '', '', false, '03/12', '16h') +
-                gerarGameMataMata('empty', 'empty', '1E', 'empty', 'empty', '2F', '', '', false, '05/12', '12h') +
-                gerarGameMataMata('brazil', 'Brasil', 'BRA<br>1G', 'empty', 'empty', '2H', '', '', false, '05/12', '16h') +
-                gerarGameMataMata('empty', 'empty', '1B', 'empty', 'empty', '2A', '', '', false, '04/12', '12h') +
-                gerarGameMataMata('france', 'França', 'FRA<br>1D', 'empty', 'empty', '2C', '', '', false, '04/12', '16h') +
-                gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false, '06/12', '12h') +
-                gerarGameMataMata('portugal', 'Portugal', 'POR<br>1H', 'empty', 'empty', '2G', '', '', true, '06/12', '16h')
-                 ) + '<br><p>é possivel que sofra alteração</p>'}
+                //name1, nome1, cla1, sigla1, name2, nome2, cla2, sigla2, goal1, goal2, semBorda, data, horário
+                gerarGameMataMata('empty', 'empty', '1A', '', 'empty', 'empty', '2B', '', '', '', false, '03/12', '12h') +
+                gerarGameMataMata('empty', 'empty', '1C', '', 'empty', 'empty', '2D', '', '', '', false, '03/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '1E', '', 'empty', 'empty', '2F', '', '', '', false, '05/12', '12h') +
+                gerarGameMataMata('brazil', 'Brasil', '1G', 'BRA', 'empty', 'empty', '2H', '', '', '', false, '05/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '1B', '', 'empty', 'empty', '2A', '', '', '', false, '04/12', '12h') +
+                gerarGameMataMata('france', 'França', '1D', 'FRA', 'empty', 'empty', '2C', '', '', '', false, '04/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '1F', '', 'empty', 'empty', '2E', '', '', '', false, '06/12', '12h') +
+                gerarGameMataMata('portugal', 'Portugal', '1H', 'POR', 'empty', 'empty', '2G', '', '', '', true, '06/12', '16h')
+                 ) + '<br><p>Nada confirmado, inseridos alguns de acordo com as classificações</p>'}
             ${gerarLinhaMataMata('Quartas de Final', 'quartas',
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '09/12', '16h') +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '09/12', '12h') +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '10/12', '16h') +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true, '10/12', '12h') )}
+                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '12h') +
+                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '10/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '10/12', '12h') )}
             ${gerarLinhaMataMata('Semi Finais', 'semifinais',
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '13/12', '16h') +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true, '14/12', '16h') )}
+                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '13/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '14/12', '16h') )}
             ${gerarLinhaMataMata('Final', 'final',
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '17/12', '12h<br>3º Lugar') +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true, '18/12', '12h<br>FINAL!') )}
+                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '17/12', '12h<br>3º Lugar') +
+                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '18/12', '12h<br>FINAL!') )}
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
@@ -847,7 +848,7 @@ function gerarGrupoCard(grupo, paises) {
 }
 
 // Função PARTIDA - MATAMATA
-function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda, data, tituloJogo) {
+function gerarGameMataMata(name1, nome1, cla1, sigla1, name2, nome2, cla2, sigla2, goal1, goal2, semBorda, data, tituloJogo) {
     let borda = '';
     semBorda ? borda = ` sem-borda` : '';
     return `
@@ -860,8 +861,8 @@ function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, go
                 <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" onclick="gerarNovosDados('${sigla2}', '${name2}', 'play-offs')" /><br>
             </div>
             <div class="siglas">
-                <div><span>${sigla1 ? sigla1 : ''}</span>${goal1 ? goal1 : ''}</div>
-                <div><span>${sigla2 ? sigla2 : ''}</span>${goal2 ? goal2 : ''}</div>
+                <div><span class="sigla">${sigla1 ? sigla1 : ''}</span><p class="cla">${cla1 ? cla1 : ''}</p>${goal1 ? goal1 : ''}</div>
+                <div><span class="sigla">${sigla2 ? sigla2 : ''}</span><p class="cla">${cla2 ? cla2 : ''}</p>${goal2 ? goal2 : ''}</div>
             </div>
         </div>`
 }

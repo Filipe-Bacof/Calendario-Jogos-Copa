@@ -323,7 +323,7 @@ td img {
 
 .game {
     padding-right: 6px;
-    border-right: 2px solid #f7dd43;
+    border-right: 3px solid #121214;
 }
 
 .sem-borda {
@@ -391,4 +391,12 @@ td img {
     background-color: #121214;
     height: 80px;
     width: 60px;
+}
+
+.oitavas .siglas div {
+    padding: 10px 0px 5px 0px; /* top right bottom left */
+}
+
+.siglas .cla {
+    color: #f78b43;
 }
