@@ -397,6 +397,20 @@ td img {
     padding: 10px 0px 5px 0px; /* top right bottom left */
 }
 
-.siglas .cla {
+.siglas div h4 {
+    color: #e72727;
+}
+
+.siglas .cla,
+.game .data p {
     color: #f78b43;
+}
+
+.game .data p span,
+.siglas .sigla {
+    color: #f7dd43;
+}
+
+.ganhador {
+    color: #2de727 !important;
 }
