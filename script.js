@@ -183,7 +183,7 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('france', 'França', '1D', 'FRA', 'argentina', 'Argentina', '2C', 'ARG', '', '', false, '04/12', '16h') +
                 gerarGameMataMata('croatia', 'Croácia', '1F', 'CRO', 'japan', 'Japão', '2E', 'JPN', '', '', false, '06/12', '12h') +
                 gerarGameMataMata('portugal', 'Portugal', '1H', 'POR', 'switzerland', 'Suíça', '2G', 'SUI', '', '', true, '06/12', '16h')
-                 ) + '<br><p>Nada confirmado! Foram inseridos de acordo com as classificações,<br>ainda ter o terceiro jogo de cada seleção, portanto pode ser alterado!</p>'}
+                 ) + '<br><p>Nada confirmado! Foram inseridos de acordo com as classificações,<br>ainda tem o terceiro jogo de cada seleção, portanto pode ser alterado!</p>'}
             ${gerarLinhaMataMata('Quartas de Final', 'quartas',
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '16h') +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '12h') +
