@@ -53,7 +53,7 @@ document.querySelector("#app").innerHTML = `
             createGame('spain', 'ESP', '16:00', 'germany', 'GER', '1', '1'))}
         ${createCard("28/11", "segunda",
             createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '3', '3') +
-            createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '', '') +
+            createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '2', '3') +
             createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '', '') +
             createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '', ''))}
         ${createCard("29/11", "terça",
@@ -118,7 +118,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 28/11/2022 - 09h</span>
+    <span>Atualizado por último em: 28/11/2022 - 12h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('ecuador', 'ECU', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
@@ -156,9 +156,9 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('serbia', 'SRB', 'Sérvia', 1, 2, 0, 1, 1, 3, 5, -2, false) )}
     ${gerarGrupoCard('H',
         gerarEquipeNaTabela('portugal', 'POR', 'Portugal', 3, 1, 1, 0, 0, 3, 1, 2, true) +
-        gerarEquipeNaTabela('south-korea', 'KOR', 'Coréia do Sul', 1, 1, 0, 1, 0, 0, 0, 0, true) +
+        gerarEquipeNaTabela('ghana', 'GHA', 'Gana', 3, 2, 1, 0, 1, 5, 5, 0, true) +
         gerarEquipeNaTabela('uruguay', 'URU', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false) +
-        gerarEquipeNaTabela('ghana', 'GHA', 'Gana', 0, 1, 0, 0, 1, 1, 3, -2, false) )}
+        gerarEquipeNaTabela('south-korea', 'KOR', 'Coréia do Sul', 1, 2, 0, 1, 1, 2, 3, -1, false) )}
     ${gerarLegendas()}
     </main>`
 
@@ -220,7 +220,9 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('england', 'Bukayo<br>Saka', '2', 'gols', 'ENG') +
             gerarJogadorEstatistica('netherlands', 'Cody<br>Gakpo', '2', 'gols', 'HOL') +
             gerarJogadorEstatistica('spain', 'Ferran<br>Torres', '2', 'gols', 'ESP') +
+            gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '2', 'gols', 'ARG') +
             gerarJogadorEstatistica('iran', 'Mehdi<br>Taremi', '2', 'gols', 'IRN') +
+            gerarJogadorEstatistica('ghana', 'Mohammed<br>Kudus', '2', 'gols', 'GHA') +
             gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '2', 'gols', 'FRA') +
             gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols', 'BRA') )}
         ${gerarCartaoEstatisticas('Cartões Amarelos',
