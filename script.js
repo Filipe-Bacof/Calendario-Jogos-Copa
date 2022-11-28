@@ -174,25 +174,26 @@ document.querySelector("#play-offs").innerHTML = `
         <span>AINDA ESTÁ EM TESTES<br>Recomendado abrir no computador<br>Ou girar o celular e reduzir o zoom</span>
         <div class="card">
             ${gerarLinhaMataMata('Oitavas de Final', 'oitavas',
-                gerarGameMataMata('empty', 'empty', '1A', 'empty', 'empty', '2B', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '1C', 'empty', 'empty', '2D', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '1E', 'empty', 'empty', '2F', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '1G', 'empty', 'empty', '2H', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '1B', 'empty', 'empty', '2A', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '1D', 'empty', 'empty', '2C', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '1H', 'empty', 'empty', '2G', '', '', true) )}
+                gerarGameMataMata('empty', 'empty', '1A', 'empty', 'empty', '2B', '', '', false, '03/12', '12h') +
+                gerarGameMataMata('empty', 'empty', '1C', 'empty', 'empty', '2D', '', '', false, '03/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '1E', 'empty', 'empty', '2F', '', '', false, '05/12', '12h') +
+                gerarGameMataMata('brazil', 'Brasil', '1G<br>BRA', 'empty', 'empty', '2H', '', '', false, '05/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '1B', 'empty', 'empty', '2A', '', '', false, '04/12', '12h') +
+                gerarGameMataMata('france', 'França', '1D<br>FRA', 'empty', 'empty', '2C', '', '', false, '04/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false, '06/12', '12h') +
+                gerarGameMataMata('empty', 'empty', '1H', 'empty', 'empty', '2G', '', '', true, '06/12', '16h')
+                 ) + '<br><p>é possivel que sofra alteração</p>'}
             ${gerarLinhaMataMata('Quartas de Final', 'quartas',
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '09/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '09/12', '12h') +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '10/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true, '10/12', '12h') )}
             ${gerarLinhaMataMata('Semi Finais', 'semifinais',
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
-            ${gerarLinhaMataMata('Terceiro Lugar e Final', 'final',
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false) +
-                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true) )}
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '13/12', '16h') +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true, '14/12', '16h') )}
+            ${gerarLinhaMataMata('Final', 'final',
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '17/12', '12h<br>3º Lugar') +
+                gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', true, '18/12', '12h<br>FINAL!') )}
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
@@ -845,11 +846,14 @@ function gerarGrupoCard(grupo, paises) {
 }
 
 // Função PARTIDA - MATAMATA
-function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda) {
+function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, goal2, semBorda, data, tituloJogo) {
     let borda = '';
     semBorda ? borda = ` sem-borda` : '';
     return `
         <div class="game ${borda}">
+            <div class="data">
+                <p>${data} <span>${tituloJogo ? tituloJogo : ''}</span></p>
+            </div>
             <div class="fotos">
                 <img src="./assets/icon-${name1}.svg" alt="Bandeira ${nome1}" onclick="gerarNovosDados('${sigla1}', '${name1}', 'play-offs')" />
                 <img src="./assets/icon-${name2}.svg" alt="Bandeira ${nome2}" onclick="gerarNovosDados('${sigla2}', '${name2}', 'play-offs')" /><br>
@@ -864,7 +868,7 @@ function gerarGameMataMata(name1, nome1, sigla1, name2, nome2, sigla2, goal1, go
 // Função LINHA CHEIA DE PARTIDAS - MATAMATA
 function gerarLinhaMataMata(titulo, jogoClass, games) {
     return `
-        <h3>${titulo}</h3>
+        <h3>${titulo ? titulo : ''}</h3>
         <div class="games ${jogoClass}">
             ${games}
         </div>`
