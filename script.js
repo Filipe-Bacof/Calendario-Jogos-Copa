@@ -54,7 +54,7 @@ document.querySelector("#app").innerHTML = `
         ${createCard("28/11", "segunda",
             createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '3', '3') +
             createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '2', '3') +
-            createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '', '') +
+            createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '1', '0') +
             createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '', ''))}
         ${createCard("29/11", "terça",
             createGame('ecuador', 'ECU', '12:00', 'senegal', 'SEN', '', '') +
@@ -118,7 +118,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 28/11/2022 - 12h</span>
+    <span>Atualizado por último em: 28/11/2022 - 15h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('ecuador', 'ECU', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
@@ -150,8 +150,8 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('belgium', 'BEL', 'Bélgica', 3, 2, 1, 0, 1, 1, 2, -1, false) +
         gerarEquipeNaTabela('canada', 'CAN', 'Canadá', 0, 2, 0, 0, 2, 1, 5, -4, false) )}
     ${gerarGrupoCard('G',
-        gerarEquipeNaTabela('brazil', 'BRA', 'Brasil', 3, 1, 1, 0, 0, 2, 0, 2, true) +
-        gerarEquipeNaTabela('switzerland', 'SUI', 'Suíça', 3, 1, 1, 0, 0, 1, 0, 1, true) +
+        gerarEquipeNaTabela('brazil', 'BRA', 'Brasil', 6, 2, 2, 0, 0, 3, 0, 3, true) +
+        gerarEquipeNaTabela('switzerland', 'SUI', 'Suíça', 3, 2, 1, 0, 1, 1, 1, 0, true) +
         gerarEquipeNaTabela('cameroon', 'CMR', 'Camarões', 1, 2, 0, 1, 1, 3, 4, -1, false) +
         gerarEquipeNaTabela('serbia', 'SRB', 'Sérvia', 1, 2, 0, 1, 1, 3, 5, -2, false) )}
     ${gerarGrupoCard('H',
