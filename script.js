@@ -55,7 +55,7 @@ document.querySelector("#app").innerHTML = `
             createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '3', '3') +
             createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '2', '3') +
             createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '1', '0') +
-            createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '', ''))}
+            createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '2', '0'))}
         ${createCard("29/11", "terça",
             createGame('ecuador', 'ECU', '12:00', 'senegal', 'SEN', '', '') +
             createGame('netherlands', 'HOL', '12:00', 'qatar', 'QAT', '', '') +
@@ -118,7 +118,7 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 28/11/2022 - 15h</span>
+    <span>Atualizado por último em: 28/11/2022 - 18h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 4, 2, 1, 1, 0, 3, 1, 2, true) +
         gerarEquipeNaTabela('ecuador', 'ECU', 'Equador', 4, 2, 1, 1, 0, 3, 1, 2, true) +
@@ -155,10 +155,10 @@ document.querySelector("#classification").innerHTML = `
         gerarEquipeNaTabela('cameroon', 'CMR', 'Camarões', 1, 2, 0, 1, 1, 3, 4, -1, false) +
         gerarEquipeNaTabela('serbia', 'SRB', 'Sérvia', 1, 2, 0, 1, 1, 3, 5, -2, false) )}
     ${gerarGrupoCard('H',
-        gerarEquipeNaTabela('portugal', 'POR', 'Portugal', 3, 1, 1, 0, 0, 3, 1, 2, true) +
+        gerarEquipeNaTabela('portugal', 'POR', 'Portugal', 6, 2, 2, 0, 0, 5, 2, 3, true) +
         gerarEquipeNaTabela('ghana', 'GHA', 'Gana', 3, 2, 1, 0, 1, 5, 5, 0, true) +
-        gerarEquipeNaTabela('uruguay', 'URU', 'Uruguai', 1, 1, 0, 1, 0, 0, 0, 0, false) +
-        gerarEquipeNaTabela('south-korea', 'KOR', 'Coréia do Sul', 1, 2, 0, 1, 1, 2, 3, -1, false) )}
+        gerarEquipeNaTabela('south-korea', 'KOR', 'Coréia do Sul', 1, 2, 0, 1, 1, 2, 3, -1, false) +
+        gerarEquipeNaTabela('uruguay', 'URU', 'Uruguai', 1, 2, 0, 1, 1, 0, 2, -2, false) )}
     ${gerarLegendas()}
     </main>`
 
@@ -181,7 +181,7 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('empty', 'empty', '1B', 'empty', 'empty', '2A', '', '', false, '04/12', '12h') +
                 gerarGameMataMata('france', 'França', 'FRA<br>1D', 'empty', 'empty', '2C', '', '', false, '04/12', '16h') +
                 gerarGameMataMata('empty', 'empty', '1F', 'empty', 'empty', '2E', '', '', false, '06/12', '12h') +
-                gerarGameMataMata('empty', 'empty', '1H', 'empty', 'empty', '2G', '', '', true, '06/12', '16h')
+                gerarGameMataMata('portugal', 'Portugal', 'POR<br>1H', 'empty', 'empty', '2G', '', '', true, '06/12', '16h')
                  ) + '<br><p>é possivel que sofra alteração</p>'}
             ${gerarLinhaMataMata('Quartas de Final', 'quartas',
                 gerarGameMataMata('empty', 'empty', '', 'empty', 'empty', '', '', '', false, '09/12', '16h') +
@@ -219,6 +219,7 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('spain', 'Álvaro<br>Morata', '2', 'gols', 'ESP') +
             gerarJogadorEstatistica('croatia', 'Andrej<br>Kramarić', '2', 'gols', 'CRO') +
             gerarJogadorEstatistica('england', 'Bukayo<br>Saka', '2', 'gols', 'ENG') +
+            gerarJogadorEstatistica('south-korea', 'Cho<br>Gue-sung', '2', 'gols', 'KOR') +
             gerarJogadorEstatistica('netherlands', 'Cody<br>Gakpo', '2', 'gols', 'HOL') +
             gerarJogadorEstatistica('spain', 'Ferran<br>Torres', '2', 'gols', 'ESP') +
             gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '2', 'gols', 'ARG') +
