@@ -398,7 +398,7 @@ td img {
 }
 
 .siglas div h4 {
-    color: #e72727;
+    color: #f7dd43;
 }
 
 .siglas .cla,
@@ -412,5 +412,13 @@ td img {
 }
 
 .ganhador {
-    color: #2de727 !important;
+    color: #26c920 !important;
+}
+
+.empatou {
+    color: #f7dd43 !important;
+}
+
+.perdedor {
+    color: #e72727 !important;
 }
