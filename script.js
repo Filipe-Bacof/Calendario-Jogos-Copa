@@ -53,7 +53,7 @@ document.querySelector("#app").innerHTML = `
             createGame('spain', 'ESP', '16:00', 'germany', 'GER', '1', '1', corPlacar('3'), corPlacar('3')))}
         ${createCard("28/11", "segunda",
             createGame('cameroon', 'CMR', '07:00', 'serbia', 'SRB', '3', '3', corPlacar('3'), corPlacar('3')) +
-            createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '2', '3', corPlacar('1'), corPlacar('2')) +
+            createGame('south-korea', 'KOR', '10:00', 'ghana', 'GHA', '2', '3', corPlacar('2'), corPlacar('1')) +
             createGame('brazil', 'BRA', '13:00', 'switzerland', 'SUI', '1', '0', corPlacar('1'), corPlacar('2')) +
             createGame('portugal', 'POR', '16:00', 'uruguay', 'URU', '2', '0', corPlacar('1'), corPlacar('2')))}
         ${createCard("29/11", "terça",
