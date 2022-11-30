@@ -231,8 +231,10 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('iran', 'Mehdi<br>Taremi', '2', 'gols', 'IRN') +
             gerarJogadorEstatistica('ghana', 'Mohammed<br>Kudus', '2', 'gols', 'GHA') +
             gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '2', 'gols', 'FRA') +
-            gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols', 'BRA') )}
+            gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols', 'BRA') +
+            gerarJogadorEstatistica('saudi-arabia', 'Salem<br>Al-Dawsari', '2', 'gols', 'KSA') )}
         ${gerarCartaoEstatisticas('Cartões Amarelos',
+            gerarJogadorEstatistica('saudi-arabia', 'Abdulelah Ali<br>Awadh Al Amri', '2', 'cartões', 'KSA') +
             gerarJogadorEstatistica('saudi-arabia', 'Abdulellah<br>Al-Malki', '2', 'cartões', 'KSA') +
             gerarJogadorEstatistica('iran', 'Alireza<br>Jahanbakhsh', '2', 'cartões', 'IRN') +
             gerarJogadorEstatistica('belgium', 'Amadou<br>Mvom Onana', '2', 'cartões', 'BEL') +
@@ -252,7 +254,8 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') +
             gerarJogadorEstatistica('united-states', 'Weston<br>McKennie', '1', 'cartão', 'USA') )}
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
-            gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
+            gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') +
+            '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>`
 
 //PARTE AUXILIAR DO CÓDIGO (JSON + FUNÇÕES + ROLAGEM + VARIÁVEL)
