@@ -5,7 +5,7 @@ document.querySelector("#app").innerHTML = `
         <img src="./assets/logo.svg" alt="Logo da NLW" />
         <p>Copa Do Mundo</p><br/>
         <label>Será atualizado diariamente <br/>durante a copa do mundo 2022</label><br/><br/>
-        <label class="destaque">NOVIDADE: Classificações no site<br/>NOVIDADE: Gráfico das Finais no site<br/>NOVIDADE: Estatísticas no site</label><br/><br/>
+        <label class="destaque">SPOILER: MUITAS<br/>NOVIDADES<br/>EM BREVE!!!</label><br/><br/>
         <h3>Feito por Filipe Bacof</h3>
         <a href="https://github.com/Filipe-Bacof/Calendario-Jogos-Copa" target="_blank">Link para o Github</a>
         <button class="scroll-top-btn" onclick="rolagem(0, 'smooth')">TOPO</button>
