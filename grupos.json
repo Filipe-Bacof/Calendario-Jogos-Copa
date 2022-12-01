@@ -1,418 +1,6811 @@
 [
     {
         "id": 0,
-        "sigla": "ARG",
-        "pais": "argentina",
-        "grupo": "C",
-        "jogadores": {
-            "tecnico": "Lionel Scaloni",
-            "goleiros": ["Franco Armani", "Geronimo Rulli", "Damian Martinez"],
-            "zagueiros": ["Juan Foyth", "Nicolas Tagliafico", "Gonzalo Montiel", "German Pezzella", "Cristian Romero", "Nicolas Otamendi", "Lisandro Martinez", "Nahuel Molina"],
-            "meioscampos": ["Leandro Paredes", "Rodrigo De Paul", "Marcos Acuna", "Exequiel Palacios", "Thiago Almada", "Alejandro Gomez", "Rodriguez Guido", "Alexis Mac Allister", "Enzo Fernandez"],
-            "atacantes": ["Julian Alvarez", "Lionel Messi", "Angel Di Maria", "Angel Correa", "Paulo Dybala", "Lautaro Martinez"]
+        "initials": "ARG",
+        "country": [
+            "argentina",
+            "argentina"
+        ],
+        "group": "C",
+        "points": [
+            "6",
+            "3",
+            "2",
+            "0",
+            "1",
+            "5",
+            "2",
+            "3"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Lionel Scaloni",
+            "goalkeeper": [
+                [
+                    "Franco Armani",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gerónimo Rulli",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Damian Martínez",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Juan Foyth",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nicolás Tagliafico",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gonzalo Montiel",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Germán Pezzella",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Cristian Romero",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nicolás Otamendi",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lisandro Martínez",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nahuel Molina",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Leandro Paredes",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rodrigo De Paul",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marcos Acuña",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Exequiel Palacios",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Thiago Almada",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alejandro Gómez",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Guido Rodríguez",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alexis Mac Allister",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Enzo Fernández",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Julián Álvarez",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lionel Messi",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ángel Di María",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ángel Correa",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Paulo Dybala",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lautaro Martínez",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 1,
-        "sigla": "AUS",
-        "pais": "australia",
-        "grupo": "D",
-        "jogadores": {
-            "tecnico": "Graham James Arnold",
-            "goleiros": ["Mathew Ryan", "Andrew Redmayne", "Danny Vukovic"],
-            "zagueiros": ["Milos Degenek", "Nathaniel Atkinson", "Kye Rowles", "Fran Karacic", "Bailey Wright", "Aziz Behich", "Harry Souttar", "Thomas Deng", "Joel Bruce King"],
-            "meioscampos": ["Ajdin Hrustic", "Aaron Mooy", "Riley McGree", "Cameron Devlin", "Jackson Irvine", "Keanu Baccus"],
-            "atacantes": ["Marco Tilio", "Mathew Leckie", "Jamie MacLaren", "Awer Mabil", "Mitch Duke", "Garang Kuol", "Craig Goodwin", "Jason Cummings"]
+        "initials": "AUS",
+        "country": [
+            "australia",
+            "australia"
+        ],
+        "group": "D",
+        "points": [
+            "6",
+            "3",
+            "2",
+            "0",
+            "1",
+            "3",
+            "4",
+            "-1"
+        ],
+        "capitain": "01",
+        "players": {
+            "manager": "Graham James Arnold",
+            "goalkeeper": [
+                [
+                    "Mathew Ryan",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andrew Redmayne",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Danny Vukovic",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Milos Degenek",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nathaniel Atkinson",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kye Rowles",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Fran Karacic",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bailey Wright",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aziz Behich",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Harry Souttar",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Thomas Deng",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Joel Bruce King",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Ajdin Hrustic",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aaron Mooy",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Riley McGree",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Cameron Devlin",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jackson Irvine",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Keanu Baccus",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Marco Tilio",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mathew Leckie",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jamie MacLaren",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Awer Mabil",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mitch Duke",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Garang Kuol",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Craig Goodwin",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jason Cummings",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 2,
-        "sigla": "BEL",
-        "pais": "belgium",
-        "grupo": "F",
-        "jogadores": {
-            "tecnico": "Roberto Martínez Montoliu",
-            "goleiros": ["Thibaut Courtois", "Simon Mignolet", "Koen Casteels"],
-            "zagueiros": ["Toby Alderweireld", "Arthur Theate", "Wout Faes", "Jan Vertonghen", "Leander Dendoncker", "Zeno Debast"],
-            "meioscampos": ["Axel Witsel", "Kevin De Bruyne", "Youri Tielemans", "Thomas Meunier", "Thorgan Hazard", "Amadou Onana", "Hans Vanaken", "Timothy Castagne"],
-            "atacantes": ["Romelu Lukaku", "Eden Hazard", "Yannick Carrasco", "Dries Mertens", "Leandro Trossard", "De Ketelaere", "Michy Batshuayi", "Lois Openda", "Jeremy Doku"]
+        "initials": "BEL",
+        "country": [
+            "belgium",
+            "bélgica"
+        ],
+        "group": "F",
+        "points": [
+            "4",
+            "3",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2",
+            "-1"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Roberto Martínez Montoliu",
+            "goalkeeper": [
+                [
+                    "Thibaut Courtois",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Simon Mignolet",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Koen Casteels",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Toby Alderweireld",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Arthur Theate",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Wout Faes",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jan Vertonghen",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Leander Dendoncker",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Zeno Debast",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Axel Witsel",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kevin De Bruyne",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Youri Tielemans",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Thomas Meunier",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Thorgan Hazard",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Amadou Onana",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hans Vanaken",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Timothy Castagne",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Romelu Lukaku",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Eden Hazard",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yannick Carrasco",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dries Mertens",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Leandro Trossard",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Charles De Ketelaere",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Michy Batshuayi",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Loïs Openda",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jérémy Doku",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 3,
-        "sigla": "BRA",
-        "pais": "brazil",
-        "grupo": "G",
-        "jogadores": {
-            "tecnico": "Tite",
-            "goleiros": ["Alisson", "Ederson", "Weverton"],
-            "zagueiros": ["Danilo", "Alex Sandro", "Daniel Alves", "Alex Telles", "Militão", "Marquinhos", "Thiago Silva", "Bremer"],
-            "meioscampos": ["Bruno Guimarães", "Casemiro", "Fabinho", "Fred", "Paquetá", "Everton Ribeiro"],
-            "atacantes": ["Neymar", "Vinicius Júnior", "Antony", "Rodrygo", "Raphinha", "Richarlison", "Pedro", "Gabriel Jesus", "Gabriel Martinelli"]
+        "initials": "BRA",
+        "country": [
+            "brazil",
+            "brasil"
+        ],
+        "group": "G",
+        "points": [
+            "6",
+            "2",
+            "2",
+            "0",
+            "0",
+            "3",
+            "0",
+            "3"
+        ],
+        "capitain": "03",
+        "players": {
+            "manager": "Tite",
+            "goalkeeper": [
+                [
+                    "Alisson",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Weverton",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ederson",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Danilo",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Thiago Silva",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marquinhos",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alex Sandro",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daniel Alves",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Éder Militão",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alex Telles",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bremer",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Casemiro",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lucas Paquetá",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Fred",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Fabinho",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bruno Guimarães",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Éverton Ribeiro",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Richarlison",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Neymar",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Raphinha",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gabriel Jesus",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Antony",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Vinicius Junior",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rodrygo",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pedro",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gabriel Martinelli",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 4,
-        "sigla": "CMR",
-        "pais": "cameroon",
-        "grupo": "G",
-        "jogadores": {
-            "tecnico": "Rigobert Song Bahanag",
-            "goleiros": ["Brady Ngapandouetnbu", "Devis Epassy", "Andre Onana"],
-            "zagueiros": ["Jerome Ngom Mbekeli", "Nicolas Nkoulou", "Christopher Wooh", " Olivier Mbaizo", "Collins Fai", " Jean Charles Castelletto", "Enzo Ebosse", "Nouhou Tolo"],
-            "meioscampos": ["Gael Ondoua", "Georges Kevin Nkoudou", "Andre Frank Zambo", "Samuel Gouet", "Pierre Kunde", "Martin Hongla", "Olivier Ntcham", "Souaibou Marou"],
-            "atacantes": ["Nicolas Ngameleu", "Jean Pierre Nsame", "Vincent Aboubakar", "Christian Bassogog", "Karl Toko Ekambi", "Choupo Moting Eric", "Bryan Mbeumo"]
+        "initials": "CMR",
+        "country": [
+            "cameroon",
+            "camarões"
+        ],
+        "group": "G",
+        "points": [
+            "1",
+            "2",
+            "0",
+            "1",
+            "1",
+            "3",
+            "4",
+            "-1"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Rigobert Song Bahanag",
+            "goalkeeper": [
+                [
+                    "Brady Ngapandouetnbu",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Devis Epassy",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "André Onana",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Jerome Ngom Mbekeli",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nicolas Nkoulou",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Christopher Wooh",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Olivier Mbaizo",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Collins Fai",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jean Charles Castelletto",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Enzo Ebosse",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nouhou Tolo",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Gael Ondoua",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Georges Kevin Nkoudou",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andre Frank Zambo",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Samuel Gouet",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pierre Kunde",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Martin Hongla",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Olivier Ntcham",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Souaibou Marou",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Nicolas Ngameleu",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jean Pierre Nsame",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Vincent Aboubakar",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Christian Bassogog",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Karl Toko Ekambi",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Choupo Moting Eric",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bryan Mbeumo",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 5,
-        "sigla": "CAN",
-        "pais": "canada",
-        "grupo": "F",
-        "jogadores": {
-            "tecnico": "John Herdman",
-            "goleiros": ["Dayne St Clair", "James Pantemis", "Milan Borjan"],
-            "zagueiros": ["Alistair Johnston", "Sam Adekugbe", "Kamal Miller", "Steven Vitoria", "Richie Laryea", "Derek Cornelius", "Joel Waterman"],
-            "meioscampos": ["Samuel Piette", "Stephen Eustaquio", "Liam Fraser", "Junior Hoilett", "Atiba Hutchinson", "Mark Anthony Kaye", "Ismael Kone", "Jonathan Osorio", "Liam Millar", "David Wotherspoon"],
-            "atacantes": ["Lucas Cavallini", "Tajon Buchanan", "Ike Ugbo", "Cyle Larin", "Davies Alphonso", "Jonathan David"]
+        "initials": "CAN",
+        "country": [
+            "canada",
+            "canadá"
+        ],
+        "group": "F",
+        "points": [
+            "0",
+            "3",
+            "0",
+            "0",
+            "3",
+            "2",
+            "7",
+            "-5"
+        ],
+        "capitain": "13",
+        "players": {
+            "manager": "John Herdman",
+            "goalkeeper": [
+                [
+                    "Dayne St Clair",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "James Pantemis",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Milan Borjan",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Alistair Johnston",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sam Adekugbe",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kamal Miller",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Steven Vitória",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Richie Laryea",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Derek Cornelius",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Joel Waterman",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Samuel Piette",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Stephen Eustaquio",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Liam Fraser",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Junior Hoilett",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Atiba Hutchinson",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mark Anthony Kaye",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ismaël Koné",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jonathan Osorio",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Liam Millar",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "David Wotherspoon",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Lucas Cavallini",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Tajon Buchanan",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Iké Ugbo",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Cyle Larin",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Davies Alphonso",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jonathan David",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 6,
-        "sigla": "CRC",
-        "pais": "costa-rica",
-        "grupo": "E",
-        "jogadores": {
-            "tecnico": "Fernando Suárez",
-            "goleiros": ["Keylor Navas", "Esteban Alvarado", "Patrick Sequeira"],
-            "zagueiros": ["Juan Vargas", "Keysher Fuller", "Oscar Duarte", "Bryan Oviedo", "Francisco Calvo", "Carlos Martinez", "Kendall Waston", "Ronald Matarrita"],
-            "meioscampos": ["Daniel Chacon", "Celso Borges", "Jewison Bennette", "Bryan Ruiz", "Gerson Torres", "Youstin Salas", "Yeltsin Tejeda", "Brandon Aguilera", "Douglas Lopez", "Roan Wilson", "Anthony Hernandez", "Alvaro Zamora"],
-            "atacantes": ["Anthony Contreras", "Johan Venegas", "Joel Campbell"]
+        "initials": "CRC",
+        "country": [
+            "costa-rica",
+            "costa rica"
+        ],
+        "group": "E",
+        "points": [
+            "3",
+            "3",
+            "1",
+            "0",
+            "2",
+            "3",
+            "1",
+            "-8"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Fernando Suárez",
+            "goalkeeper": [
+                [
+                    "Keylor Navas",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Esteban Alvarado",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Patrick Sequeira",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Juan Vargas",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Keysher Fuller",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Óscar Duarte",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bryan Oviedo",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Francisco Calvo",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Carlos Martínez",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kendall Waston",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ronald Matarrita",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Daniel Chacón",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Celso Borges",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jewison Bennette",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bryan Ruiz",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gerson Torres",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Youstin Salas",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yeltsin Tejeda",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Brandon Aguilera",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Douglas López",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Roan Wilson",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Anthony Hernández",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Álvaro Zamora",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Anthony Contreras",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Johan Venegas",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Joel Campbell",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 7,
-        "sigla": "CRO",
-        "pais": "croatia",
-        "grupo": "F",
-        "jogadores": {
-            "tecnico": "Zlatko Dalić",
-            "goleiros": ["Dominik Livakovic", "Ivo Grbic", "Ivica Ivusic"],
-            "zagueiros": ["Josip Stanisic", "Borna Barisic", "Martin Erlic", "Dejan Lovren", "Borna Sosa", "Josko Gvardiol", "Domagoj Vida", "Josip Juranovic", "Josip Sutalo"],
-            "meioscampos": ["Lovro Majer", "Mateo Kovacic", "Luka Modric", "Marcelo Brozovic", "Nikola Vlasic", "Mario Pasalic", "Luka Sucic", "Kristijan Jakic"],
-            "atacantes": ["Ivan Persic", "Andrej Kramaric", "Marko Livaja", "Bruno Petkovic", "Ante Budimir", "Mislav Orsic"]
+        "initials": "CRO",
+        "country": [
+            "croatia",
+            "croácia"
+        ],
+        "group": "F",
+        "points": [
+            "5",
+            "3",
+            "1",
+            "2",
+            "0",
+            "4",
+            "1",
+            "3"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Zlatko Dalić",
+            "goalkeeper": [
+                [
+                    "Dominik Livakovic",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ivo Grbic",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ivica Ivusic",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Josip Stanisic",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Borna Barisic",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Martin Erlic",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dejan Lovren",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Borna Sosa",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Josko Gvardiol",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Domagoj Vida",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Josip Juranovic",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Josip Sutalo",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Lovro Majer",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mateo Kovacic",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Luka Modric",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marcelo Brozovic",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nikola Vlasic",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mario Pasalic",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Luka Sucic",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kristijan Jakic",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Ivan Persic",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andrej Kramaric",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marko Livaja",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bruno Petkovic",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ante Budimir",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mislav Orsic",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 8,
-        "sigla": "DEN",
-        "pais": "denmark",
-        "grupo": "D",
-        "jogadores": {
-            "tecnico": "Kasper Hjulmand",
-            "goleiros": ["Kasper Schmeichel", "Oliver Christensen", "Frederik Ronnow"],
-            "zagueiros": ["Joachim Anderson", "Victor Nelsson", "Simon Kjaer", "Joakim Maehle", "Andreas Christensen", "Rasmus Kristensen", "Jens Stryger Larsen", "Daniel Wass", "Alexander Bah"],
-            "meioscampos": ["Mathias Jensen", "Thomas Delaney", "Christian Eriksen", "Andreas Skov Olsen", "Mikkel Damsgaard", "Christian Norgaard", "Pierre Emile Hojbjerg", "Robert Skov", "Jesper Lindstrom"],
-            "atacantes": ["Martin Braithwaite", "Kasper Dolberg", "Jonas Wind", "Yussuf Yurary Poulsen", "Andreas Cornelius"]
+        "initials": "DEN",
+        "country": [
+            "denmark",
+            "dinamarca"
+        ],
+        "group": "D",
+        "points": [
+            "1",
+            "3",
+            "0",
+            "1",
+            "2",
+            "1",
+            "3",
+            "-2"
+        ],
+        "capitain": "04",
+        "players": {
+            "manager": "Kasper Hjulmand",
+            "goalkeeper": [
+                [
+                    "Kasper Schmeichel",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Oliver Christensen",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Frederik Rönnow",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Joachim Anderson",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Victor Nelsson",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Simon Kjaer",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Joakim Maehle",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andreas Christensen",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rasmus Kristensen",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jens Stryger Larsen",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daniel Wass",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alexander Bah",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Mathias Jensen",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Thomas Delaney",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Christian Eriksen",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andreas Skov Olsen",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mikkel Damsgaard",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Christian Norgaard",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pierre-Emile Höjbjerg",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Robert Skov",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jesper Lindström",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Martin Braithwaite",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kasper Dolberg",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jonas Wind",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yussuf Yurary Poulsen",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andreas Cornelius",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 9,
-        "sigla": "ECU",
-        "pais": "ecuador",
-        "grupo": "A",
-        "jogadores": {
-            "tecnico": "Gustavo Alfaro",
-            "goleiros": ["Hernan Galindez", "Moises Ramirez", "Alexander Dominguez"],
-            "zagueiros": ["Felix Torres", "Piero Hincapie", "Robert Arboleda", "William Pacho", "Pervis Estupinan", "Xavier Arreaga", "Angelo Preciado", "Diego Jose Palacios Espinoza", "Jackson Porozo"],
-            "meioscampos": ["Jose Cifuentes", "Carlos Gruezo", "Eduar Preciado", "Romario Ibarra", "Angel Mena", "Jeremy Sarmiento", "Gonzalo Plata", "Jhegson Mendez", "Alan Franco", "Moises Caicedo"],
-            "atacantes": ["Michael Estrada", "Enner Valencia", "Djorkaeff Reasco", "Kevin Rodriguez"]
+        "initials": "ECU",
+        "country": [
+            "ecuador",
+            "equador"
+        ],
+        "group": "A",
+        "points": [
+            "4",
+            "3",
+            "1",
+            "1",
+            "1",
+            "4",
+            "3",
+            "1"
+        ],
+        "capitain": "13",
+        "players": {
+            "manager": "Gustavo Alfaro",
+            "goalkeeper": [
+                [
+                    "Hernán Galíndez",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Moisés Ramírez",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alexander Domínguez",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Félix Torres",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Piero Hincapié",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Robert Arboleda",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "William Pacho",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pervis Estupiñán",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Xavier Arreaga",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Angelo Preciado",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Diego Jose Palacios Espinoza",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jackson Porozo",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "José Cifuentes",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Carlos Gruezo",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Eduar Preciado",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Romario Ibarra",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ángel Mena",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jeremy Sarmiento",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gonzalo Plata",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jhegson Méndez",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alan Franco",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Moisés Caicedo",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Michael Estrada",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Enner Valencia",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Djorkaeff Reasco",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kevin Rodríguez",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 10,
-        "sigla": "ENG",
-        "pais": "england",
-        "grupo": "B",
-        "jogadores": {
-            "tecnico": "Gareth Southgate",
-            "goleiros": ["Jordan Pickford", "Nick Pope", "Aaron Ramsdale"],
-            "zagueiros": ["Kyle Walker", "Luke Shaw", "John Stones", "Harry Maguire", "Kieran Trippier", "Eric Dier", "Conor Coady", "Trent Alexander-Arnold", "Ben White"],
-            "meioscampos": ["Declan Rice", "Jordan Henderson", "Kalvin Phillips", "Mason Mount", "Philip Foden", "Jude Bellingham", "James Maddison", "Conor Gallagher"],
-            "atacantes": ["Jack Grealish", "Harry Kane", "Raheem Sterling", "Marcus Rashford", "Bukayo Saka", "Callum Wilson"]
+        "initials": "ENG",
+        "country": [
+            "england",
+            "inglaterra"
+        ],
+        "group": "B",
+        "points": [
+            "7",
+            "3",
+            "2",
+            "1",
+            "0",
+            "9",
+            "2",
+            "7"
+        ],
+        "capitain": "09",
+        "players": {
+            "manager": "Gareth Southgate",
+            "goalkeeper": [
+                [
+                    "Jordan Pickford",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nick Pope",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aaron Ramsdale",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Kyle Walker",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Luke Shaw",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "John Stones",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Harry Maguire",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kieran Trippier",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Eric Dier",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Conor Coady",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Trent Alexander-Arnold",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ben White",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Declan Rice",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jordan Henderson",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kalvin Phillips",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mason Mount",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Philip Foden",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jude Bellingham",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "James Maddison",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Conor Gallagher",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Jack Grealish",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Harry Kane",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Raheem Sterling",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marcus Rashford",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bukayo Saka",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Callum Wilson",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 11,
-        "sigla": "FRA",
-        "pais": "france",
-        "grupo": "D",
-        "jogadores": {
-            "tecnico": "Didier Deschamps",
-            "goleiros": ["Hugo Lloris", "Steve Mandanda", "Alphonse Areola"],
-            "zagueiros": ["Pavard Benjamin", "Axel Arthur Disasi", "Raphael Varane", "Jules Kounde", "Youssouf Fofana", "William Saliba", "Dayotchanculle Upamecano", "Hernandez Lucas", "Theo Hernandez", "Ibrahima Konate"],
-            "meioscampos": ["Matteo Guendouzi", "Aurelien Tchouameni", "Adrien Rabiot", "Jordan Veretout", "Eduardo Celmi Camavinga"],
-            "atacantes": ["Antoine Griezmann", "Olivier Giroud", "Kylian Mbappe", "Ousmane Dembele", "Randal Kolo Muani", "Karim Benzema", "Coman Kingsley", "Marcus Thuram"]
+        "initials": "FRA",
+        "country": [
+            "france",
+            "frança"
+        ],
+        "group": "D",
+        "points": [
+            "6",
+            "3",
+            "2",
+            "0",
+            "1",
+            "6",
+            "3",
+            "3"
+        ],
+        "capitain": "01",
+        "players": {
+            "manager": "Didier Deschamps",
+            "goalkeeper": [
+                [
+                    "Hugo Lloris",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Steve Mandanda",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alphonse Areola",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Pavard Benjamin",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Axel Arthur Disasi",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Raphaël Varane",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jules Koundé",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Youssouf Fofana",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "William Saliba",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dayotchanculle Upamecano",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lucas Hernández",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Theo Hernández",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ibrahima Konaté",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Mattéo Guendouzi",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aurélien Tchouameni",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Adrien Rabiot",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jordan Veretout",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Eduardo Celmi Camavinga",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Antoine Griezmann",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Olivier Giroud",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kylian Mbappé",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ousmane Dembélé",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Randal Kolo Muani",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Karim Benzema",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kingsley Coman",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marcus Thuram",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 12,
-        "sigla": "GER",
-        "pais": "germany",
-        "grupo": "E",
-        "jogadores": {
-            "tecnico": "Hans Dieter Flick",
-            "goleiros": ["Neuer Manuel", "Kevin Trapp", "Marc Andre Ter Stegen"],
-            "zagueiros": ["Antonio Ruediger", "David Raum", "Matthias Ginter", "Thilo Kehrer", "Suele Niklas", "Lukas Klostermann", "Christian Günter", "Nico Schlotterbeck", "Armel Bella Kotchap"],
-            "meioscampos": ["Kimmich Joshua", "Goretzka Leon", "Mario Goetze", "Mueller Thomas", "Musiala Jamal", "Julian Brandt", "Jonas Hofmann", "Sane Leroy", "Ilkay Guendogan"],
-            "atacantes": ["Kai Havertz", "Niclas Füllkrug", "Gnabry Serge", "Karim David Adeyemi", "Youssoufa Moukoko"]
+        "initials": "GER",
+        "country": [
+            "germany",
+            "alemanha"
+        ],
+        "group": "E",
+        "points": [
+            "4",
+            "3",
+            "1",
+            "1",
+            "1",
+            "6",
+            "5",
+            "1"
+        ],
+        "capitain": "01",
+        "players": {
+            "manager": "Hans Dieter Flick",
+            "goalkeeper": [
+                [
+                    "Manuel Neuer",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kevin Trapp",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marc-André Ter Stegen",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Antonio Rüdiger",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "David Raum",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Matthias Ginter",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Thilo Kehrer",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Niklas Süle",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lukas Klostermann",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Christian Günter",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nico Schlotterbeck",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Armel Bella-Kotchap",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Joshua Kimmich",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Leon Goretzka",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mario Götze",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Thomas Müller",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jamal Musiala",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Julian Brandt",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jonas Hofmann",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Leroy Sané",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ilkay Gündogan",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Kai Havertz",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Niclas Füllkrug",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Serge Gnabry",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Karim David Adeyemi",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Youssoufa Moukoko",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 13,
-        "sigla": "GHA",
-        "pais": "ghana",
-        "grupo": "H",
-        "jogadores": {
-            "tecnico": "Otto Addo",
-            "goleiros": ["Lawrence Ati", "Danlad Ibrahim", "Abdul Manaf Nurudeen"],
-            "zagueiros": ["Tariq Lamptey", "Denis Odoi", "Mohammed Salisu", "Gideon Mensah", "Joseph Aidoo", "Abdul Rahman Baba", "Daniel Amartey", "Alexander Djiku", "Seidu Alidu"],
-            "meioscampos": ["Thomas Partey", "Elisha Owusu", "Abdul Fatawu Issahaku", "Daniel Kofi Kyereh", "Osman Bukari", "Daniel Afriyie", "Kodus Mohammed", "Salis Abdul Samed", "Kamaldeen Sulemana", "Kamal Sowah"],
-            "atacantes": ["Jordan Ayew", "Andre Ayew", "Inaki Williams", "Antoine Semenyo"]
+        "initials": "GHA",
+        "country": [
+            "ghana",
+            "gana"
+        ],
+        "group": "H",
+        "points": [
+            "3",
+            "2",
+            "1",
+            "0",
+            "1",
+            "5",
+            "5",
+            "0"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Otto Addo",
+            "goalkeeper": [
+                [
+                    "Lawrence Ati",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Danlad Ibrahim",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdul Manaf Nurudeen",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Tariq Lamptey",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Denis Odoi",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohammed Salisu",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gideon Mensah",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Joseph Aidoo",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdul-Rahman Baba",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daniel Amartey",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alexander Djiku",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Seidu Alidu",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Thomas Partey",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Elisha Owusu",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdul Fatawu Issahaku",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daniel-Kofi Kyereh",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Osman Bukari",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daniel Afriyie",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kodus Mohammed",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Salis Abdul Samed",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kamaldeen Sulemana",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kamal Sowah",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Jordan Ayew",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "André Ayew",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Iñaki Williams",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Antoine Semenyo",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 14,
-        "sigla": "IRN",
-        "pais": "iran",
-        "grupo": "B",
-        "jogadores": {
-            "tecnico": "Carlos Queiroz",
-            "goleiros": ["Alireza Beiranvand", "Payam Niazmand", "Amir Abedzadeh", "Hossein Hosseini"],
-            "zagueiros": ["Sadegh Moharrami", "Ehsan Haji Safi", "Shojae Khalilzadeh", "Milad Mohammadi", "Morteza Pouraliganji", "Mohammad Kanaani", "Roozbeh Cheshmi", "Majid Hosseini", "Ramin Rezaeian", "Abolfazl Jalali"],
-            "meioscampos": ["Saeid Ezatolahi", "Alireza Jahanbakhsh", "Vahid Amiri", "Saman Ghoddos", "Mahdi Torabi", "Ali Gholizadeh", "Karimi Ali", "Ahmad Noorollahi", ""],
-            "atacantes": ["Mehdi Taremi", "Karim Ansarifard", "Sardar Azmoun"]
+        "initials": "IRN",
+        "country": [
+            "iran",
+            "irã"
+        ],
+        "group": "B",
+        "points": [
+            "3",
+            "3",
+            "1",
+            "0",
+            "2",
+            "4",
+            "7",
+            "-3"
+        ],
+        "capitain": "03",
+        "players": {
+            "manager": "Carlos Queiroz",
+            "goalkeeper": [
+                [
+                    "Alireza Beiranvand",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Payam Niazmand",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Amir Abedzadeh",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hossein Hosseini",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Sadegh Moharrami",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ehsan Haji Safi",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Shojae Khalilzadeh",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Milad Mohammadi",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Morteza Pouraliganji",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohammad Kanaani",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Roozbeh Cheshmi",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Majid Hosseini",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ramin Rezaeian",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abolfazl Jalali",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Saeid Ezatolahi",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alireza Jahanbakhsh",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Vahid Amiri",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Saman Ghoddos",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mahdi Torabi",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ali Gholizadeh",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Karimi Ali",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ahmad Noorollahi",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Mehdi Taremi",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Karim Ansarifard",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sardar Azmoun",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 15,
-        "sigla": "JPN",
-        "pais": "japan",
-        "grupo": "E",
-        "jogadores": {
-            "tecnico": "Hajime Moriyasu",
-            "goleiros": ["Eiji Kawashima", "Shuichi Gonda", "Daniel Schmidt"],
-            "zagueiros": ["Miki Yamane", "Shogo Taniguchi", "Kou Itakura", "Yuto Nagatomo", "Takehiro Tomiyasu", "Hiroki Sakai", "Maya Yoshida", "Hiroki Ito"],
-            "meioscampos": ["Wataru Endo", "Gaku Shibasaki", "Ritsu Doan", "Kaoru Mitoma", "Takumi Minamino", "Takefusa Kubo", "Hidemasa Morita", "Junya Ito", "Daichi Kamada", "Ao Tanaka", "Yuki Soma"],
-            "atacantes": ["Takuma Asano", "Shuto Machino", "Ayase Ueda", "Daizen Maeda"]
+        "initials": "JPN",
+        "country": [
+            "japan",
+            "japão"
+        ],
+        "group": "E",
+        "points": [
+            "6",
+            "3",
+            "2",
+            "0",
+            "1",
+            "4",
+            "3",
+            "1"
+        ],
+        "capitain": "22",
+        "players": {
+            "manager": "Hajime Moriyasu",
+            "goalkeeper": [
+                [
+                    "Eiji Kawashima",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Shuichi Gonda",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daniel Schmidt",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Miki Yamane",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Shogo Taniguchi",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kou Itakura",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yuto Nagatomo",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Takehiro Tomiyasu",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hiroki Sakai",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Maya Yoshida",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hiroki Ito",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Wataru Endo",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gaku Shibasaki",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ritsu Doan",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kaoru Mitoma",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Takumi Minamino",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Takefusa Kubo",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hidemasa Morita",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Junya Ito",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daichi Kamada",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ao Tanaka",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yuki Soma",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Takuma Asano",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Shuto Machino",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ayase Ueda",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daizen Maeda",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 16,
-        "sigla": "KOR",
-        "pais": "south-korea",
-        "grupo": "H",
-        "jogadores": {
-            "tecnico": "Paulo Jorge Gomes",
-            "goleiros": ["Kim Seunggyu", "Song Bumkeun", "Jo Hyeonwoo"],
-            "zagueiros": ["Yoon Jonggyu", "Kim Jinsu", "Kim Minjae", "Hong Chul", "Kim Moonhwan", "Kim Younggwon", "Kwon Kyungwon", "Kim Taehwan", "Cho Yumin"],
-            "meioscampos": ["Jung Wooyoung", "Hwang Inbeom", "Son Heungmin", "Paik Seungho", "Lee Jaesung", "Hwang Heechan", "Son Junho", "Na Sangho", "Lee Kangin", "Kwon Changhoon", "Jeong Wooyeong", "Song Minkyu"],
-            "atacantes": ["Cho Guesung", "Hwang Uijo"]
+        "initials": "KOR",
+        "country": [
+            "south-korea",
+            "coréia do sul"
+        ],
+        "group": "H",
+        "points": [
+            "1",
+            "2",
+            "0",
+            "1",
+            "1",
+            "2",
+            "3",
+            "-1"
+        ],
+        "capitain": "07",
+        "players": {
+            "manager": "Paulo Jorge Gomes",
+            "goalkeeper": [
+                [
+                    "Seung-gyu Kim",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bum-keun Song",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hyeon-woo Jo",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Jong-gyu Yoon",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jin-su Kim",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Min-jae Kim",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hong Chul",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Moon-hwan Kim",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Young-gwon Kim",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kyung-won Kwon",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Tae-hwan Kim",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yu-min Cho",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Woo-young Jung",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "In-beom Hwang",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Heung-min Son",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Seung-ho Paik",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jae-sung Lee",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hee-chan Hwang",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jun-ho Son",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sang-ho Na",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kang-in Lee",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Chang-hoon Kwon",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Woo-yeong Jeong",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Min-kyu Song",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Gue-sung Cho",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ui-jo Hwang",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 17,
-        "sigla": "MEX",
-        "pais": "mexico",
-        "grupo": "C",
-        "jogadores": {
-            "tecnico": "Gerardo Daniel Martino",
-            "goleiros": ["Alfredo Talavera", "Rodolfo Cota", "Guillermo Ochoa"],
-            "zagueiros": ["Nestor Araujo", "Cesar Montes", "Edson Alvarez", "Johan Vasquez", "Gerardo Arteaga", "Hector Moreno", "Jorge Sanchez", "Jesus Gallardo", "Kevin Alvarez"],
-            "meioscampos": ["Luis Romo", "Carlos Rodriguez", "Erick Gutierrez", "Hector Herrera", "Andres Guardado", "Luis Chavez"],
-            "atacantes": ["Raul Jimenez", "Alexis Vega", "Gogelio Gabriel Funes", "Orbelin Pineda", "Henry Martin", "Uriel Antuna", "Hirving Lozando", "Roberto Alvarado"]
+        "initials": "MEX",
+        "country": [
+            "mexico",
+            "méxico"
+        ],
+        "group": "C",
+        "points": [
+            "4",
+            "3",
+            "1",
+            "1",
+            "1",
+            "2",
+            "3",
+            "-1"
+        ],
+        "capitain": "18",
+        "players": {
+            "manager": "Gerardo Daniel Martino",
+            "goalkeeper": [
+                [
+                    "Alfredo Talavera",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rodolfo Cota",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Guillermo Ochoa",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Néstor Araújo",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "César Montes",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Edson Alvarez",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Johan Vásquez",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gerardo Arteaga",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Héctor Moreno",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jorge Sánchez",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jesús Gallardo",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kevin Álvarez",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Luis Romo",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Carlos Rodríguez",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Érick Gutiérrez",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Héctor Herrera",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andrés Guardado",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Luis Chávez",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Raúl Jiménez",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alexis Vega",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rogelio Funes Mori",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Orbelín Pineda",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Henry Martín",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Uriel Antuna",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hirving Lozando",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Roberto Alvarado",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 18,
-        "sigla": "MAR",
-        "pais": "morocco",
-        "grupo": "F",
-        "jogadores": {
-            "tecnico": "Hoalid Regragui",
-            "goleiros": ["Yassine Bounou", "Monir El Kajoui", "Ahmed Tagnaouti"],
-            "zagueiros": ["Achraf Hakimi", "Noussair Mazraoui", "Nayef Aguerd", "Ghanem Saiss", "Jawad El Yamiq", "Dari Achraf", "Benoun Badr", "Yahya Attiat-Allah"],
-            "meioscampos": ["Sofyan Amrabat", "Hakim Ziyech", "Azzedine Ounahi", "Anass Zaroury", "Ilias Chair", "Zakaria Aboukhlal", "Selim Amallah", "Sofiane Boufal", "Bilal El Khannouss", "Jabrane Yahya"],
-            "atacantes": ["Abd Al Razke Hamdalah", "Abdelhamid Sabiri", "Abde Ezzalzouli", "Youssef En Nesyri", "Walid Cheddira"]
+        "initials": "MAR",
+        "country": [
+            "morocco",
+            "marrocos"
+        ],
+        "group": "F",
+        "points": [
+            "7",
+            "3",
+            "2",
+            "1",
+            "0",
+            "4",
+            "1",
+            "3"
+        ],
+        "capitain": "06",
+        "players": {
+            "manager": "Hoalid Regragui",
+            "goalkeeper": [
+                [
+                    "Yassine Bono",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Munir El Kajoui",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ahmed Reda Tagnaouti",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Achraf Hakimi",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Noussair Mazraoui",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nayef Aguerd",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ghanem Saïss",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jawad El Yamiq",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Achraf Dari",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Badr Benoun",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yahya Attiat-Allah",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Sofyan Amrabat",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hakim Ziyech",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Azzedine Ounahi",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Anass Zaroury",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ilias Chair",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Zakaria Aboukhlal",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Selim Amallah",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sofiane Boufal",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bilal El Khannouss",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yahya Jabrane",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Abderrazak Hamdalah",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdelhamid Sabiri",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abde Ezzalzouli",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Youssef En-Nesyri",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Walid Cheddira",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 19,
-        "sigla": "HOL",
-        "pais": "netherlands",
-        "grupo": "A",
-        "jogadores": {
-            "tecnico": "Louis Van Gaal",
-            "goleiros": ["Remko Pasveer", "Justin Bijlow", "Andries Noppert"],
-            "zagueiros": ["Jurrien Timber", "Matthijs De Ligt", "Virgil Van Dijk", "Nathan Ake", "Stefan De Vrij", "Tyrell Malacia", "Daley Blind", "Denzel Dumfries", "Jeremie Frimpong"],
-            "meioscampos": ["Steven Berghuis", "Davy Klaassen", "Marten De Roon", "Teun Koopmeiners", "Frenkie De Jong", "Kenneth Taylor", "Xavi Simons"],
-            "atacantes": ["Steven Bergwijn", "Cody Gakpo", "Luuk De Jong", "Memphis Depay", "Noa Lang", "Vincent Janssen", "Wout Weghorst"]
+        "initials": "NED",
+        "country": [
+            "netherlands",
+            "holanda"
+        ],
+        "group": "A",
+        "points": [
+            "7",
+            "3",
+            "2",
+            "1",
+            "0",
+            "5",
+            "1",
+            "4"
+        ],
+        "capitain": "04",
+        "players": {
+            "manager": "Louis Van Gaal",
+            "goalkeeper": [
+                [
+                    "Remko Pasveer",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Justin Bijlow",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andries Noppert",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Jurrien Timber",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Matthijs De Ligt",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Virgil Van Dijk",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nathan Aké",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Stefan De Vrij",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Tyrell Malacia",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daley Blind",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Denzel Dumfries",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jeremie Frimpong",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Steven Berghuis",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Davy Klaassen",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marten De Roon",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Teun Koopmeiners",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Frenkie De Jong",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kenneth Taylor",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Xavi Simons",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Steven Bergwijn",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Cody Gakpo",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Luuk De Jong",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Memphis Depay",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Noa Lang",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Vincent Janssen",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Wout Weghorst",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 20,
-        "sigla": "POL",
-        "pais": "poland",
-        "grupo": "C",
-        "jogadores": {
-            "tecnico": "Czes ław Michniewicz",
-            "goleiros": ["Wojciech Szczesny", "Lukasz Skorupski", "Kamil Grabara"],
-            "zagueiros": ["Matty Cash", "Artur Jedrzejczyk", "Mateusz Wieteska", "Jan Bednarek", "Jakub Kiwior", "Kamil Glik", "Bartosz Bereszynski", "Robert Gumny"],
-            "meioscampos": ["Krystian Bielik", "Damian Szymanski", "Grzegorz Krychowiak", "Kamil Grosicki", "Jakub Kaminski", "Szyman Zurkowski", "Sebastian Szymanski", "Piotr Zielinski", "Nicola Zalewski", "Przemyslaw Frankowski", "Michal Skoras"],
-            "atacantes": ["Arkadiusz Milik", "Lewandowski Robert", "Karol Swiderski", "Krzysztof Piatek"]
+        "initials": "POL",
+        "country": [
+            "poland",
+            "polônia"
+        ],
+        "group": "C",
+        "points": [
+            "4",
+            "3",
+            "1",
+            "1",
+            "1",
+            "2",
+            "2",
+            "0"
+        ],
+        "capitain": "09",
+        "players": {
+            "manager": "Czes ław Michniewicz",
+            "goalkeeper": [
+                [
+                    "Wojciech Szczesny",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lukasz Skorupski",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kamil Grabara",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Matty Cash",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Artur Jedrzejczyk",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mateusz Wieteska",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jan Bednarek",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jakub Kiwior",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kamil Glik",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bartosz Bereszynski",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Robert Gumny",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Krystian Bielik",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Damian Szymanski",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Grzegorz Krychowiak",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kamil Grosicki",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jakub Kaminski",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Szyman Zurkowski",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sebastian Szymanski",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Piotr Zielinski",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nicola Zalewski",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Przemyslaw Frankowski",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Michal Skoras",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Arkadiusz Milik",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lewandowski Robert",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Karol Swiderski",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Krzysztof Piatek",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 21,
-        "sigla": "POR",
-        "pais": "portugal",
-        "grupo": "H",
-        "jogadores": {
-            "tecnico": "Fernando Manuel Fernandes",
-            "goleiros": ["Rui Patricio", "Jose Sa", "Diogo Costa"],
-            "zagueiros": ["Diogo Dalot", "Pepe", "Ruben Dias", "Raphael Guerreiro", "Danilo", "Nuno Mendes", "Joao Cancelo", "Antonio Silva"],
-            "meioscampos": ["Joao Palhinha", "Bruno Fernandes", "William", "Vitinha", "Joao Mario", "Rúben Neves", "Matheus Nunes", "Otavio"],
-            "atacantes": ["Cristiano Ronaldo", "Andre Silva", "Bernardo Silva", "Joao Felix", "Rafael Leao", "Ricardo Horta", "Goncalo Ramos"]
+        "initials": "POR",
+        "country": [
+            "portugal",
+            "portugal"
+        ],
+        "group": "H",
+        "points": [
+            "6",
+            "2",
+            "2",
+            "0",
+            "0",
+            "5",
+            "2",
+            "3"
+        ],
+        "capitain": "07",
+        "players": {
+            "manager": "Fernando Manuel Fernandes",
+            "goalkeeper": [
+                [
+                    "Rui Patrício",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "José Sá",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Diogo Costa",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Diogo Dalot",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pepe",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rúben Dias",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Raphaël Guerreiro",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Danilo",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nuno Mendes",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "João Cancelo",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "António Silva",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "João Palhinha",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bruno Fernandes",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "William",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Vitinha",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "João Mário",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rúben Neves",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Matheus Nunes",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Otávio",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Cristiano Ronaldo",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "André Silva",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bernardo Silva",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "João Félix",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rafael Leão",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ricardo Horta",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gonçalo Ramos",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 22,
-        "sigla": "QAT",
-        "pais": "qatar",
-        "grupo": "A",
-        "jogadores": {
-            "tecnico": "Féliz Sánchez Bas",
-            "goleiros": ["Saad Alsheeb", "Yousof Hassan", "Meshaal Barsham"],
-            "zagueiros": ["Pedro Miguel", "Mohammed Waad", "Tarek Salman", "Musaab Khidir", "Homam Ahmed", "Bassam Hisham", "Boualem Khoukhi", "Ismail Mohamad"],
-            "meioscampos": ["Abdelkarim Hassan", "Abdulaziz Hatem", "Ali Assadalla", "Hassan Alhaydos", "Karim Boudiaf", "Salem Al Hajri", "Assim Madibo", "Naif Abdulraheem", "Jassem Gaber", "Mostafa Tarek Meshaal"],
-            "atacantes": ["Ahmed Alaaeldin", "Mohammed Muntari", "Akram Afif", "Khalid Muneer", "Almoez Ali"]
+        "initials": "QAT",
+        "country": [
+            "qatar",
+            "catar"
+        ],
+        "group": "A",
+        "points": [
+            "0",
+            "3",
+            "0",
+            "0",
+            "3",
+            "1",
+            "7",
+            "-6"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Féliz Sánchez Bas",
+            "goalkeeper": [
+                [
+                    "Saad Al-sheeb",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yousof Hassan",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Meshaal Barsham",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Pedro Miguel",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohammed Waad",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Tarek Salman",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Musaab Khidir",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Homam Ahmed",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bassam Al-Rawi",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Boualem Khoukhi",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ismaeel Mohammed",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Abdelkarim Hassan",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdulaziz Hatem",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ali Assadalla",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hassan Al-Haydos",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Karim Boudiaf",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Salem Al-Hajri",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Assim Madibo",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Naif Al-Hadhrami",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jassem Gaber",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mostafa Tarek Meshaal",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Ahmed Alaaeldin",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohammed Muntari",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Akram Afif",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Khalid Muneer",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Almoez Ali",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 23,
-        "sigla": "KSA",
-        "pais": "saudi-arabia",
-        "grupo": "C",
-        "jogadores": {
-            "tecnico": "Hervé Renard",
-            "goleiros": ["Mohammed Alyami", "Mohammed Alowais", "Nawaf Alaqidi"],
-            "zagueiros": ["Sultan Alghannam", "Abdullah Madu", "Abdulelah Alamri", "Ali Albulathi", "Mohammed Alburayk", "Saud Abdulhamid", "Yasser Alshahrani", "Hassan Altambakti"],
-            "meioscampos": ["Salman Alfaraj", "Abdulelah Almalki", "Abdullah Otayf", "Ali Alhassan", "Sami Alnaji", "Nawaf Al Abid", "Mohamed Kanno", "Nasser Aldawsari", "Riyadh Sharahili"],
-            "atacantes": ["Feras Albrikan", "Salem Aldawsari", "Saleh Alshehri", "Hatam Bahbri", "Abdulrahman Alobud", "Haitham Asiri"]
+        "initials": "KSA",
+        "country": [
+            "saudi-arabia",
+            "arábia saudita"
+        ],
+        "group": "C",
+        "points": [
+            "3",
+            "3",
+            "1",
+            "0",
+            "2",
+            "3",
+            "5",
+            "-2"
+        ],
+        "capitain": "07",
+        "players": {
+            "manager": "Hervé Renard",
+            "goalkeeper": [
+                [
+                    "Mohammed Al-Rubaie",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohammed Al-Owais",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nawaf Al-Aqidi",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Sultan Al-Ghannam",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdullah Madu",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdulelah Al-Amri",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ali Al-Boleahi",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohammed Al-Burayk",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Saud Abdulhamid",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yasser Al-Shahrani",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hassan Tambakti",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Salman Al-Faraj",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdulelah Al-Malki",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdullah Otayf",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ali Al-Hassan",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sami Al-Najei",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nawaf Al-Abed",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohamed Kanno",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nasser Al-Dawsari",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Riyadh Sharahili",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Feras Al-Buraikan",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Salem Al-Dawsari",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Saleh Al-Shehri",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hatam Bahebri",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdulrahman Al-Oboud",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Haitham Asiri",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 24,
-        "sigla": "SEN",
-        "pais": "senegal",
-        "grupo": "A",
-        "jogadores": {
-            "tecnico": "Aliou Cissé",
-            "goleiros": ["Seny Dieng", "Edouard Mendy", "Alfred Gomis"],
-            "zagueiros": ["Formose Mendy", "Kalidou Koulibaly", "Pape Abou Cisse", "Cheikhou Kouyate", "Moussa Ndiaye", "Fode Ballo", "Ismail Jakobs", "Youssouf Sabaly", "Abdou Diallo", "Moustapha Name"],
-            "meioscampos": ["Idrissa Gana Gueye", "Nampalys Mendy", "Pathe Ciss", "Krepin Diatta", "Pape Sarr", "Mamadou Ndiaye", "Pape Gueye"],
-            "atacantes": ["Nicolas Jackson", "Boulaye Dia", "Iliman Ndiaye", "Ismaila Sarr", "Famara Diedhiou", "Cheikh Dieng"]
+        "initials": "SEN",
+        "country": [
+            "senegal",
+            "senegal"
+        ],
+        "group": "A",
+        "points": [
+            "6",
+            "3",
+            "2",
+            "0",
+            "1",
+            "5",
+            "4",
+            "1"
+        ],
+        "capitain": "03",
+        "players": {
+            "manager": "Aliou Cissé",
+            "goalkeeper": [
+                [
+                    "Seny Dieng",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Edouard Mendy",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alfred Gomis",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Formose Mendy",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kalidou Koulibaly",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pape Abou Cissé",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Cheikhou Kouyaté",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Moussa N-Diaye",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Fodé Ballo-Touré",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ismail Jakobs",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Youssouf Sabaly",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Abdou Diallo",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Moustapha Name",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Idrissa Gana Gueye",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nampalys Mendy",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pathé Ciss",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Krépin Diatta",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pape Sarr",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mamadou Ndiaye",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pape Gueye",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Nicolas Jackson",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Boulaye Dia",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Iliman Ndiaye",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ismaïla Sarr",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Famara Diédhiou",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Cheikh Dieng",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 25,
-        "sigla": "SRB",
-        "pais": "serbia",
-        "grupo": "G",
-        "jogadores": {
-            "tecnico": "Dragan Stojković",
-            "goleiros": ["Marko Dmitrovic", "Predrag Rajkovic", "Vanja Milinkovic"],
-            "zagueiros": ["Strahinja Pavlovic", "Strahinja Erakovic", "Nikola Milenkovic", "Milos Veljkovic", "Stefan Mitrovic", "Srdan Babic", "Filip Mladenovic"],
-            "meioscampos": ["Nemanja Maksimovic", "Nemanja Gudelj", "Andrija Zivkovic", "Sasa Lukic", "Filip Kostic", "Uros Racic", "Sergej Milinkovic-Savic", "Darko Lazovic", "Ivan Ilic", "Marko Grujic"],
-            "atacantes": ["Nemanja Radonjic", "Aleksandar Mitrovic", "Dusan Tajic", "Luka Jovic", "Dusan Vlahovic", "Filip Djuricic"]
+        "initials": "SRB",
+        "country": [
+            "serbia",
+            "sérvia"
+        ],
+        "group": "G",
+        "points": [
+            "1",
+            "2",
+            "0",
+            "1",
+            "1",
+            "3",
+            "5",
+            "-2"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Dragan Stojković",
+            "goalkeeper": [
+                [
+                    "Marko Dmitrović",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Predrag Rajković",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Vanja Milinković-Savić",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Strahinja Pavlovic",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Strahinja Eraković",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nikola Milenković",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Miloš Veljković",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Stefan Mitrović",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Srdjan Babic",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Filip Mladenovic",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Nemanja Maksimović",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nemanja Gudelj",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Andrija Zivkovic",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Saša Lukić",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Filip Kostić",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Uros Račić",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sergej Milinković-Savić",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Darko Lazović",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ivan Ilić",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marko Grujić",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Nemanja Radonjić",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aleksandar Mitrović",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dusan Tajić",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Luka Jović",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dušan Vlahović",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Filip Djuricic",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 26,
-        "sigla": "ESP",
-        "pais": "spain",
-        "grupo": "E",
-        "jogadores": {
-            "tecnico": "Luis Enrique Martínez",
-            "goleiros": ["Robert Lynch Sánchez", "David Raya", "Unai Simon"],
-            "zagueiros": ["Cesar Azpilicueta", "Eric Garcia", "Pau Torres", "Alejandro Balde", "Hugo Guillamon", "Jordi Alba", "Dani Carvajal", "Aymeric Laporte"],
-            "meioscampos": ["Sergio Busquets", "Marcos Llorente", "Koke", "Gavi", "Rodri", "Carlos Soler", "Pedri Gonzalez"],
-            "atacantes": ["Alvaro Morata", "Marco Asensio", "Ferran Torres", "Nico Williams", "Yeremy Pino", "Dani Olmo", "Pablo Sarabia", "Anssumane Fati"]
+        "initials": "ESP",
+        "country": [
+            "spain",
+            "espanha"
+        ],
+        "group": "E",
+        "points": [
+            "4",
+            "3",
+            "1",
+            "1",
+            "1",
+            "9",
+            "3",
+            "6"
+        ],
+        "capitain": "05",
+        "players": {
+            "manager": "Luis Enrique Martínez",
+            "goalkeeper": [
+                [
+                    "Robert Lynch Sánchez",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "David Raya",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Unai Simón",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "César Azpilicueta",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Eric García",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pau Torres",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Alejandro Balde",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hugo Guillamón",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jordi Alba",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dani Carvajal",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aymeric Laporte",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Sergio Busquets",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marcos Llorente",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Koke",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gavi",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rodri",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Carlos Soler",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pedri Gonzalez",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Álvaro Morata",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Marco Asensio",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ferran Torres",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nico Williams",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yéremy Pino",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dani Olmo",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Pablo Sarabia",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Anssumane Fati",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 27,
-        "sigla": "SUI",
-        "pais": "switzerland",
-        "grupo": "G",
-        "jogadores": {
-            "tecnico": "Murat Yakin",
-            "goleiros": ["Yann Sommer", "Jonas Omlin", "Gregor Kobel", "Philipp Koehn"],
-            "zagueiros": ["Edimilson Fernandes", "Silvan Widmer", "Nico Elvedi", "Manuel Akanji", "Renato Steffen", "Ricardo Rodriguez", "Eray Comert", "Fabian Schaer"],
-            "meioscampos": ["Denis Zakaria", "Remo Freuler", "Granit Xhaka", "Michel Aebischer", "Mohameth Sow", "Christian Fassnacht", "Fabian Frei", "Xherdan Shaqiri", "Fabian Rieder", "Ardon Jashari"],
-            "atacantes": ["Breel Embolo", "Haris Seferovic", "Ruben Vargas", "Noah Okafor"]
+        "initials": "SUI",
+        "country": [
+            "switzerland",
+            "suíça"
+        ],
+        "group": "G",
+        "points": [
+            "3",
+            "2",
+            "1",
+            "0",
+            "1",
+            "1",
+            "1",
+            "0"
+        ],
+        "capitain": "10",
+        "players": {
+            "manager": "Murat Yakin",
+            "goalkeeper": [
+                [
+                    "Yann Sommer",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jonas Omlin",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gregor Kobel",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Philipp Köhn",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Edimilson Fernandes",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Silvan Widmer",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nico Elvedi",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Manuel Akanji",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Renato Steffen",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ricardo Rodríguez",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Eray Cömert",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Fabian Schär",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Denis Zakaria",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Remo Freuler",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Granit Xhaka",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Michel Aebischer",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohameth Sow",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Christian Fassnacht",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Fabian Frei",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Xherdan Shaqiri",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Fabian Rieder",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ardon Jashari",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Breel Embolo",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Haris Seferovic",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rubén Vargas",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Noah Okafor",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 28,
-        "sigla": "TUN",
-        "pais": "tunisia",
-        "grupo": "D",
-        "jogadores": {
-            "tecnico": "Jalel Kadri",
-            "goleiros": ["Aymen Mathlouthi", "Aymen Dahmen", "Ben Said Bechir", "Hassen Mouez"],
-            "zagueiros": ["Ifa Bilel", "Talbi Montassar", "Meriah Yassine", "Dylan Bronn", "Maaloul Ali", "Drager Mohamed", "Wajdi Kechrida", "Ali Abdi"],
-            "meioscampos": ["Nader Ghandri", "Mejbri Hannibal", "Sassi Ferjani", "Aissa Laidouni", "Ben Romdhane Ali", "Ellyes Skhiri", "Chaaleli Ghaylen"],
-            "atacantes": ["Msakni Youssef", "Issam Jebali", "Wahbi Khazri", "Taha Khenissi", "Jaziri Seifeddine", "Sliti Naim", "Ben Slimane Anis"]
+        "initials": "TUN",
+        "country": [
+            "tunisia",
+            "tunísia"
+        ],
+        "group": "D",
+        "points": [
+            "4",
+            "3",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "0"
+        ],
+        "capitain": "07",
+        "players": {
+            "manager": "Jalel Kadri",
+            "goalkeeper": [
+                [
+                    "Aymen Balbouli",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aymen Dahmen",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Bechir Ben Said",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mouez Hassen",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Bilel Ifa",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Montassar Talbi",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yassine Meriah",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dylan Bronn",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Maâloul Ali",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohamed Dräger",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Wajdi Kechrida",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ali Abdi",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Nader Ghandri",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Hannibal Mejbri",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ferjani Sassi",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aïssa Laïdouni",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mohamed Ali Ben Romdhane",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ellyes Skhiri",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ghaylen Chaaleli",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Youssef Msakni",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Issam Jebali",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Wahbi Khazri",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Taha Yassine Khenissi",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Seifeddine Jaziri",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Naïm Sliti",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ben Slimane Anis",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 29,
-        "sigla": "USA",
-        "pais": "united-states",
-        "grupo": "B",
-        "jogadores": {
-            "tecnico": "Gregg Berhalter",
-            "goleiros": ["Matt Turner", "Ethan Horvath", "Sean Johnson"],
-            "zagueiros": ["Sergino Dest", "Walker Zimmerman", "Antonee Robinson", "Tim Ream", "Aaron Long", "Shaquell Moore", "Cameron Carter-Vickers", "DeAndre Yedlin", "Joseph Scally"],
-            "meioscampos": ["Tyler Adams", "Yunus Musah", "Weston James Earl Mc Kennie", "Luca De La Torre", "Cristian Roldan", "Kellyn Perry-Acosta"],
-            "atacantes": ["Giovanni Reyna", "Jesus Ferreira", "Christian Pulisic", "Branden Aaronson", "Jordan Morris", "Haji Wright", "Tim Weah", "Josh Sargent"]
+        "initials": "USA",
+        "country": [
+            "united-states",
+            "estados unidos"
+        ],
+        "group": "B",
+        "points": [
+            "5",
+            "3",
+            "1",
+            "2",
+            "0",
+            "2",
+            "1",
+            "1"
+        ],
+        "capitain": "04",
+        "players": {
+            "manager": "Gregg Berhalter",
+            "goalkeeper": [
+                [
+                    "Matt Turner",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ethan Horvath",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sean Johnson",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Sergiño Dest",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Walker Zimmerman",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Antonee Robinson",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Tim Ream",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aaron Long",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Shaquell Moore",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Cameron Carter-Vickers",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "DeAndre Yedlin",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Joseph Scally",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Tyler Adams",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Yunus Musah",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Weston James Earl McKennie",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Luca De La Torre",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Cristian Roldán",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kellyn Perry-Acosta",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Giovanni Reyna",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jesús Ferreira",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Christian Pulisic",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Branden Aaronson",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jordan Morris",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Haji Wright",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Tim Weah",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Josh Sargent",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 30,
-        "sigla": "URU",
-        "pais": "uruguay",
-        "grupo": "H",
-        "jogadores": {
-            "tecnico": "Diego Alonso",
-            "goleiros": ["Fernando Muslera", "Sebastian Sosa", "Sergio Rochet"],
-            "zagueiros": ["Jose Gimenez", "Diego Godin", "Ronald Araujo", "Guillermo Varela", "Mathias Olivera", "Vina Matias", "Sebastian Coates", "Martin Caceres", "Jose Luis Rodriguez"],
-            "meioscampos": ["Matias Vecino", "Rodrigo Bentancur", "Nicolas De La Cruz", "Giorgian De Arrascaeta", "Lucas Torreira", "Federico Valverde", "Agustin Canobbio", "Manuel Ugarte"],
-            "atacantes": ["Facundo Pellistri", "Luis Suarez", "Darwin Nunez", "Maximiliano Gomez", "Facundo Torres", "Edinson Cavani"]
+        "initials": "URU",
+        "country": [
+            "uruguay",
+            "uruguai"
+        ],
+        "group": "H",
+        "points": [
+            "1",
+            "2",
+            "0",
+            "1",
+            "1",
+            "0",
+            "2",
+            "-2"
+        ],
+        "capitain": "03",
+        "players": {
+            "manager": "Diego Alonso",
+            "goalkeeper": [
+                [
+                    "Fernando Muslera",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sebastián Sosa",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sergio Rochet",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "José María Giménez",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Diego Godín",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ronald Araújo",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Guillermo Varela",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mathías Olivera",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Matías Viña",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sebastián Coates",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Martín Cáceres",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "José Luis Rodríguez",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Matías Vecino",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rodrigo Bentancur",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Nicolás De La Cruz",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Giorgian De Arrascaeta",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Lucas Torreira",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Federico Valverde",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Agustín Canobbio",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Manuel Ugarte",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Facundo Pellistri",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Luis Suárez",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Darwin Núñez",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Maximiliano Gómez",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Facundo Torres",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Edinson Cavani",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     },
     {
         "id": 31,
-        "sigla": "WAL",
-        "pais": "wales",
-        "grupo": "B",
-        "jogadores": {
-            "tecnico": "Robert John Page",
-            "goleiros": ["Wayne Hennessey", "Danny Ward", "Adam Davies"],
-            "zagueiros": ["Chris Gunter", "Neco Shay Williams", "Ben Davies", "Chris Mepham", "Joe Rodon", "Connor Roberts", "Ethan Ampadu", "Tom Lockyer", "Ben Cabango", "Rubin Colwill"],
-            "meioscampos": ["Joe Allen", "Harry Wilson", "Aaron Ramsey", "Joseff Morrell", "Jonathan Williams", "Sorba Thomas", "Dylan Levitt", "Matt Smith", ""],
-            "atacantes": ["Brennan Johnson", "Gareth Bale", "Kieffer Moore", "Mark Harris", "Daniel James"]
+        "initials": "WAL",
+        "country": [
+            "wales",
+            "país de gales"
+        ],
+        "group": "B",
+        "points": [
+            "1",
+            "3",
+            "0",
+            "1",
+            "2",
+            "1",
+            "6",
+            "-5"
+        ],
+        "capitain": "11",
+        "players": {
+            "manager": "Robert John Page",
+            "goalkeeper": [
+                [
+                    "Wayne Hennessey",
+                    "01",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Danny Ward",
+                    "12",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Adam Davies",
+                    "21",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "defender": [
+                [
+                    "Chris Gunter",
+                    "02",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Neco Shay Williams",
+                    "03",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ben Davies",
+                    "04",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Chris Mepham",
+                    "05",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Joe Rodon",
+                    "06",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Connor Roberts",
+                    "14",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ethan Ampadu",
+                    "15",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Tom Lockyer",
+                    "17",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Ben Cabango",
+                    "24",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Rubin Colwill",
+                    "25",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "midfielder": [
+                [
+                    "Joe Allen",
+                    "07",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Harry Wilson",
+                    "08",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Aaron Ramsey",
+                    "10",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Joseff Morrell",
+                    "16",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Jonathan Williams",
+                    "18",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Sorba Thomas",
+                    "22",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Dylan Levitt",
+                    "23",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Matt Smith",
+                    "26",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ],
+            "forward": [
+                [
+                    "Brennan Johnson",
+                    "09",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Gareth Bale",
+                    "11",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Kieffer Moore",
+                    "13",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Mark Harris",
+                    "19",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "Daniel James",
+                    "20",
+                    "0",
+                    "0",
+                    "0"
+                ]
+            ]
         }
     }
 ]
