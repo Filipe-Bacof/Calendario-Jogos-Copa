@@ -76,32 +76,32 @@ document.querySelector("#app").innerHTML = `
             createGame('ghana', 'GHA', '12:00', 'uruguay', 'URU', '0', '2', corPlacar('2'), corPlacar('1')) +
             createGame('serbia', 'SRB', '16:00', 'switzerland', 'SUI', '2', '3', corPlacar('2'), corPlacar('1')) +
             createGame('brazil', 'BRA', '16:00', 'cameroon', 'CMR', '0', '1', corPlacar('2'), corPlacar('1')))}
-        <p>Será Atualizado Em Breve!</p>
-        ${createCard("03/12", "sabado", '<p>Oitavas de Final</p>' +
+        ${createCard("03/12", "sabado",
             createGame('netherlands', 'HOL', '12:00', 'united-states', 'USA', '', '', corPlacar(''), corPlacar('')) +
             createGame('argentina', 'ARG', '16:00', 'australia', 'AUS', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("04/12", "domingo", '<p>Oitavas de Final</p>' +
+        ${createCard("04/12", "domingo",
             createGame('france', 'FRA', '12:00', 'poland', 'POL', '', '', corPlacar(''), corPlacar('')) +
             createGame('england', 'ENG', '16:00', 'senegal', 'SEN', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("05/12", "segunda", '<p>Oitavas de Final</p>' +
+        ${createCard("05/12", "segunda",
             createGame('japan', 'JAP', '12:00', 'croatia', 'CRO', '', '', corPlacar(''), corPlacar('')) +
             createGame('brazil', 'BRA', '16:00', 'south-korea', 'KOR', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("06/12", "terça", '<p>Oitavas de Final</p>' +
+        ${createCard("06/12", "terça",
             createGame('morocco', 'MAR', '12:00', 'spain', 'ESP', '', '', corPlacar(''), corPlacar('')) +
             createGame('portugal', 'POR', '16:00', 'switzerland', 'SUI', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("09/12", "sexta", '<p>Quartas de Final</p>' +
+        <p>Será Atualizado Em Breve!</p>
+        ${createCard("09/12", "sexta",
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) +
             createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("10/12", "sabado", '<p>Quartas de Final</p>' +
+        ${createCard("10/12", "sabado",
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) +
             createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("13/12", "terça", '<p>Semi Finais</p>' +
+        ${createCard("13/12", "terça",
             createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("14/12", "quarta", '<p>Semi Finais</p>' +
+        ${createCard("14/12", "quarta",
             createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("17/12", "sabado", '<p>Disputa de Terceiro Lugar</p>' +
+        ${createCard("17/12", "sabado",
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
-        ${createCard("18/12", "domingo", '<p>Final</p>' +
+        ${createCard("18/12", "domingo",
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>`
 
@@ -166,16 +166,11 @@ document.querySelector("#classification").innerHTML = `
 document.querySelector("#play-offs").innerHTML = `
     <header>
         <img src="./assets/logo.svg" alt="Logo da NLW" /><br>
-        <label>Será atualizado diariamente <br />durante a copa do mundo 2022</label><br /><br />
-        <span>Pode travar um pouco no celular<br>
-        Recomendado abrir no computador<br>
-        Ou girar o celular e reduzir o zoom</span><br><br>
         <h1>Fases Finais</h1>
-        <span>Atualizado por último em: 02/12 - 18h</span>
     </header>
     <main id="cards">
         <div class="card">
-            ${gerarLinhaMataMata('Oitavas de Final', 'oitavas',
+            ${gerarLinhaMataMata('', 'oitavas',
                 //name1, nome1, cla1, sigla1, name2, nome2, cla2, sigla2, goal1, goal2, semBorda, data, horário, vencedor(1ou2)
                 gerarGameMataMata('netherlands', 'Holanda', '1A', 'HOL', 'united-states', 'Estados Unidos', '2B', 'USA', '', '', false, '03/12', '12h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('argentina', 'Argentina', '1C', 'ARG', 'australia', 'Austrália', '2D', 'AUS', '', '', false, '03/12', '16h', corPlacar(''), corPlacar('')) +
@@ -184,17 +179,16 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('france', 'França', '1D', 'FRA', 'poland', 'Polônia', '2C', 'POL', '', '', false, '04/12', '12h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('england', 'Inglaterra', '1B', 'ENG', 'senegal', 'Senegal', '2A', 'SEN', '', '', false, '04/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('morocco', 'Marrocos', '1F', 'MAR', 'spain', 'Espanha', '2E', 'ESP', '', '', false, '06/12', '12h', corPlacar(''), corPlacar('')) +
-                gerarGameMataMata('portugal', 'Portugal', '1H', 'POR', 'switzerland', 'Suíça', '2G', 'SUI', '', '', true, '06/12', '16h', corPlacar(''), corPlacar('')) 
-                 ) + '<br><p>Todos os jogos acima confirmados</p>'}
-            ${gerarLinhaMataMata('Quartas de Final', 'quartas',
+                gerarGameMataMata('portugal', 'Portugal', '1H', 'POR', 'switzerland', 'Suíça', '2G', 'SUI', '', '', true, '06/12', '16h', corPlacar(''), corPlacar('')) )}
+            ${gerarLinhaMataMata('', 'quartas',
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '12h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '10/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '10/12', '12h', corPlacar(''), corPlacar('')) )}
-            ${gerarLinhaMataMata('Semi Finais', 'semifinais',
+            ${gerarLinhaMataMata('', 'semifinais',
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '13/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '14/12', '16h', corPlacar(''), corPlacar('')) )}
-            ${gerarLinhaMataMata('Final', 'final',
+            ${gerarLinhaMataMata('', 'final',
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '17/12', '12h<br>3º Lugar', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '18/12', '12h<br>FINAL!', corPlacar(''), corPlacar('')) )}
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>

@@ -246,8 +246,7 @@ h2 {
     border-top: none;
 }
 
-#classification #cards h1,
-#play-offs header h1 {
+#classification #cards h1 {
     color: #e1e1e6;
     justify-content: center;
     text-align: center;
@@ -421,4 +420,10 @@ td img {
 
 .perdedor {
     color: #e72727 !important;
+}
+
+#play-offs header h1 {
+    color: #f7dd43;
+    justify-content: center;
+    text-align: center;
 }
