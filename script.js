@@ -75,7 +75,7 @@ document.querySelector("#app").innerHTML = `
             createGame('south-korea', 'KOR', '12:00', 'portugal', 'POR', '2', '1', corPlacar('1'), corPlacar('2')) +
             createGame('ghana', 'GHA', '12:00', 'uruguay', 'URU', '0', '2', corPlacar('2'), corPlacar('1')) +
             createGame('serbia', 'SRB', '16:00', 'switzerland', 'SUI', '2', '3', corPlacar('2'), corPlacar('1')) +
-            createGame('brazil', 'BRA', '16:00', 'cameroon', 'CMR', '0', '1', corPlacar('2'), corPlacar('3')))}
+            createGame('brazil', 'BRA', '16:00', 'cameroon', 'CMR', '0', '1', corPlacar('2'), corPlacar('1')))}
         <p>Será Atualizado Em Breve!</p>
         ${createCard("03/12", "sabado", '<p>Oitavas de Final</p>' +
             createGame('netherlands', 'HOL', '12:00', 'united-states', 'USA', '', '', corPlacar(''), corPlacar('')) +
