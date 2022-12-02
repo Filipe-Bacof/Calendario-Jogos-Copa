@@ -1049,34 +1049,34 @@ function diaAtual() {
         rolagem = 6850;
     } else if (milisegundos > 1670036400001 && milisegundos < 1670122800000) {
         //dia 03/12
-        rolagem = 7464;
+        rolagem = 7344;
     } else if (milisegundos > 1670122800001 && milisegundos < 1670209200000) {
         //dia 04/12
-        rolagem = 7905;
+        rolagem = 7743;
     } else if (milisegundos > 1670209200001 && milisegundos < 1670295600000) {
         //dia 05/12
-        rolagem = 8304;
+        rolagem = 8102;
     } else if (milisegundos > 1670295600001 && milisegundos < 1670382000000) {
         //dia 06/12
-        rolagem = 8730;
+        rolagem = 8473;
     } else if (milisegundos > 1670382000001 && milisegundos < 1670641200000) {
         //dia 07/12 e 08/12 DATA SEM JOGOS = dia 09/12
-        rolagem = 9129;
+        rolagem = 8898;
     } else if (milisegundos > 1670641200001 && milisegundos < 1670727600000) {
         //dia 10/12
-        rolagem = 9570;
+        rolagem = 9242;
     } else if (milisegundos > 1670727600001 && milisegundos < 1670986800000) {
         //dia 11/12 e 12/12 DATA SEM JOGOS = dia 13/12
-        rolagem = 9966;
+        rolagem = 9612;
     } else if (milisegundos > 1670986800001 && milisegundos < 1671073200000) {
         //dia 14/12
-        rolagem = 10270;
+        rolagem = 9902;
     } else if (milisegundos > 1671073200001 && milisegundos < 1671332400000) {
         //dia 15/12 e 16/12 DATA SEM JOGOS = dia 17/12
-        rolagem = 10596;
+        rolagem = 10220;
     } else if (milisegundos > 1671332400001 && milisegundos < 1671418800000) {
         //dia 18/12 FINAL
-        rolagem = 10600;
+        rolagem = 10500;
     } else {
         //Qualquer outro dia = pode ir para o topo
         rolagem = 0;
@@ -1107,3 +1107,4 @@ setTimeout(() => rolagem(diaDeHoje, 'smooth'), 1500);
 
 // Variável usada em diversas funções sobre o dia atual
 let diaDeHoje = diaAtual();
+console.log(window.scrollY)
