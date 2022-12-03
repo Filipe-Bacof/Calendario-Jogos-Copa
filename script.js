@@ -235,8 +235,12 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('cameroon', 'Collins<br>Fai', '2', 'cartões', 'CMR') +
             gerarJogadorEstatistica('costa-rica', 'Francisco<br>Calvo', '2', 'cartões', 'CRC') +
             gerarJogadorEstatistica('senegal', 'Idrissa<br>Gueye', '2', 'cartões', 'SEN') +
+            gerarJogadorEstatistica('australia', 'Jackson<br>Irvine', '2', 'cartões', 'AUS') +
+
+
             gerarJogadorEstatistica('ecuador', 'Jhegson<br>Méndez', '2', 'cartões', 'ECU') +
             gerarJogadorEstatistica('japan', 'Ko<br>Itakura', '2', 'cartões', 'JAP') +
+            gerarJogadorEstatistica('australia', 'Milos<br>Degenek', '2', 'cartões', 'AUS') +
             gerarJogadorEstatistica('serbia', 'Nemanja<br>Gudelj', '2', 'cartões', 'SRB') +
             gerarJogadorEstatistica('serbia', 'Nikola<br>Milenković', '2', 'cartões', 'SRB') +
             gerarJogadorEstatistica('serbia', 'Saša<br>Lukić', '2', 'cartões', 'SRB') +
