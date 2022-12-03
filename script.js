@@ -77,7 +77,7 @@ document.querySelector("#app").innerHTML = `
             createGame('serbia', 'SRB', '16:00', 'switzerland', 'SUI', '2', '3', corPlacar('2'), corPlacar('1')) +
             createGame('brazil', 'BRA', '16:00', 'cameroon', 'CMR', '0', '1', corPlacar('2'), corPlacar('1')))}
         ${createCard("03/12", "sabado",
-            createGame('netherlands', 'HOL', '12:00', 'united-states', 'USA', '', '', corPlacar(''), corPlacar('')) +
+            createGame('netherlands', 'HOL', '12:00', 'united-states', 'USA', '3', '1', corPlacar('1'), corPlacar('2')) +
             createGame('argentina', 'ARG', '16:00', 'australia', 'AUS', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("04/12", "domingo",
             createGame('france', 'FRA', '12:00', 'poland', 'POL', '', '', corPlacar(''), corPlacar('')) +
@@ -91,7 +91,7 @@ document.querySelector("#app").innerHTML = `
         <p>Será Atualizado Em Breve!</p>
         ${createCard("09/12", "sexta",
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) +
-            createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
+            createGame('netherlands', 'HOL', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("10/12", "sabado",
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) +
             createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
@@ -118,7 +118,6 @@ document.querySelector("#classification").innerHTML = `
     </header>
 <main id="cards">
     <h1>Classificação</h1>
-    <span>Atualizado por último em: 02/12/2022 - 18h</span>
     ${gerarGrupoCard('A',
         gerarEquipeNaTabela('netherlands', 'HOL', 'Holanda', 7, 3, 2, 1, 0, 5, 1, 4, true) +
         gerarEquipeNaTabela('senegal', 'SEN', 'Senegal', 6, 3, 2, 0, 1, 5, 4, 1, true) +
@@ -172,7 +171,7 @@ document.querySelector("#play-offs").innerHTML = `
         <div class="card">
             ${gerarLinhaMataMata('', 'oitavas',
                 //name1, nome1, cla1, sigla1, name2, nome2, cla2, sigla2, goal1, goal2, semBorda, data, horário, vencedor(1ou2)
-                gerarGameMataMata('netherlands', 'Holanda', '1A', 'HOL', 'united-states', 'Estados Unidos', '2B', 'USA', '', '', false, '03/12', '12h', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('netherlands', 'Holanda', '1A', 'HOL', 'united-states', 'Estados Unidos', '2B', 'USA', '3', '1', false, '03/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('argentina', 'Argentina', '1C', 'ARG', 'australia', 'Austrália', '2D', 'AUS', '', '', false, '03/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('japan', 'Japão', '1E', 'JAP', 'croatia', 'Croácia', '2F', 'CRO', '', '', false, '05/12', '12h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('brazil', 'Brasil', '1G', 'BRA', 'south-korea', 'Coréia do Sul', '2H', 'KOR', '', '', false, '05/12', '16h', corPlacar(''), corPlacar('')) +
@@ -181,7 +180,7 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('morocco', 'Marrocos', '1F', 'MAR', 'spain', 'Espanha', '2E', 'ESP', '', '', false, '06/12', '12h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('portugal', 'Portugal', '1H', 'POR', 'switzerland', 'Suíça', '2G', 'SUI', '', '', true, '06/12', '16h', corPlacar(''), corPlacar('')) )}
             ${gerarLinhaMataMata('', 'quartas',
-                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '16h', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('netherlands', 'Holanda', '', 'HOL', 'empty', 'empty', '', '', '', '', false, '09/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '12h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '10/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '10/12', '12h', corPlacar(''), corPlacar('')) )}
@@ -209,7 +208,7 @@ document.querySelector("#stats").innerHTML = `
     </header>
     <main id="cards">
         <h1>Estatísticas</h1>
-        <span>Atualizado por último em: 02/12 - 18h</span>
+        <span>Atualizado por último em: 03/12 - 14h</span>
         ${gerarCartaoEstatisticas('Artilheiros',
             gerarJogadorEstatistica('spain', 'Álvaro<br>Morata', '3', 'gols', 'ESP') +
             gerarJogadorEstatistica('netherlands', 'Cody<br>Gakpo', '3', 'gols', 'HOL') +
@@ -239,6 +238,8 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('ecuador', 'Jhegson<br>Méndez', '2', 'cartões', 'ECU') +
             gerarJogadorEstatistica('japan', 'Ko<br>Itakura', '2', 'cartões', 'JAP') +
             gerarJogadorEstatistica('serbia', 'Nemanja<br>Gudelj', '2', 'cartões', 'SRB') +
+            gerarJogadorEstatistica('serbia', 'Nikola<br>Milenković', '2', 'cartões', 'SRB') +
+            gerarJogadorEstatistica('serbia', 'Saša<br>Lukić', '2', 'cartões', 'SRB') +
             gerarJogadorEstatistica('serbia', 'Strahinja<br>Pavlović', '2', 'cartões', 'SRB') +
             gerarJogadorEstatistica('senegal', 'Boulaye<br>Dia', '1', 'cartão', 'SEN') +
             gerarJogadorEstatistica('qatar', 'Homan<br>Ahmed', '1', 'cartão', 'QAT') +
@@ -253,6 +254,7 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') +
             gerarJogadorEstatistica('united-states', 'Weston<br>McKennie', '1', 'cartão', 'USA') )}
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
+            gerarJogadorEstatistica('cameroon', 'Vincent<br>Aboubakar', '1', 'cartão', 'CMR') +
             gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') +
             '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>`
