@@ -83,6 +83,7 @@ document.querySelector("#app").innerHTML = `
             createGame('france', 'FRA', '12:00', 'poland', 'POL', '3', '1', corPlacar('1'), corPlacar('2')) +
             createGame('england', 'ENG', '16:00', 'senegal', 'SEN', '3', '0', corPlacar('1'), corPlacar('2')))}
         ${createCard("05/12", "segunda",
+            // os dois jogos que precisa atualizar hoje
             createGame('japan', 'JAP', '12:00', 'croatia', 'CRO', '', '', corPlacar(''), corPlacar('')) +
             createGame('brazil', 'BRA', '16:00', 'south-korea', 'KOR', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("06/12", "terça",
@@ -90,6 +91,7 @@ document.querySelector("#app").innerHTML = `
             createGame('portugal', 'POR', '16:00', 'switzerland', 'SUI', '', '', corPlacar(''), corPlacar('')))}
         <p>Será Atualizado Em Breve!</p>
         ${createCard("09/12", "sexta",
+            //inserir os jogos de segunda aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) +
             createGame('netherlands', 'HOL', '16:00', 'argentina', 'ARG', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("10/12", "sabado",
@@ -173,7 +175,9 @@ document.querySelector("#play-offs").innerHTML = `
                 //name1, nome1, cla1, sigla1, name2, nome2, cla2, sigla2, goal1, goal2, semBorda, data, horário, vencedor(1ou2)
                 gerarGameMataMata('netherlands', 'Holanda', '1A', 'HOL', 'united-states', 'Estados Unidos', '2B', 'USA', '3', '1', false, '03/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('argentina', 'Argentina', '1C', 'ARG', 'australia', 'Austrália', '2D', 'AUS', '2', '1', false, '03/12', '16h', corPlacar('1'), corPlacar('2')) +
+                //atualizar meio dia
                 gerarGameMataMata('japan', 'Japão', '1E', 'JAP', 'croatia', 'Croácia', '2F', 'CRO', '', '', false, '05/12', '12h', corPlacar(''), corPlacar('')) +
+                //atualizar 16h
                 gerarGameMataMata('brazil', 'Brasil', '1G', 'BRA', 'south-korea', 'Coréia do Sul', '2H', 'KOR', '', '', false, '05/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('france', 'França', '1D', 'FRA', 'poland', 'Polônia', '2C', 'POL', '3', '1', false, '04/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('england', 'Inglaterra', '1B', 'ENG', 'senegal', 'Senegal', '2A', 'SEN', '3', '0', false, '04/12', '16h', corPlacar('1'), corPlacar('2')) +
@@ -181,6 +185,7 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('portugal', 'Portugal', '1H', 'POR', 'switzerland', 'Suíça', '2G', 'SUI', '', '', true, '06/12', '16h', corPlacar(''), corPlacar('')) )}
             ${gerarLinhaMataMata('', 'quartas',
                 gerarGameMataMata('netherlands', 'Holanda', '', 'HOL', 'argentina', 'Argentina', '', 'ARG', '', '', false, '09/12', '16h', corPlacar(''), corPlacar('')) +
+                //inserir os jogos de segunda aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '12h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('france', 'França', '', 'FRA', 'england', 'Inglaterra', '', 'ENG', '', '', false, '10/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '10/12', '12h', corPlacar(''), corPlacar('')) )}
