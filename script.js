@@ -83,18 +83,18 @@ document.querySelector("#app").innerHTML = `
             createGame('france', 'FRA', '12:00', 'poland', 'POL', '3', '1', corPlacar('1'), corPlacar('2')) +
             createGame('england', 'ENG', '16:00', 'senegal', 'SEN', '3', '0', corPlacar('1'), corPlacar('2')))}
         ${createCard("05/12", "segunda",
-            // os dois jogos que precisa atualizar hoje
-            createGame('japan', 'JAP', '12:00', 'croatia', 'CRO', '', '', corPlacar(''), corPlacar('')) +
-            createGame('brazil', 'BRA', '16:00', 'south-korea', 'KOR', '', '', corPlacar(''), corPlacar('')))}
+        createGame('japan', 'JAP', '12:00', 'croatia', 'CRO', '1 (1)', '1 (3)', corPlacar('2'), corPlacar('1')) +
+        createGame('brazil', 'BRA', '16:00', 'south-korea', 'KOR', '4', '1', corPlacar('1'), corPlacar('2')))}
         ${createCard("06/12", "terça",
+        // os dois jogos que precisa atualizar hoje
             createGame('morocco', 'MAR', '12:00', 'spain', 'ESP', '', '', corPlacar(''), corPlacar('')) +
             createGame('portugal', 'POR', '16:00', 'switzerland', 'SUI', '', '', corPlacar(''), corPlacar('')))}
         <p>Será Atualizado Em Breve!</p>
         ${createCard("09/12", "sexta",
-            //inserir os jogos de segunda aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
-            createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) +
-            createGame('netherlands', 'HOL', '16:00', 'argentina', 'ARG', '', '', corPlacar(''), corPlacar('')))}
+        createGame('croatia', 'CRO', '12:00', 'brazil', 'BRA', '', '', corPlacar(''), corPlacar('')) +
+        createGame('netherlands', 'HOL', '16:00', 'argentina', 'ARG', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("10/12", "sabado",
+        //inserir os jogos de terça aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) +
             createGame('france', 'FRA', '16:00', 'england', 'ENG', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("13/12", "terça",
@@ -176,9 +176,9 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('netherlands', 'Holanda', '1A', 'HOL', 'united-states', 'Estados Unidos', '2B', 'USA', '3', '1', false, '03/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('argentina', 'Argentina', '1C', 'ARG', 'australia', 'Austrália', '2D', 'AUS', '2', '1', false, '03/12', '16h', corPlacar('1'), corPlacar('2')) +
                 //atualizar meio dia
-                gerarGameMataMata('japan', 'Japão', '1E', 'JAP', 'croatia', 'Croácia', '2F', 'CRO', '', '', false, '05/12', '12h', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('japan', 'Japão', '1E', 'JAP', 'croatia', 'Croácia', '2F', 'CRO', '1 (1)', '1 (3)', false, '05/12', '12h', corPlacar('2'), corPlacar('1')) +
                 //atualizar 16h
-                gerarGameMataMata('brazil', 'Brasil', '1G', 'BRA', 'south-korea', 'Coréia do Sul', '2H', 'KOR', '', '', false, '05/12', '16h', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('brazil', 'Brasil', '1G', 'BRA', 'south-korea', 'Coréia do Sul', '2H', 'KOR', '4', '1', false, '05/12', '16h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('france', 'França', '1D', 'FRA', 'poland', 'Polônia', '2C', 'POL', '3', '1', false, '04/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('england', 'Inglaterra', '1B', 'ENG', 'senegal', 'Senegal', '2A', 'SEN', '3', '0', false, '04/12', '16h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('morocco', 'Marrocos', '1F', 'MAR', 'spain', 'Espanha', '2E', 'ESP', '', '', false, '06/12', '12h', corPlacar(''), corPlacar('')) +
@@ -186,7 +186,7 @@ document.querySelector("#play-offs").innerHTML = `
             ${gerarLinhaMataMata('', 'quartas',
                 gerarGameMataMata('netherlands', 'Holanda', '', 'HOL', 'argentina', 'Argentina', '', 'ARG', '', '', false, '09/12', '16h', corPlacar(''), corPlacar('')) +
                 //inserir os jogos de segunda aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
-                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '09/12', '12h', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('croatia', 'Croácia', '', 'CRO', 'brazil', 'Brasil', '', 'BRA', '', '', false, '09/12', '12h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('france', 'França', '', 'FRA', 'england', 'Inglaterra', '', 'ENG', '', '', false, '10/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '10/12', '12h', corPlacar(''), corPlacar('')) )}
             ${gerarLinhaMataMata('', 'semifinais',
@@ -223,6 +223,7 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '3', 'gols', 'ARG') +
             gerarJogadorEstatistica('england', 'Marcus<br>Rashford', '3', 'gols', 'ENG') +
             gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '3', 'gols', 'FRA') +
+            gerarJogadorEstatistica('brazil', 'Richarlison', '3', 'gols', 'BRA') +
             gerarJogadorEstatistica('croatia', 'Andrej<br>Kramarić', '2', 'gols', 'CRO') +
             gerarJogadorEstatistica('portugal', 'Bruno<br>Fernandes', '2', 'gols', 'POR') +
             gerarJogadorEstatistica('south-korea', 'Cho<br>Gue-sung', '2', 'gols', 'KOR') +
@@ -230,7 +231,6 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('iran', 'Mehdi<br>Taremi', '2', 'gols', 'IRN') +
             gerarJogadorEstatistica('ghana', 'Mohammed<br>Kudus', '2', 'gols', 'GHA') +
             gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '2', 'gols', 'FRA') +
-            gerarJogadorEstatistica('brazil', 'Richarlison', '2', 'gols', 'BRA') +
             gerarJogadorEstatistica('saudi-arabia', 'Salem<br>Al-Dawsari', '2', 'gols', 'KSA') )}
         ${gerarCartaoEstatisticas('Cartões Amarelos',
             gerarJogadorEstatistica('saudi-arabia', 'Abdulelah Ali<br>Awadh Al Amri', '2', 'cartões', 'KSA') +
@@ -244,6 +244,7 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('australia', 'Jackson<br>Irvine', '2', 'cartões', 'AUS') +
             gerarJogadorEstatistica('ecuador', 'Jhegson<br>Méndez', '2', 'cartões', 'ECU') +
             gerarJogadorEstatistica('japan', 'Ko<br>Itakura', '2', 'cartões', 'JAP') +
+            gerarJogadorEstatistica('poland', 'Matty<br>Cash', '2', 'cartões', 'POL') +
             gerarJogadorEstatistica('australia', 'Milos<br>Degenek', '2', 'cartões', 'AUS') +
             gerarJogadorEstatistica('serbia', 'Nemanja<br>Gudelj', '2', 'cartões', 'SRB') +
             gerarJogadorEstatistica('serbia', 'Nikola<br>Milenković', '2', 'cartões', 'SRB') +
