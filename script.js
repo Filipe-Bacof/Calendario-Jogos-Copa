@@ -91,14 +91,14 @@ document.querySelector("#app").innerHTML = `
             createGame('portugal', 'POR', '16:00', 'switzerland', 'SUI', '6', '1', corPlacar('1'), corPlacar('2')))}
         <p>Será Atualizado Em Breve!</p>
         ${createCard("09/12", "sexta",
-        createGame('croatia', 'CRO', '12:00', 'brazil', 'BRA', '', '', corPlacar(''), corPlacar('')) +
-        createGame('netherlands', 'HOL', '16:00', 'argentina', 'ARG', '', '', corPlacar(''), corPlacar('')))}
+        createGame('croatia', 'CRO', '12:00', 'brazil', 'BRA', '1 (4)', '1 (2)', corPlacar('1'), corPlacar('2')) +
+        createGame('netherlands', 'HOL', '16:00', 'argentina', 'ARG', '2 (3)', '2 (4)', corPlacar('2'), corPlacar('1')))}
         ${createCard("10/12", "sabado",
         //inserir os jogos de terça aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
             createGame('morocco', 'MAR', '12:00', 'portugal', 'POR', '', '', corPlacar(''), corPlacar('')) +
             createGame('france', 'FRA', '16:00', 'england', 'ENG', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("13/12", "terça",
-            createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
+            createGame('argentina', 'ARG', '16:00', 'croatia', 'CRO', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("14/12", "quarta",
             createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("17/12", "sabado",
@@ -184,13 +184,13 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('morocco', 'Marrocos', '1F', 'MAR', 'spain', 'Espanha', '2E', 'ESP', '0 (3)', '0 (0)', false, '06/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('portugal', 'Portugal', '1H', 'POR', 'switzerland', 'Suíça', '2G', 'SUI', '6', '1', true, '06/12', '16h', corPlacar('1'), corPlacar('2')) )}
             ${gerarLinhaMataMata('', 'quartas',
-                gerarGameMataMata('netherlands', 'Holanda', '', 'HOL', 'argentina', 'Argentina', '', 'ARG', '', '', false, '09/12', '16h', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('netherlands', 'Holanda', '', 'HOL', 'argentina', 'Argentina', '', 'ARG', '2 (3)', '2 (4)', false, '09/12', '16h', corPlacar('2'), corPlacar('1')) +
                 //inserir os jogos de segunda aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
-                gerarGameMataMata('croatia', 'Croácia', '', 'CRO', 'brazil', 'Brasil', '', 'BRA', '', '', false, '09/12', '12h', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('croatia', 'Croácia', '', 'CRO', 'brazil', 'Brasil', '', 'BRA', '1 (4)', '1 (2)', false, '09/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('france', 'França', '', 'FRA', 'england', 'Inglaterra', '', 'ENG', '', '', false, '10/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('morocco', 'Marrocos', '', 'MAR', 'portugal', 'Portugal', '', 'POR', '', '', true, '10/12', '12h', corPlacar(''), corPlacar('')) )}
             ${gerarLinhaMataMata('', 'semifinais',
-                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '13/12', '16h', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'croatia', 'Croácia', '', 'CRO', '', '', false, '13/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '14/12', '16h', corPlacar(''), corPlacar('')) )}
             ${gerarLinhaMataMata('', 'final',
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '17/12', '12h<br>3º Lugar', corPlacar(''), corPlacar('')) +
