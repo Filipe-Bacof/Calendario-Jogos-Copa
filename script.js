@@ -182,7 +182,7 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('netherlands', 'Holanda', '', 'HOL', 'argentina', 'Argentina', '', 'ARG', '2 (3)', '2 (4)', false, '09/12', '16h', corPlacar('2'), corPlacar('1')) +
                 gerarGameMataMata('croatia', 'Croácia', '', 'CRO', 'brazil', 'Brasil', '', 'BRA', '1 (4)', '1 (2)', false, '09/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('france', 'França', '', 'FRA', 'england', 'Inglaterra', '', 'ENG', '2', '1', false, '10/12', '16h', corPlacar('1'), corPlacar('2')) +
-                gerarGameMataMata('morocco', 'Marrocos', '', 'MAR', 'portugal', 'Portugal', '', 'POR', '1', ''0, true, '10/12', '12h', corPlacar('1'), corPlacar('2')) )}
+                gerarGameMataMata('morocco', 'Marrocos', '', 'MAR', 'portugal', 'Portugal', '', 'POR', '1', '0', true, '10/12', '12h', corPlacar('1'), corPlacar('2')) )}
             ${gerarLinhaMataMata('', 'semifinais',
                 gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'croatia', 'Croácia', '', 'CRO', '', '', false, '13/12', '16h', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('morocco', 'Marrocos', '', 'MAR', 'france', 'França', '', 'FRA', '', '', true, '14/12', '16h', corPlacar(''), corPlacar('')) )}
