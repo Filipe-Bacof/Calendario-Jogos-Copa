@@ -86,7 +86,6 @@ document.querySelector("#app").innerHTML = `
         createGame('japan', 'JAP', '12:00', 'croatia', 'CRO', '1 (1)', '1 (3)', corPlacar('2'), corPlacar('1')) +
         createGame('brazil', 'BRA', '16:00', 'south-korea', 'KOR', '4', '1', corPlacar('1'), corPlacar('2')))}
         ${createCard("06/12", "terça",
-        // os dois jogos que precisa atualizar hoje
             createGame('morocco', 'MAR', '12:00', 'spain', 'ESP', '0 (3)', '0 (0)', corPlacar('1'), corPlacar('2')) +
             createGame('portugal', 'POR', '16:00', 'switzerland', 'SUI', '6', '1', corPlacar('1'), corPlacar('2')))}
         <p>Será Atualizado Em Breve!</p>
@@ -94,13 +93,12 @@ document.querySelector("#app").innerHTML = `
         createGame('croatia', 'CRO', '12:00', 'brazil', 'BRA', '1 (4)', '1 (2)', corPlacar('1'), corPlacar('2')) +
         createGame('netherlands', 'HOL', '16:00', 'argentina', 'ARG', '2 (3)', '2 (4)', corPlacar('2'), corPlacar('1')))}
         ${createCard("10/12", "sabado",
-        //inserir os jogos de terça aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
-            createGame('morocco', 'MAR', '12:00', 'portugal', 'POR', '', '', corPlacar(''), corPlacar('')) +
-            createGame('france', 'FRA', '16:00', 'england', 'ENG', '', '', corPlacar(''), corPlacar('')))}
+            createGame('morocco', 'MAR', '12:00', 'portugal', 'POR', '1', '0', corPlacar('1'), corPlacar('2')) +
+            createGame('france', 'FRA', '16:00', 'england', 'ENG', '2', '1', corPlacar('1'), corPlacar('2')))}
         ${createCard("13/12", "terça",
             createGame('argentina', 'ARG', '16:00', 'croatia', 'CRO', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("14/12", "quarta",
-            createGame('empty', '', '16:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
+            createGame('france', 'FRA', '16:00', 'morocco', 'MAR', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("17/12", "sabado",
             createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("18/12", "domingo",
@@ -172,12 +170,9 @@ document.querySelector("#play-offs").innerHTML = `
     <main id="cards">
         <div class="card">
             ${gerarLinhaMataMata('', 'oitavas',
-                //name1, nome1, cla1, sigla1, name2, nome2, cla2, sigla2, goal1, goal2, semBorda, data, horário, vencedor(1ou2)
                 gerarGameMataMata('netherlands', 'Holanda', '1A', 'HOL', 'united-states', 'Estados Unidos', '2B', 'USA', '3', '1', false, '03/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('argentina', 'Argentina', '1C', 'ARG', 'australia', 'Austrália', '2D', 'AUS', '2', '1', false, '03/12', '16h', corPlacar('1'), corPlacar('2')) +
-                //atualizar meio dia
                 gerarGameMataMata('japan', 'Japão', '1E', 'JAP', 'croatia', 'Croácia', '2F', 'CRO', '1 (1)', '1 (3)', false, '05/12', '12h', corPlacar('2'), corPlacar('1')) +
-                //atualizar 16h
                 gerarGameMataMata('brazil', 'Brasil', '1G', 'BRA', 'south-korea', 'Coréia do Sul', '2H', 'KOR', '4', '1', false, '05/12', '16h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('france', 'França', '1D', 'FRA', 'poland', 'Polônia', '2C', 'POL', '3', '1', false, '04/12', '12h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('england', 'Inglaterra', '1B', 'ENG', 'senegal', 'Senegal', '2A', 'SEN', '3', '0', false, '04/12', '16h', corPlacar('1'), corPlacar('2')) +
@@ -185,13 +180,12 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('portugal', 'Portugal', '1H', 'POR', 'switzerland', 'Suíça', '2G', 'SUI', '6', '1', true, '06/12', '16h', corPlacar('1'), corPlacar('2')) )}
             ${gerarLinhaMataMata('', 'quartas',
                 gerarGameMataMata('netherlands', 'Holanda', '', 'HOL', 'argentina', 'Argentina', '', 'ARG', '2 (3)', '2 (4)', false, '09/12', '16h', corPlacar('2'), corPlacar('1')) +
-                //inserir os jogos de segunda aqui 12h X 16h     corPlacar('1') ganhador ('2') perdedor ('3') empate
                 gerarGameMataMata('croatia', 'Croácia', '', 'CRO', 'brazil', 'Brasil', '', 'BRA', '1 (4)', '1 (2)', false, '09/12', '12h', corPlacar('1'), corPlacar('2')) +
-                gerarGameMataMata('france', 'França', '', 'FRA', 'england', 'Inglaterra', '', 'ENG', '', '', false, '10/12', '16h', corPlacar(''), corPlacar('')) +
-                gerarGameMataMata('morocco', 'Marrocos', '', 'MAR', 'portugal', 'Portugal', '', 'POR', '', '', true, '10/12', '12h', corPlacar(''), corPlacar('')) )}
+                gerarGameMataMata('france', 'França', '', 'FRA', 'england', 'Inglaterra', '', 'ENG', '2', '1', false, '10/12', '16h', corPlacar('1'), corPlacar('2')) +
+                gerarGameMataMata('morocco', 'Marrocos', '', 'MAR', 'portugal', 'Portugal', '', 'POR', '1', ''0, true, '10/12', '12h', corPlacar('1'), corPlacar('2')) )}
             ${gerarLinhaMataMata('', 'semifinais',
                 gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'croatia', 'Croácia', '', 'CRO', '', '', false, '13/12', '16h', corPlacar(''), corPlacar('')) +
-                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '14/12', '16h', corPlacar(''), corPlacar('')) )}
+                gerarGameMataMata('morocco', 'Marrocos', '', 'MAR', 'france', 'França', '', 'FRA', '', '', true, '14/12', '16h', corPlacar(''), corPlacar('')) )}
             ${gerarLinhaMataMata('', 'final',
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '17/12', '12h<br>3º Lugar', corPlacar(''), corPlacar('')) +
                 gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '18/12', '12h<br>FINAL!', corPlacar(''), corPlacar('')) )}
@@ -213,16 +207,17 @@ document.querySelector("#stats").innerHTML = `
     </header>
     <main id="cards">
         <h1>Estatísticas</h1>
-        <span>Atualizado por último em: 04/12 - 18h</span>
+        <span>Atualizado por último em: 10/12 - 18h</span>
         ${gerarCartaoEstatisticas('Artilheiros',
             gerarJogadorEstatistica('france', 'Kylian<br>Mbappé', '5', 'gols', 'FRA') +
+            gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '4', 'gols', 'ARG') +
+            gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '4', 'gols', 'FRA') +
             gerarJogadorEstatistica('spain', 'Álvaro<br>Morata', '3', 'gols', 'ESP') +
             gerarJogadorEstatistica('england', 'Bukayo<br>Saka', '3', 'gols', 'ENG') +
             gerarJogadorEstatistica('netherlands', 'Cody<br>Gakpo', '3', 'gols', 'HOL') +
             gerarJogadorEstatistica('ecuador', 'Enner<br>Valencia', '3', 'gols', 'ECU') +
-            gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '3', 'gols', 'ARG') +
+            gerarJogadorEstatistica('portugal', 'Gonçalo<br>Ramos', '2', 'gols', 'POR') +
             gerarJogadorEstatistica('england', 'Marcus<br>Rashford', '3', 'gols', 'ENG') +
-            gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '3', 'gols', 'FRA') +
             gerarJogadorEstatistica('brazil', 'Richarlison', '3', 'gols', 'BRA') +
             gerarJogadorEstatistica('croatia', 'Andrej<br>Kramarić', '2', 'gols', 'CRO') +
             gerarJogadorEstatistica('portugal', 'Bruno<br>Fernandes', '2', 'gols', 'POR') +
@@ -263,7 +258,9 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') +
             gerarJogadorEstatistica('united-states', 'Weston<br>McKennie', '1', 'cartão', 'USA') )}
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
+            gerarJogadorEstatistica('netherlands', 'Denzel<br>Dunfries', '1', 'cartão', 'HOL') +
             gerarJogadorEstatistica('cameroon', 'Vincent<br>Aboubakar', '1', 'cartão', 'CMR') +
+            gerarJogadorEstatistica('morocco', 'Wallid<br>Cheddira', '1', 'cartão', 'MAR') +
             gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') +
             '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>`
