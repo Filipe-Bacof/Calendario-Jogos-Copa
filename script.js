@@ -96,13 +96,13 @@ document.querySelector("#app").innerHTML = `
             createGame('morocco', 'MAR', '12:00', 'portugal', 'POR', '1', '0', corPlacar('1'), corPlacar('2')) +
             createGame('france', 'FRA', '16:00', 'england', 'ENG', '2', '1', corPlacar('1'), corPlacar('2')))}
         ${createCard("13/12", "terça",
-            createGame('argentina', 'ARG', '16:00', 'croatia', 'CRO', '', '', corPlacar(''), corPlacar('')))}
+            createGame('argentina', 'ARG', '16:00', 'croatia', 'CRO', '3', '0', corPlacar('1'), corPlacar('2')))}
         ${createCard("14/12", "quarta",
-            createGame('france', 'FRA', '16:00', 'morocco', 'MAR', '', '', corPlacar(''), corPlacar('')))}
+            createGame('france', 'FRA', '16:00', 'morocco', 'MAR', '2', '0', corPlacar('1'), corPlacar('2')))}
         ${createCard("17/12", "sabado",
-            createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')))}
+            createGame('croatia', 'CRO', '12:00', 'morocco', 'MAR', '', '', corPlacar(''), corPlacar('')))}
         ${createCard("18/12", "domingo",
-            createGame('empty', '', '12:00', 'empty', '', '', '', corPlacar(''), corPlacar('')) + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
+            createGame('argentina', 'ARG', '12:00', 'france', 'FRA', '', '', corPlacar(''), corPlacar('')) + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>`
 
 // Criador das Classificações com a Pontuação de cada time
@@ -184,11 +184,11 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('france', 'França', '', 'FRA', 'england', 'Inglaterra', '', 'ENG', '2', '1', false, '10/12', '16h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('morocco', 'Marrocos', '', 'MAR', 'portugal', 'Portugal', '', 'POR', '1', '0', true, '10/12', '12h', corPlacar('1'), corPlacar('2')) )}
             ${gerarLinhaMataMata('', 'semifinais',
-                gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'croatia', 'Croácia', '', 'CRO', '', '', false, '13/12', '16h', corPlacar(''), corPlacar('')) +
-                gerarGameMataMata('france', 'França', '', 'FRA', 'morocco', 'Marrocos', '', 'MAR', '', '', true, '14/12', '16h', corPlacar(''), corPlacar('')) )}
+                gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'croatia', 'Croácia', '', 'CRO', '3', '0', false, '13/12', '16h', corPlacar('1'), corPlacar('2')) +
+                gerarGameMataMata('france', 'França', '', 'FRA', 'morocco', 'Marrocos', '', 'MAR', '2', '0', true, '14/12', '16h', corPlacar('1'), corPlacar('2')) )}
             ${gerarLinhaMataMata('', 'final',
-                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', false, '17/12', '12h<br>3º Lugar', corPlacar(''), corPlacar('')) +
-                gerarGameMataMata('empty', 'empty', '', '', 'empty', 'empty', '', '', '', '', true, '18/12', '12h<br>FINAL!', corPlacar(''), corPlacar('')) )}
+                gerarGameMataMata('croatia', 'Croácia', '', 'CRO', 'morocco', 'Marrocos', '', 'MAR', '', '', false, '17/12', '12h<br>3º Lugar', corPlacar(''), corPlacar('')) +
+                gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'france', 'França', '', 'FRA', '', '', true, '18/12', '12h<br>FINAL!', corPlacar(''), corPlacar('')) )}
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
@@ -210,7 +210,8 @@ document.querySelector("#stats").innerHTML = `
         <span>Atualizado por último em: 10/12 - 18h</span>
         ${gerarCartaoEstatisticas('Artilheiros',
             gerarJogadorEstatistica('france', 'Kylian<br>Mbappé', '5', 'gols', 'FRA') +
-            gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '4', 'gols', 'ARG') +
+            gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '5', 'gols', 'ARG') +
+            gerarJogadorEstatistica('argentina', 'Julián<br>Álvarez', '4', 'gols', 'ARG') +
             gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '4', 'gols', 'FRA') +
             gerarJogadorEstatistica('spain', 'Álvaro<br>Morata', '3', 'gols', 'ESP') +
             gerarJogadorEstatistica('england', 'Bukayo<br>Saka', '3', 'gols', 'ENG') +
