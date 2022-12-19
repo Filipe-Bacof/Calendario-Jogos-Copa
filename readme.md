@@ -6,7 +6,7 @@
 -   Mesmo assim eu coloquei a mão na massa e criei primeiro a tela com as tabelas o site foi se aprimorando aos poucos, atualizando ele constantemente, o legal de utilizar GIT é que será possível visualizar cada uma das etapas de desenvolvimento desde o começo.
 -   Inicialmente não apliquei Clean Code nenhum, na verdade foi apenas DIRTY CODE! porém refatorei boa parte das funções organizei a estruturação do código, coloquei todas as funções que geram as telas principais no começo, já que fica mais facil editar e atualizar pelo celular hahaha
 -   Ao inves de ter 4 arquivos HTML um para cada tela, achei mais fácil colocar tudo na mesma tela e exibir elas manipulando a DOM com JavaScript, conforme ensinado pela rocketseat de diversas formas super didáticas.
--   
+-   Interessante de verdade foi adicionar a auto-rolagem para o site, ao abrir durante a copa no dia de determinado jogo, o site rolava sozinho para melhorar a experiencia do usuário.
 
 # Melhores momentos da copa (minha opinião)
 
