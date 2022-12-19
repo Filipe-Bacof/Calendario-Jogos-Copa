@@ -7,6 +7,8 @@
 -   Inicialmente não apliquei Clean Code nenhum, na verdade foi apenas DIRTY CODE! porém refatorei boa parte das funções organizei a estruturação do código, coloquei todas as funções que geram as telas principais no começo, já que fica mais facil editar e atualizar pelo celular hahaha
 -   Ao inves de ter 4 arquivos HTML um para cada tela, achei mais fácil colocar tudo na mesma tela e exibir elas manipulando a DOM com JavaScript, conforme ensinado pela rocketseat de diversas formas super didáticas.
 -   Interessante de verdade foi adicionar a auto-rolagem para o site, ao abrir durante a copa no dia de determinado jogo, o site rolava sozinho para melhorar a experiencia do usuário.
+-   Detalhe é que um dos processos mais trabalhosos foi escrever o JSON com os nomes dos jogadores, é possível visualizar ele ao clicar nas bandeiras de cada seleção, as informações foram extraídas diretamente do site da FIFA e demoraram quase 3 dias para serem adicionadas. Abaixo deixarei o link também para uma página do TABNEWS onde encontei alguém que tambem procurava por uma API mas resolveu criar ela e o JSON que eu escrevi pode ajudar de alguma forma.
+-   https://www.tabnews.com.br/liverday/pitch-fiz-uma-api-rest-open-source-para-a-copa-do-mundo
 
 # Melhores momentos da copa (minha opinião)
 
