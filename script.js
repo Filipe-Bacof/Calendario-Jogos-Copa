@@ -100,9 +100,9 @@ document.querySelector("#app").innerHTML = `
         ${createCard("14/12", "quarta",
             createGame('france', 'FRA', '16:00', 'morocco', 'MAR', '2', '0', corPlacar('1'), corPlacar('2')))}
         ${createCard("17/12", "sabado",
-            createGame('croatia', 'CRO', '12:00', 'morocco', 'MAR', '', '', corPlacar(''), corPlacar('')))}
+            createGame('croatia', 'CRO', '12:00', 'morocco', 'MAR', '2', '1', corPlacar('1'), corPlacar('2')))}
         ${createCard("18/12", "domingo",
-            createGame('argentina', 'ARG', '12:00', 'france', 'FRA', '', '', corPlacar(''), corPlacar('')) + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
+            createGame('argentina', 'ARG', '12:00', 'france', 'FRA', '3 (4)', '3 (2)', corPlacar('1'), corPlacar('2')) + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>' )}
     </main>`
 
 // Criador das Classificações com a Pontuação de cada time
@@ -187,8 +187,8 @@ document.querySelector("#play-offs").innerHTML = `
                 gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'croatia', 'Croácia', '', 'CRO', '3', '0', false, '13/12', '16h', corPlacar('1'), corPlacar('2')) +
                 gerarGameMataMata('france', 'França', '', 'FRA', 'morocco', 'Marrocos', '', 'MAR', '2', '0', true, '14/12', '16h', corPlacar('1'), corPlacar('2')) )}
             ${gerarLinhaMataMata('', 'final',
-                gerarGameMataMata('croatia', 'Croácia', '', 'CRO', 'morocco', 'Marrocos', '', 'MAR', '', '', false, '17/12', '12h<br>3º Lugar', corPlacar(''), corPlacar('')) +
-                gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'france', 'França', '', 'FRA', '', '', true, '18/12', '12h<br>FINAL!', corPlacar(''), corPlacar('')) )}
+                gerarGameMataMata('croatia', 'Croácia', '', 'CRO', 'morocco', 'Marrocos', '', 'MAR', '2', '1', false, '17/12', '12h<br>3º Lugar', corPlacar('1'), corPlacar('2')) +
+                gerarGameMataMata('argentina', 'Argentina', '', 'ARG', 'france', 'França', '', 'FRA', '3 (4)', '3 (2)', true, '18/12', '12h<br>FINAL!', corPlacar('1'), corPlacar('2')) )}
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#classification', 0, 'auto')">CLASSIFICAÇÕES</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#app', diaDeHoje, 'smooth')">CALENDÁRIO</button>
             <button class="btn-nav" onclick="mostrarOuEsconder('#play-offs', '#stats', 0, 'auto')">ESTATÍSTICAS</button>
@@ -209,8 +209,8 @@ document.querySelector("#stats").innerHTML = `
         <h1>Estatísticas</h1>
         <span>Atualizado por último em: 10/12 - 18h</span>
         ${gerarCartaoEstatisticas('Artilheiros',
-            gerarJogadorEstatistica('france', 'Kylian<br>Mbappé', '5', 'gols', 'FRA') +
-            gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '5', 'gols', 'ARG') +
+            gerarJogadorEstatistica('france', 'Kylian<br>Mbappé', '8', 'gols', 'FRA') +
+            gerarJogadorEstatistica('argentina', 'Lionel<br>Messi', '7', 'gols', 'ARG') +
             gerarJogadorEstatistica('argentina', 'Julián<br>Álvarez', '4', 'gols', 'ARG') +
             gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '4', 'gols', 'FRA') +
             gerarJogadorEstatistica('spain', 'Álvaro<br>Morata', '3', 'gols', 'ESP') +
@@ -219,45 +219,23 @@ document.querySelector("#stats").innerHTML = `
             gerarJogadorEstatistica('ecuador', 'Enner<br>Valencia', '3', 'gols', 'ECU') +
             gerarJogadorEstatistica('portugal', 'Gonçalo<br>Ramos', '2', 'gols', 'POR') +
             gerarJogadorEstatistica('england', 'Marcus<br>Rashford', '3', 'gols', 'ENG') +
-            gerarJogadorEstatistica('brazil', 'Richarlison', '3', 'gols', 'BRA') +
-            gerarJogadorEstatistica('croatia', 'Andrej<br>Kramarić', '2', 'gols', 'CRO') +
-            gerarJogadorEstatistica('portugal', 'Bruno<br>Fernandes', '2', 'gols', 'POR') +
-            gerarJogadorEstatistica('south-korea', 'Cho<br>Gue-sung', '2', 'gols', 'KOR') +
-            gerarJogadorEstatistica('spain', 'Ferran<br>Torres', '2', 'gols', 'ESP') +
-            gerarJogadorEstatistica('iran', 'Mehdi<br>Taremi', '2', 'gols', 'IRN') +
-            gerarJogadorEstatistica('ghana', 'Mohammed<br>Kudus', '2', 'gols', 'GHA') +
-            gerarJogadorEstatistica('france', 'Olivier<br>Giroud', '2', 'gols', 'FRA') +
-            gerarJogadorEstatistica('saudi-arabia', 'Salem<br>Al-Dawsari', '2', 'gols', 'KSA') )}
+            gerarJogadorEstatistica('brazil', 'Richarlison', '3', 'gols', 'BRA') )}
         ${gerarCartaoEstatisticas('Cartões Amarelos',
-            gerarJogadorEstatistica('saudi-arabia', 'Abdulelah Ali<br>Awadh Al Amri', '2', 'cartões', 'KSA') +
+            gerarJogadorEstatistica('argentina', 'Gonzalo<br>Montiel', '3', 'cartões', 'ARG') +
+            gerarJogadorEstatistica('argentina', 'Marcus<br>Acuña', '3', 'cartões', 'ARG') +
             gerarJogadorEstatistica('saudi-arabia', 'Abdulellah<br>Al-Malki', '2', 'cartões', 'KSA') +
             gerarJogadorEstatistica('ghana', 'Alidu<br>Seidu', '2', 'cartões', 'GHA') +
             gerarJogadorEstatistica('iran', 'Alireza<br>Jahanbakhsh', '2', 'cartões', 'IRN') +
             gerarJogadorEstatistica('belgium', 'Amadou<br>Mvom Onana', '2', 'cartões', 'BEL') +
-            gerarJogadorEstatistica('cameroon', 'Collins<br>Fai', '2', 'cartões', 'CMR') +
+            gerarJogadorEstatistica('argentina', 'Cristian<br>Romero', '2', 'cartões', 'ARG') +
             gerarJogadorEstatistica('costa-rica', 'Francisco<br>Calvo', '2', 'cartões', 'CRC') +
-            gerarJogadorEstatistica('senegal', 'Idrissa<br>Gueye', '2', 'cartões', 'SEN') +
             gerarJogadorEstatistica('australia', 'Jackson<br>Irvine', '2', 'cartões', 'AUS') +
-            gerarJogadorEstatistica('ecuador', 'Jhegson<br>Méndez', '2', 'cartões', 'ECU') +
             gerarJogadorEstatistica('japan', 'Ko<br>Itakura', '2', 'cartões', 'JAP') +
-            gerarJogadorEstatistica('poland', 'Matty<br>Cash', '2', 'cartões', 'POL') +
-            gerarJogadorEstatistica('australia', 'Milos<br>Degenek', '2', 'cartões', 'AUS') +
             gerarJogadorEstatistica('serbia', 'Nemanja<br>Gudelj', '2', 'cartões', 'SRB') +
+            gerarJogadorEstatistica('argentina', 'Nicolás<br>Otamendi', '2', 'cartões', 'ARG') +
             gerarJogadorEstatistica('serbia', 'Nikola<br>Milenković', '2', 'cartões', 'SRB') +
             gerarJogadorEstatistica('serbia', 'Saša<br>Lukić', '2', 'cartões', 'SRB') +
-            gerarJogadorEstatistica('serbia', 'Strahinja<br>Pavlović', '2', 'cartões', 'SRB') +
-            gerarJogadorEstatistica('senegal', 'Boulaye<br>Dia', '1', 'cartão', 'SEN') +
-            gerarJogadorEstatistica('qatar', 'Homan<br>Ahmed', '1', 'cartão', 'QAT') +
-            gerarJogadorEstatistica('senegal', 'Ismail<br>Jakobs', '1', 'cartão', 'SEN') +
-            gerarJogadorEstatistica('wales', 'Joe<br>Rodon', '1', 'cartão', 'WAL') +
-            gerarJogadorEstatistica('netherlands', 'Matthijs<br>de Ligt', '1', 'cartão', 'HOL') +
-            gerarJogadorEstatistica('ecuador', 'Moisés<br>Caicedo', '1', 'cartão', 'ECU') +
-            gerarJogadorEstatistica('iran', 'Morteza<br>Pouraliganji', '1', 'cartão', 'IRN') +
-            gerarJogadorEstatistica('senegal', 'Nampalys<br>Mendy', '1', 'cartão', 'SEN') +
-            gerarJogadorEstatistica('united-states', 'Sergiño<br>Dest', '1', 'cartão', 'USA') +
-            gerarJogadorEstatistica('united-states', 'Tim<br>Ream', '1', 'cartão', 'USA') +
-            gerarJogadorEstatistica('wales', 'Wayne<br>Hennessey', '1', 'cartão', 'WAL') +
-            gerarJogadorEstatistica('united-states', 'Weston<br>McKennie', '1', 'cartão', 'USA') )}
+            gerarJogadorEstatistica('serbia', 'Strahinja<br>Pavlović', '2', 'cartões', 'SRB') )}
         ${gerarCartaoEstatisticas('Cartões Vermelhos',
             gerarJogadorEstatistica('netherlands', 'Denzel<br>Dunfries', '1', 'cartão', 'HOL') +
             gerarJogadorEstatistica('cameroon', 'Vincent<br>Aboubakar', '1', 'cartão', 'CMR') +
